@@ -1,0 +1,55 @@
+/* Base Tailwind adjustments will be injected by CDN. */
+
+/* Base glass styling for header */
+.glass-header {
+  background: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Glassmorphism for cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Lang Switcher Dropdown background fallback */
+select#lang-select option {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Liquid Ether container for background */
+.liquid-ether-container {
+  /* no-op now; left in case of future reuse */
+}
+
+/* Image framing and sketchy corners */
+.art-image-mask {
+  /* Creating sketchy / cut-off corners to hide visual noise */
+  clip-path: polygon(
+    8% 0, 92% 0, 100% 8%, 100% 90%, 
+    90% 100%, 10% 100%, 0 92%, 0 8%
+  );
+}
+
+/* Neon frames offset (emerald only) */
+.neon-frame-1 {
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.25), inset 0 0 15px rgba(0, 255, 127, 0.25);
+  transform: rotate(-3deg) scale(1.03);
+  pointer-events: none;
+}
+
+.neon-frame-2 {
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.1), inset 0 0 10px rgba(0, 255, 127, 0.1);
+  transform: rotate(2deg) scale(1.01);
+  pointer-events: none;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
