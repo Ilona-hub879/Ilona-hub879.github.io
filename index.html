@@ -34,6 +34,7 @@
     }
   </script>
   
+  <link rel="icon" type="image/jpeg" href="images/favikon.jpg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-anthracite text-gray-200 font-inter overflow-x-hidden selection:bg-emerald selection:text-white pb-20">
@@ -90,7 +91,7 @@
             <div class="neon-frame-2 absolute inset-2 border border-emerald rounded-lg opacity-60"></div>
             <!-- Image mask -->
             <div class="art-image-mask relative z-10 w-64 h-64 md:w-80 md:h-80 bg-anthracite overflow-hidden">
-              <img src="images/me-pencil-art.jpg" alt="Vibecoder" class="w-full h-full object-cover filter contrast-125 sepia-[.1] hue-rotate-[-10deg]" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+              <img src="images/me-pencil-art4.png" alt="Vibecoder" class="w-full h-full object-cover filter contrast-125 sepia-[.1] hue-rotate-[-10deg]" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
               <div class="hidden absolute inset-0 flex items-center justify-center text-gray-600 text-sm text-center px-4">
                 Файл me-pencil-art.png не найден. Положите его в папку.
               </div>
@@ -165,14 +166,14 @@
         <!-- Basic -->
         <div class="border border-darkBorder bg-anthracite/50 rounded-2xl p-8 hover:border-emerald/50 transition-colors">
           <h3 class="font-syne text-2xl font-bold text-white mb-2" data-i18n="pr_b_t">Базовый</h3>
-          <div class="text-3xl text-emerald font-bold mb-4" data-i18n="pr_b_p">от $200</div>
+          <div class="text-3xl text-emerald font-bold mb-4" data-i18n="pr_b_p">от €200</div>
           <p class="text-gray-400 text-sm mb-6" data-i18n="pr_b_d">Простые скрипты и боты. Идеально для старта автоматизации.</p>
         </div>
         <!-- Pro -->
         <div class="border border-emerald bg-emerald/5 rounded-2xl p-8 relative transform md:-translate-y-4 shadow-[0_0_30px_rgba(0,255,127,0.15)]">
           <div class="absolute top-0 right-8 transform -translate-y-1/2 bg-emerald text-anthracite px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Popular</div>
           <h3 class="font-syne text-2xl font-bold text-white mb-2" data-i18n="pr_p_t">Про</h3>
-          <div class="text-3xl text-emerald font-bold mb-4" data-i18n="pr_p_p">от $500</div>
+          <div class="text-3xl text-emerald font-bold mb-4" data-i18n="pr_p_p">от €500</div>
           <p class="text-gray-400 text-sm mb-6" data-i18n="pr_p_d">Сложные интеграции, парсеры и цепочки данных.</p>
         </div>
         <!-- Corp -->
@@ -186,22 +187,25 @@
 
     <!-- SIGNATURE CARD SECTION (based on reference design) -->
     <section id="signature-card" class="flex justify-center" data-aos="fade-up">
-      <div class="glass-card rounded-3xl px-5 py-4 md:px-8 md:py-5 flex items-center gap-4 md:gap-6 w-full max-w-xl">
+      <div class="glass-card rounded-3xl px-5 py-5 md:px-8 md:py-6 flex items-center gap-4 md:gap-6 w-full max-w-2xl">
         <div class="relative w-14 h-14 md:w-16 md:h-16 rounded-2xl overflow-hidden border border-emerald/50 bg-anthracite flex-shrink-0">
-          <img src="images/me-pencil-art.jpg" alt="Vibecoder portrait" class="w-full h-full object-cover" />
+          <img src="images/me-pencil-art4.png" alt="Vibecoder portrait" class="w-full h-full object-cover" />
         </div>
-        <div class="flex flex-col gap-1 min-w-0">
+        <div class="flex flex-col gap-1.5 min-w-0">
           <div class="text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-emerald" data-i18n="sig_label">
             Vibecoder &amp; Automator
           </div>
-          <div class="font-syne text-sm md:text-base text-white truncate" data-i18n="sig_title">
+          <div class="font-syne text-base md:text-lg text-white" data-i18n="sig_title">
             Вайбкодер, который экономит вам время.
           </div>
-          <div class="text-[11px] md:text-xs text-gray-400" data-i18n="sig_desc">
-            LV · RU · EN · Автоматизация, боты, парсеры, интеграции.
+          <div class="text-[11px] md:text-xs text-gray-400" data-i18n="sig_sub">
+            Не трать время, а инвестируй в него.
+          </div>
+          <div class="text-[11px] md:text-xs text-gray-500" data-i18n="sig_desc">
+            Автоматизация, боты, парсеры, интеграции.
           </div>
         </div>
-        <a href="#calculator" class="ml-auto hidden md:inline-flex items-center whitespace-nowrap px-4 py-2 rounded-full border border-emerald/70 text-[11px] font-syne font-semibold text-emerald hover:bg-emerald hover:text-anthracite transition-colors" data-i18n="sig_cta">
+        <a href="https://wa.me/37127502878" target="_blank" rel="noopener noreferrer" class="ml-auto hidden md:inline-flex items-center whitespace-nowrap px-4 py-2 rounded-full border border-emerald/70 text-[11px] font-syne font-semibold text-emerald hover:bg-emerald hover:text-anthracite transition-colors" data-i18n="sig_cta">
           Написать мне
         </a>
       </div>
