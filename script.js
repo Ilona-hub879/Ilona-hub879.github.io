@@ -215,6 +215,17 @@ function applyTranslations() {
   // Hide calculator result on language switch to avoid mixed text
   const resultDiv = document.getElementById('calc-result');
   if (resultDiv) resultDiv.classList.add('hidden');
+
+  updateQuizWebAppLink();
+}
+
+/** Vercel web app reads ?lang=ru|en|lv (see frontend resolveQuizLanguage). */
+function updateQuizWebAppLink() {
+  const quizLink = document.getElementById('gallery-link-quiz');
+  if (!quizLink) return;
+  const url = new URL('https://vibe-audit-bot.vercel.app/');
+  url.searchParams.set('lang', currentLang);
+  quizLink.href = url.toString();
 }
 
 // 4. Typewriter Effect
