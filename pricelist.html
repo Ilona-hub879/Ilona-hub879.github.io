@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#121212">
+  <title>Vibecoder — Price list</title>
+  <meta name="description" content="Autonomous AI solutions for business — price list (RU / EN / LV).">
+  <meta property="og:title" content="Vibecoder — Price list">
+  <meta property="og:description" content="Autonomous AI solutions for business. RU / EN / LV.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            anthracite: '#121212',
+            emerald: '#00ff7f',
+            darkGlass: 'rgba(255, 255, 255, 0.03)',
+            darkBorder: 'rgba(255, 255, 255, 0.05)'
+          },
+          fontFamily: {
+            syne: ['Syne', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(15, 23, 42, 0.92), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.75), transparent 55%),
+        #121212;
+      min-height: 100%;
+      min-height: -webkit-fill-available;
+    }
+    .glass-card {
+      background: rgba(2, 6, 23, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(250, 204, 21, 0.35);
+      box-shadow: 0 18px 45px 0 rgba(0, 0, 0, 0.65);
+    }
+    .lang-btn[aria-pressed="true"] {
+      background: rgba(0, 255, 127, 0.15);
+      border-color: rgba(0, 255, 127, 0.6);
+      color: #00ff7f;
+    }
+    [data-lang] { display: none; }
+    [data-lang].is-active { display: block; }
+  </style>
+</head>
+<body class="bg-anthracite text-gray-200 font-inter antialiased pb-10 px-4 pt-6 md:pt-10 selection:bg-emerald selection:text-white">
+  <div class="fixed top-[-10%] left-[-10%] w-[400px] h-[400px] bg-emerald/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+  <div class="fixed bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-emerald/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+  <div class="max-w-2xl mx-auto">
+    <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+      <div class="font-syne font-bold text-lg tracking-wider text-emerald">Vibecoder<span class="text-emerald">.</span></div>
+      <div class="flex flex-wrap gap-2" role="group" aria-label="Language">
+        <button type="button" class="lang-btn px-3 py-1.5 rounded-full border border-darkBorder text-xs font-syne font-semibold uppercase tracking-widest text-gray-300 hover:border-emerald/50 transition-colors" data-set-lang="ru" aria-pressed="true">RU</button>
+        <button type="button" class="lang-btn px-3 py-1.5 rounded-full border border-darkBorder text-xs font-syne font-semibold uppercase tracking-widest text-gray-300 hover:border-emerald/50 transition-colors" data-set-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn px-3 py-1.5 rounded-full border border-darkBorder text-xs font-syne font-semibold uppercase tracking-widest text-gray-300 hover:border-emerald/50 transition-colors" data-set-lang="lv" aria-pressed="false">LV</button>
+      </div>
+    </header>
+
+    <!-- RU -->
+    <article data-lang="ru" class="is-active glass-card rounded-2xl p-5 md:p-7 space-y-5">
+      <h1 class="font-syne text-xl md:text-2xl font-bold text-white leading-tight">Прайс-лист: автономные AI-решения для бизнеса</h1>
+
+      <section>
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">1. Автономный AI-сотрудник (Private Bot)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Цена:</span> €800 – €1,200 (единоразово)</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Что входит:</span> разработка бота на Python, интеграция с вашей базой знаний, установка на ваш сервер. 0€ ежемесячных подписок (кроме аренды сервера €5–10).</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">2. Собственная система мониторинга рынка (Parser Pro)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Цена:</span> €450 – €700</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Что входит:</span> скрипт на базе Playwright/Python для сбора данных с ss.com, auto24.ee и др. Работает 24/7 на вашем сервере, уведомления в Telegram без лимитов сторонних платформ.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">3. Прямая CRM-автоматизация (Custom Bridge)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Цена:</span> €900 – €1,500</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Что входит:</span> написание прямого программного кода для связи вашего сайта и CRM (Pipedrive/HubSpot). Никаких платных посредников типа Make/Zapier. Высокая скорость и защита данных.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">4. Бот-администратор с календарем и оплатой (Self-Managed)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Цена:</span> €700 – €1,100</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Что входит:</span> полный цикл записи на услуги, интеграция с Google/Apple Calendar через API, приём платежей (Stripe/Revolut). Вы платите только комиссию банку.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">5. AI-генератор контента (Local Node)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Цена:</span> €600 – €900</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Что входит:</span> система на базе open-source моделей (или API), которая создаёт посты и переводы. Полная автоматизация публикации в соцсети через официальные API без абонентской платы сервисам-планировщикам.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">6. Пакет «Цифровой суверенитет» (сервер + техподдержка)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Цена:</span> €200 (настройка) + €50/мес (сопровождение)</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Что входит:</span> аренда и настройка защищённого сервера в ЕС, мониторинг работы всех скриптов, бэкапы данных и оперативное исправление ошибок при обновлении внешних сайтов.</p>
+      </section>
+    </article>
+
+    <!-- EN -->
+    <article data-lang="en" class="glass-card rounded-2xl p-5 md:p-7 space-y-5">
+      <h1 class="font-syne text-xl md:text-2xl font-bold text-white leading-tight">Price list: autonomous AI solutions for business</h1>
+
+      <section>
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">1. Autonomous AI employee (Private Bot)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Price:</span> €800 – €1,200 (one-time)</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Includes:</span> Python bot development, integration with your knowledge base, deployment on your server. €0 monthly subscriptions (except server hosting €5–10).</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">2. Owned market monitoring system (Parser Pro)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Price:</span> €450 – €700</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Includes:</span> Playwright/Python script for data from ss.com, auto24.ee and more. Runs 24/7 on your server; Telegram notifications without third-party platform limits.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">3. Direct CRM automation (Custom Bridge)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Price:</span> €900 – €1,500</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Includes:</span> custom code linking your website and CRM (Pipedrive/HubSpot). No paid intermediaries like Make/Zapier. High speed and data protection.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">4. Admin bot with calendar and payments (Self-Managed)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Price:</span> €700 – €1,100</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Includes:</span> full booking flow, Google/Apple Calendar integration via API, payments (Stripe/Revolut). You only pay bank fees.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">5. AI content generator (Local Node)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Price:</span> €600 – €900</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Includes:</span> system built on open-source models (or API) for posts and translations. Full social publishing via official APIs—no planner subscription fees.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">6. “Digital sovereignty” package (server + support)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Price:</span> €200 (setup) + €50/month (maintenance)</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Includes:</span> secure EU server rental and setup, monitoring of all scripts, data backups, and quick fixes when external sites change.</p>
+      </section>
+    </article>
+
+    <!-- LV -->
+    <article data-lang="lv" class="glass-card rounded-2xl p-5 md:p-7 space-y-5">
+      <h1 class="font-syne text-xl md:text-2xl font-bold text-white leading-tight">Cenrādis: autonomi AI risinājumi biznesam</h1>
+
+      <section>
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">1. Autonoms AI darbinieks (Private Bot)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Cena:</span> €800 – €1,200 (vienreizējs maksājums)</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Iekļauts:</span> Python bota izstrāde, integrācija ar jūsu zināšanu bāzi, uzstādīšana uz jūsu servera. 0€ ikmēneša abonementi (izņemot servera īri €5–10).</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">2. Pašas tirgus monitorings (Parser Pro)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Cena:</span> €450 – €700</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Iekļauts:</span> Playwright/Python skripts datu vākšanai no ss.com, auto24.ee u.c. Darbojas 24/7 uz jūsu servera; paziņojumi Telegram bez trešo pušu platformu ierobežojumiem.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">3. Tieša CRM automatizācija (Custom Bridge)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Cena:</span> €900 – €1,500</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Iekļauts:</span> tiešs programmas kods saitei starp jūsu vietni un CRM (Pipedrive/HubSpot). Bez maksas starpniekiem kā Make/Zapier. Augsta ātrums un datu aizsardzība.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">4. Administrators bots ar kalendāru un maksājumiem (Self-Managed)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Cena:</span> €700 – €1,100</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Iekļauts:</span> pilns pierakstu cikls, Google/Apple Calendar integrācija caur API, maksājumi (Stripe/Revolut). Maksājat tikai bankas komisijas.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">5. AI satura ģenerators (Local Node)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Cena:</span> €600 – €900</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Iekļauts:</span> sistēma uz atvērtā koda modeļiem (vai API) ierakstu un tulkojumu veidošanai. Pilna publicēšana sociālajos tīklos caur oficiāliem API bez plānotāju abonementiem.</p>
+      </section>
+
+      <section class="border-t border-darkBorder pt-4">
+        <h2 class="font-syne text-base md:text-lg font-bold text-emerald mb-2">6. Pakete «Digitālais suverenitāte» (serveris + atbalsts)</h2>
+        <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Cena:</span> €200 (konfigurācija) + €50/mēn (apkalpošana)</p>
+        <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Iekļauts:</span> droša servera īre un konfigurācija ES, visu skriptu monitorings, datu rezerves kopijas un ātra kļūdu labošana, kad mainās ārējās vietnes.</p>
+      </section>
+    </article>
+
+    <p class="text-center text-xs text-gray-600 mt-6 font-syne">Vibecoder &amp; Automator</p>
+  </div>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('[data-set-lang]');
+      var blocks = document.querySelectorAll('[data-lang]');
+      function setLang(code) {
+        blocks.forEach(function (el) {
+          el.classList.toggle('is-active', el.getAttribute('data-lang') === code);
+        });
+        buttons.forEach(function (btn) {
+          var on = btn.getAttribute('data-set-lang') === code;
+          btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+        document.documentElement.lang = code === 'ru' ? 'ru' : code === 'lv' ? 'lv' : 'en';
+      }
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setLang(btn.getAttribute('data-set-lang'));
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
