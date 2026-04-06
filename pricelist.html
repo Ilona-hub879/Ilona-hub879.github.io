@@ -111,6 +111,9 @@
         <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Цена:</span> €200 (настройка) + €50/мес (сопровождение)</p>
         <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Что входит:</span> аренда и настройка защищённого сервера в ЕС, мониторинг работы всех скриптов, бэкапы данных и оперативное исправление ошибок при обновлении внешних сайтов.</p>
       </section>
+      <div class="pt-6 mt-2 border-t border-darkBorder flex justify-center">
+        <a href="index.html" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-emerald/70 text-sm font-syne font-semibold text-emerald hover:bg-emerald hover:text-anthracite transition-colors">Вернуться на сайт</a>
+      </div>
     </article>
 
     <!-- EN -->
@@ -152,6 +155,9 @@
         <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Price:</span> €200 (setup) + €50/month (maintenance)</p>
         <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Includes:</span> secure EU server rental and setup, monitoring of all scripts, data backups, and quick fixes when external sites change.</p>
       </section>
+      <div class="pt-6 mt-2 border-t border-darkBorder flex justify-center">
+        <a href="index.html" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-emerald/70 text-sm font-syne font-semibold text-emerald hover:bg-emerald hover:text-anthracite transition-colors">Back to the site</a>
+      </div>
     </article>
 
     <!-- LV -->
@@ -193,6 +199,9 @@
         <p class="text-sm text-gray-300 mb-1"><span class="text-emerald font-medium">Cena:</span> €200 (konfigurācija) + €50/mēn (apkalpošana)</p>
         <p class="text-sm text-gray-400 leading-relaxed"><span class="text-gray-300 font-medium">Iekļauts:</span> droša servera īre un konfigurācija ES, visu skriptu monitorings, datu rezerves kopijas un ātra kļūdu labošana, kad mainās ārējās vietnes.</p>
       </section>
+      <div class="pt-6 mt-2 border-t border-darkBorder flex justify-center">
+        <a href="index.html" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-emerald/70 text-sm font-syne font-semibold text-emerald hover:bg-emerald hover:text-anthracite transition-colors">Atpakaļ uz vietni</a>
+      </div>
     </article>
 
     <p class="text-center text-xs text-gray-600 mt-6 font-syne">Vibecoder &amp; Automator</p>
@@ -211,12 +220,33 @@
           btn.setAttribute('aria-pressed', on ? 'true' : 'false');
         });
         document.documentElement.lang = code === 'ru' ? 'ru' : code === 'lv' ? 'lv' : 'en';
+        try {
+          localStorage.setItem('lang', code);
+        } catch (e) {}
+        if (window.history && window.history.replaceState) {
+          var url = new URL(window.location.href);
+          url.searchParams.set('lang', code);
+          window.history.replaceState(null, '', url.pathname + url.search);
+        }
       }
       buttons.forEach(function (btn) {
         btn.addEventListener('click', function () {
           setLang(btn.getAttribute('data-set-lang'));
         });
       });
+      var params = new URLSearchParams(window.location.search);
+      var lang = params.get('lang');
+      if (lang !== 'ru' && lang !== 'en' && lang !== 'lv') {
+        try {
+          lang = localStorage.getItem('lang');
+        } catch (e) {
+          lang = null;
+        }
+        if (lang !== 'ru' && lang !== 'en' && lang !== 'lv') {
+          lang = 'ru';
+        }
+      }
+      setLang(lang);
     })();
   </script>
 </body>

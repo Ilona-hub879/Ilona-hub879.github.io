@@ -217,6 +217,14 @@ function applyTranslations() {
   if (resultDiv) resultDiv.classList.add('hidden');
 
   updateQuizWebAppLink();
+  updateHeroPricelistLink();
+}
+
+function updateHeroPricelistLink() {
+  const a = document.getElementById('hero-pricing-link');
+  if (a) {
+    a.href = `pricelist.html?lang=${encodeURIComponent(currentLang)}`;
+  }
 }
 
 /** Vercel web app reads ?lang=ru|en|lv (see frontend resolveQuizLanguage). */
