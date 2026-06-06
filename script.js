@@ -29,12 +29,13 @@ const translations = {
     pr_c_t: 'Корп',
     pr_c_p: 'Индивидуально',
     pr_c_d: 'Полная автоматизация бизнеса, поддержка и SLA.',
-    ft_rights: '© 2026 Vibecoder & Automator. Все права защищены.',
-    ft_privacy: 'Политика конфиденциальности (GDPR)',
+    ft_rights: '© 2026 Vibecoder by Ilona Samovica. Все права защищены.',
+    ft_privacy: 'Privātuma Politika',
+    ft_terms: 'Lietošanas noteikumi',
     cookie_text: 'Мы используем cookies, чтобы настроить вайб и сохранить ваши предпочтения (включая язык).',
     cookie_btn: 'Принять',
     cookie_decline: 'Отклонить',
-    sig_label: 'Vibecoder & Automator',
+    sig_label: 'Vibecoder by Ilona Samovica',
     sig_title: 'Вайбкодер, который экономит вам время.',
     sig_desc: 'Автоматизация, боты, парсеры, интеграции.',
     sig_cta: 'Написать мне',
@@ -83,12 +84,13 @@ const translations = {
     pr_c_t: 'Corp',
     pr_c_p: 'Custom',
     pr_c_d: 'Full business automation, dedicated support, SLA.',
-    ft_rights: '© 2026 Vibecoder & Automator. All rights reserved.',
-    ft_privacy: 'Privacy Policy (GDPR)',
+    ft_rights: '© 2026 Vibecoder by Ilona Samovica. All rights reserved.',
+    ft_privacy: 'Privacy Policy',
+    ft_terms: 'Terms of Service',
     cookie_text: 'We use cookies to keep the vibe right and save your preferences (like language).',
     cookie_btn: 'Accept',
     cookie_decline: 'Decline',
-    sig_label: 'Vibecoder & Automator',
+    sig_label: 'Vibecoder by Ilona Samovica',
     sig_title: 'Vibecoder who saves your time.',
     sig_desc: 'Automation, bots, parsers, integrations.',
     sig_cta: 'Contact me',
@@ -136,12 +138,13 @@ const translations = {
     pr_c_t: 'Korp',
     pr_c_p: 'Individuāli',
     pr_c_d: 'Pilna biznesa automatizācija, atbalsts un SLA.',
-    ft_rights: '© 2026 Vibecoder & Automator. Visas tiesības aizsargātas.',
-    ft_privacy: 'Privātuma politika (GDPR)',
+    ft_rights: '© 2026 Vibecoder by Ilona Samovica. Visas tiesības aizsargātas.',
+    ft_privacy: 'Privātuma Politika',
+    ft_terms: 'Lietošanas noteikumi',
     cookie_text: 'Mēs izmantojam sīkfailus, lai uzturētu labu vaibu un saglabātu jūsu izvēles (ieskaitot valodu).',
     cookie_btn: 'Pieņemt',
     cookie_decline: 'Noraidīt',
-    sig_label: 'Vibecoder & Automator',
+    sig_label: 'Vibecoder by Ilona Samovica',
     sig_title: 'Vibekoders, kas taupa jūsu laiku.',
     sig_desc: 'Automatizācija, boti, parsētāji, integrācijas.',
     sig_cta: 'Sazināties',
@@ -218,6 +221,19 @@ function applyTranslations() {
 
   updateQuizWebAppLink();
   updateHeroPricelistLink();
+  updateFooterLegalLinks();
+}
+
+function legalDocLang() {
+  return currentLang === 'en' ? 'en' : 'lv';
+}
+
+function updateFooterLegalLinks() {
+  const lang = legalDocLang();
+  const privacy = document.getElementById('footer-privacy-link');
+  const terms = document.getElementById('footer-terms-link');
+  if (privacy) privacy.href = `privacy2.html?lang=${encodeURIComponent(lang)}`;
+  if (terms) terms.href = `terms.html?lang=${encodeURIComponent(lang)}`;
 }
 
 function updateHeroPricelistLink() {
