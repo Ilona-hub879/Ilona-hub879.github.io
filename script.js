@@ -30,6 +30,8 @@ const translations = {
     pr_c_p: 'Индивидуально',
     pr_c_d: 'Полная автоматизация бизнеса, поддержка и SLA.',
     ft_rights: '© 2026 Vibecoder by Ilona Samovica. Все права защищены.',
+    nav_products: 'Цифровые продукты',
+    ft_products: 'Цифровые продукты',
     ft_privacy: 'Privātuma Politika',
     ft_terms: 'Lietošanas noteikumi',
     cookie_text: 'Мы используем cookies, чтобы настроить вайб и сохранить ваши предпочтения (включая язык).',
@@ -85,6 +87,8 @@ const translations = {
     pr_c_p: 'Custom',
     pr_c_d: 'Full business automation, dedicated support, SLA.',
     ft_rights: '© 2026 Vibecoder by Ilona Samovica. All rights reserved.',
+    nav_products: 'Digital products',
+    ft_products: 'Digital products',
     ft_privacy: 'Privacy Policy',
     ft_terms: 'Terms of Service',
     cookie_text: 'We use cookies to keep the vibe right and save your preferences (like language).',
@@ -139,6 +143,8 @@ const translations = {
     pr_c_p: 'Individuāli',
     pr_c_d: 'Pilna biznesa automatizācija, atbalsts un SLA.',
     ft_rights: '© 2026 Vibecoder by Ilona Samovica. Visas tiesības aizsargātas.',
+    nav_products: 'Digitālie produkti',
+    ft_products: 'Digitālie produkti',
     ft_privacy: 'Privātuma Politika',
     ft_terms: 'Lietošanas noteikumi',
     cookie_text: 'Mēs izmantojam sīkfailus, lai uzturētu labu vaibu un saglabātu jūsu izvēles (ieskaitot valodu).',
@@ -222,6 +228,15 @@ function applyTranslations() {
   updateQuizWebAppLink();
   updateHeroPricelistLink();
   updateFooterLegalLinks();
+  updateDigitalProductsLinks();
+}
+
+function updateDigitalProductsLinks() {
+  const url = `digital-products.html?lang=${encodeURIComponent(currentLang)}`;
+  const nav = document.getElementById('nav-products-link');
+  const footer = document.getElementById('footer-products-link');
+  if (nav) nav.href = url;
+  if (footer) footer.href = url;
 }
 
 function legalDocLang() {

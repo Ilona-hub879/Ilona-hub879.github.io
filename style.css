@@ -57,7 +57,236 @@ select#lang-select option {
   pointer-events: none;
 }
 
-/* Smooth scroll for anchor links */
+/* Smooth scroll + mobile text scaling */
 html {
+  -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Legal & product pages */
+.legal-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.legal-page h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.75rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+.legal-page h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.125rem;
+  color: #00ff7f;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.legal-page h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.legal-page p,
+.legal-page li {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  color: #d1d5db;
+}
+.legal-page ul {
+  margin: 0.5rem 0 1rem 1.25rem;
+  padding: 0;
+}
+.legal-page-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1rem 0;
+  max-width: 100%;
+}
+
+.legal-page table {
+  width: 100%;
+  min-width: 280px;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: 0;
+}
+.legal-page th,
+.legal-page td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+.legal-page th {
+  color: #00ff7f;
+  font-family: 'Syne', sans-serif;
+}
+.legal-page a {
+  color: #00ff7f;
+  text-decoration: none;
+}
+.legal-page a:hover {
+  text-decoration: underline;
+}
+.legal-page .back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #00ff7f;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.875rem;
+}
+[data-lang] {
+  display: none;
+}
+[data-lang].is-active {
+  display: block;
+}
+.lang-btn[aria-pressed="true"] {
+  background: rgba(0, 255, 127, 0.15);
+  border-color: rgba(0, 255, 127, 0.6);
+  color: #00ff7f;
+}
+#support-modal.is-open {
+  display: flex;
+}
+
+#support-modal .modal-panel {
+  max-height: min(90vh, 640px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#support-modal .support-close {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#support-modal a[href],
+#support-modal .flex.items-center.gap-4 {
+  min-height: 44px;
+}
+
+.products-shell {
+  width: 100%;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Product guide block below the card */
+.legal-page.product-guide {
+  max-width: none;
+  padding: 1.5rem 1.25rem 2rem;
+  margin-top: 0;
+}
+
+.legal-page.product-guide h2:first-of-type {
+  margin-top: 0;
+}
+
+.legal-page.product-guide p,
+.legal-page.product-guide li {
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+}
+
+.legal-page.product-guide ol,
+.legal-page.product-guide ul {
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .legal-page.product-guide {
+    padding: 1.75rem 1.75rem 2.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .legal-page.product-guide {
+    padding: 2rem 2.25rem 2.5rem;
+  }
+
+  .legal-page.product-guide p,
+  .legal-page.product-guide li {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+.product-actions a,
+.product-actions button {
+  min-height: 44px;
+  align-items: center;
+}
+
+@media (max-width: 639px) {
+  .product-actions a,
+  .product-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .product-card-media {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .legal-page {
+    max-width: 800px;
+    padding: 2.5rem 1.5rem 3.5rem;
+  }
+
+  .legal-page h1 {
+    font-size: 2rem;
+  }
+
+  .legal-page h2 {
+    font-size: 1.25rem;
+  }
+
+  .legal-page p,
+  .legal-page li {
+    font-size: 1rem;
+  }
+
+  .products-shell {
+    max-width: 56rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .legal-page {
+    max-width: 960px;
+  }
+
+  .legal-page h1 {
+    font-size: 2.25rem;
+  }
+
+  .legal-page p,
+  .legal-page li {
+    font-size: 1.0625rem;
+  }
+
+  .products-shell {
+    max-width: 64rem;
+  }
 }

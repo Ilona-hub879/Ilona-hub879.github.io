@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#121212">
+  <title>Цифровые продукты — Vibecoder by Ilona Samovica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            anthracite: '#121212',
+            emerald: '#00ff7f',
+            darkGlass: 'rgba(255, 255, 255, 0.03)',
+            darkBorder: 'rgba(255, 255, 255, 0.05)'
+          },
+          fontFamily: {
+            syne: ['Syne', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="icon" type="image/jpeg" href="images/favikon.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-anthracite text-gray-200 font-inter antialiased overflow-x-hidden pb-10 selection:bg-emerald selection:text-white">
+  <div class="fixed top-[-10%] left-[-10%] w-[400px] h-[400px] bg-emerald/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+  <div class="fixed bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-emerald/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+  <div class="products-shell px-4 pt-6 md:pt-10">
+    <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+      <a href="index.html" class="font-syne font-bold text-lg tracking-wider text-emerald hover:opacity-90 transition-opacity">Vibecoder<span class="text-emerald">.</span></a>
+      <div class="flex flex-wrap gap-2" role="group" aria-label="Language">
+        <button type="button" class="lang-btn px-3 py-1.5 rounded-full border border-darkBorder text-xs font-syne font-semibold uppercase tracking-widest text-gray-300 hover:border-emerald/50 transition-colors" data-set-lang="ru" aria-pressed="true">RU</button>
+        <button type="button" class="lang-btn px-3 py-1.5 rounded-full border border-darkBorder text-xs font-syne font-semibold uppercase tracking-widest text-gray-300 hover:border-emerald/50 transition-colors" data-set-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn px-3 py-1.5 rounded-full border border-darkBorder text-xs font-syne font-semibold uppercase tracking-widest text-gray-300 hover:border-emerald/50 transition-colors" data-set-lang="lv" aria-pressed="false">LV</button>
+      </div>
+    </header>
+
+    <!-- RU -->
+    <article data-lang="ru" class="is-active space-y-8">
+      <div>
+        <a href="index.html" class="text-emerald font-syne text-sm hover:underline">&#8592; На главную</a>
+        <h1 class="font-syne text-2xl md:text-3xl font-bold text-white mt-4">Цифровые продукты</h1>
+      </div>
+
+      <div class="glass-card rounded-2xl p-6 md:p-8">
+        <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+          <a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer" class="product-card-media shrink-0 block rounded-2xl overflow-hidden border border-emerald/30 hover:border-emerald hover:shadow-[0_0_20px_rgba(0,255,127,0.25)] transition-all">
+            <img src="images/GDPR_image.jpg" alt="AI GDPR Audit Tool" width="128" height="128" class="w-28 h-28 md:w-32 md:h-32 object-cover">
+          </a>
+          <div class="flex-1 min-w-0 w-full text-center sm:text-left">
+            <h2 class="font-syne text-xl md:text-2xl font-bold text-white mb-2">AI GDPR Audit Tool</h2>
+            <p class="text-gray-400 text-sm leading-relaxed">Автоматизированный AI GDPR Audit Tool для одного документа (PDF/DOCX). Демо бесплатно, полный отчёт — €12,49.</p>
+            <p class="product-disclaimer text-gray-500 text-xs leading-relaxed mt-3">Этот сервис — инструмент на базе искусственного интеллекта для информационных целей и автоматизированного анализа. Он не является квалифицированной юридической консультацией, не заменяет юриста и не создаёт отношений «адвокат — клиент». Окончательное решение о соответствии документа и внесении правок принимает сам пользователь (человек).</p>
+            <div class="product-actions flex flex-wrap gap-2 mt-4 w-full">
+              <a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex px-4 py-2 rounded-full bg-emerald/10 border border-emerald text-emerald text-xs font-syne font-semibold hover:bg-emerald hover:text-anthracite transition-colors">Открыть приложение</a>
+              <a href="ai-gdpr-auditor-privacy.html?lang=ru" data-legal-lang class="inline-flex px-4 py-2 rounded-full border border-darkBorder text-gray-300 text-xs font-syne font-semibold hover:border-emerald/50 hover:text-emerald transition-colors">Политика конфиденциальности</a>
+              <a href="ai-gdpr-auditor-terms.html?lang=ru" data-legal-lang class="inline-flex px-4 py-2 rounded-full border border-darkBorder text-gray-300 text-xs font-syne font-semibold hover:border-emerald/50 hover:text-emerald transition-colors">Условия использования</a>
+              <button type="button" data-support-open class="inline-flex px-4 py-2 rounded-full border border-emerald/50 text-emerald text-xs font-syne font-semibold hover:bg-emerald/10 transition-colors">Поддержка покупателей</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="legal-page product-guide glass-card rounded-2xl">
+        <h2 class="!text-white !text-xl !mt-0">Как получить полный аудит</h2>
+        <p><strong>Спасибо за интерес к нашему сервису.</strong></p>
+        <p>Этот продукт <strong>не является скачиваемым файлом отчёта</strong>. Вы получаете <strong>персональный GDPR-аудит</strong> <strong>для одного документа</strong> на нашем сайте. <strong>Документ обязательно нужно загрузить на сайте до оплаты.</strong></p>
+
+        <h2>Что вы получаете</h2>
+        <ul>
+          <li><strong>Один полный AI GDPR-аудит</strong> для <strong>одного документа</strong> (PDF или DOCX, <strong>не более 25 стр.</strong>, <strong>не более 5 МБ</strong>)</li>
+          <li>Выводы с уровнями риска, правовыми ссылками (GDPR + выбранное национальное законодательство) и рекомендациями по переформулировке</li>
+          <li><strong>Приватная ссылка</strong> на отчёт по email после подтверждения оплаты</li>
+        </ul>
+        <p><strong>Цена:</strong> €12,49 — один платёж за один документ.</p>
+
+        <h2>Как получить аудит (соблюдайте порядок)</h2>
+        <h3>Шаг 1 — Откройте наш сайт</h3>
+        <p><a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer">https://ai-gdpr-auditor.vercel.app</a></p>
+        <p>Не ожидайте отчёт в виде загрузки из LemonSqueezy.</p>
+
+        <h3>Шаг 2 — Загрузите документ на сайте</h3>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Выберите <strong>язык интерфейса</strong></li>
+          <li>Укажите <strong>страну / национальное законодательство</strong></li>
+          <li>Введите <strong>email</strong> (тот же адрес используйте при оплате)</li>
+          <li>Загрузите <strong>PDF или DOCX</strong> (<strong>максимум 25 страниц и 5 МБ</strong>)</li>
+          <li>Нажмите <strong>Проверить документ бесплатно (демо)</strong> и дождитесь предпросмотра</li>
+        </ol>
+
+        <h3>Шаг 3 — Оплатите с сайта (не из магазина LemonSqueezy)</h3>
+        <p>После появления демо нажмите <strong>Разблокировать полный аудит — €12,49</strong>. Откроется страница оплаты LemonSqueezy.</p>
+        <p><strong>Важно:</strong> оплату нужно начать кнопкой <strong>Разблокировать полный аудит</strong> <strong>после</strong> загрузки файла. Не покупайте продукт отдельно в магазине LemonSqueezy до шага 2.</p>
+
+        <h2>После оплаты</h2>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Браузер может открыть <strong>страницу отчёта</strong> (заголовок <strong>GDPR Audit Report</strong>).</li>
+          <li>Письмо с темой <strong>"Your AI GDPR Audit report is ready"</strong> — кнопка <strong>Open full report</strong>.</li>
+          <li>Используйте страницу после оплаты или кнопку в письме.</li>
+          <li>Анализ обычно занимает несколько минут; сканы PDF — дольше.</li>
+          <li><strong>Оригинальный файл мы не храним постоянно</strong> — сохраните отчёт.</li>
+        </ol>
+
+        <h2>Проблемы?</h2>
+        <div class="legal-page-table-wrap"><table>
+          <thead><tr><th>Проблема</th><th>Решение</th></tr></thead>
+          <tbody>
+            <tr><td>Нет отчёта после оплаты</td><td>Подождите 5–15 мин., проверьте спам, откройте письмо и нажмите <strong>Open full report</strong>.</td></tr>
+            <tr><td>Оплата в LemonSqueezy до загрузки</td><td>Напишите <a href="https://t.me/aigdprauditsupport_bot" target="_blank" rel="noopener noreferrer">поддержку</a> с номером заказа.</td></tr>
+            <tr><td>Report not found</td><td>Используйте кнопку <strong>Open full report</strong> в нашем письме.</td></tr>
+            <tr><td>PDF не читается</td><td>Конвертируйте через <a href="https://smallpdf.com/pdf-to-word" target="_blank" rel="noopener noreferrer">smallpdf.com</a> и загрузите снова.</td></tr>
+            <tr><td>Документ слишком длинный</td><td>До 25 стр. / 5 МБ на один файл.</td></tr>
+            <tr><td>Неправильный документ</td><td>Один платёж = один документ. Новый файл — новая покупка.</td></tr>
+          </tbody>
+        </table></div>
+        <p class="text-gray-500 text-sm italic">Автоматизированная проверка, не юридическая консультация.</p>
+      </div>
+    </article>
+
+    <!-- EN -->
+    <article data-lang="en" class="space-y-8">
+      <div>
+        <a href="index.html" class="text-emerald font-syne text-sm hover:underline">&#8592; Back to the site</a>
+        <h1 class="font-syne text-2xl md:text-3xl font-bold text-white mt-4">Digital products</h1>
+      </div>
+
+      <div class="glass-card rounded-2xl p-6 md:p-8">
+        <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+          <a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer" class="product-card-media shrink-0 block rounded-2xl overflow-hidden border border-emerald/30 hover:border-emerald hover:shadow-[0_0_20px_rgba(0,255,127,0.25)] transition-all">
+            <img src="images/GDPR_image.jpg" alt="AI GDPR Audit Tool" width="128" height="128" class="w-28 h-28 md:w-32 md:h-32 object-cover">
+          </a>
+          <div class="flex-1 min-w-0 w-full text-center sm:text-left">
+            <h2 class="font-syne text-xl md:text-2xl font-bold text-white mb-2">AI GDPR Audit Tool</h2>
+            <p class="text-gray-400 text-sm leading-relaxed">Automated AI GDPR Audit Tool for one document (PDF/DOCX). Free demo, full report — €12.49.</p>
+            <p class="product-disclaimer text-gray-500 text-xs leading-relaxed mt-3">This service is an artificial intelligence tool for informational purposes and automated analysis. It is not qualified legal advice, does not replace a lawyer, and does not create an attorney–client relationship. The final decision on document compliance and any amendments rests with the user (a human).</p>
+            <div class="product-actions flex flex-wrap gap-2 mt-4 w-full">
+              <a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex px-4 py-2 rounded-full bg-emerald/10 border border-emerald text-emerald text-xs font-syne font-semibold hover:bg-emerald hover:text-anthracite transition-colors">Open app</a>
+              <a href="ai-gdpr-auditor-privacy.html?lang=en" data-legal-lang class="inline-flex px-4 py-2 rounded-full border border-darkBorder text-gray-300 text-xs font-syne font-semibold hover:border-emerald/50 hover:text-emerald transition-colors">Privacy Policy</a>
+              <a href="ai-gdpr-auditor-terms.html?lang=en" data-legal-lang class="inline-flex px-4 py-2 rounded-full border border-darkBorder text-gray-300 text-xs font-syne font-semibold hover:border-emerald/50 hover:text-emerald transition-colors">Terms of Service</a>
+              <button type="button" data-support-open class="inline-flex px-4 py-2 rounded-full border border-emerald/50 text-emerald text-xs font-syne font-semibold hover:bg-emerald/10 transition-colors">Customer support</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="legal-page product-guide glass-card rounded-2xl">
+        <h2 class="!text-white !text-xl !mt-0">How to receive your full audit</h2>
+        <p><strong>Thank you for your interest in our service.</strong></p>
+        <p>This product is <strong>not a downloadable report file</strong>. You receive a <strong>personal GDPR compliance audit</strong> for <strong>one document</strong> on our website. <strong>You must upload your document on the website before paying.</strong></p>
+
+        <h2>What you get</h2>
+        <ul>
+          <li><strong>One full AI-powered GDPR audit</strong> for <strong>one document</strong> (PDF or DOCX, <strong>max 25 pages</strong>, <strong>max 5 MB</strong>)</li>
+          <li>Findings with risk levels, legal references (GDPR + selected national law), and rewrite suggestions</li>
+          <li>A <strong>private report link</strong> by email after payment is confirmed</li>
+        </ul>
+        <p><strong>Price:</strong> €12.49 — one payment per document.</p>
+
+        <h2>How to get your audit (follow this order)</h2>
+        <h3>Step 1 — Open our website</h3>
+        <p><a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer">https://ai-gdpr-auditor.vercel.app</a></p>
+
+        <h3>Step 2 — Upload your document on the website</h3>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Choose your <strong>interface language</strong></li>
+          <li>Select <strong>country / national law</strong></li>
+          <li>Enter your <strong>email address</strong></li>
+          <li>Upload <strong>PDF or DOCX</strong> (<strong>maximum 25 pages and 5 MB</strong>)</li>
+          <li>Click <strong>Check document for free (demo)</strong> and wait for the preview</li>
+        </ol>
+
+        <h3>Step 3 — Pay from the website (not from the LemonSqueezy store)</h3>
+        <p>After the demo appears, click <strong>Unlock full audit — €12.49</strong>. Complete payment on the LemonSqueezy checkout page.</p>
+        <p><strong>Important:</strong> payment must be started with <strong>Unlock full audit</strong> <strong>after</strong> you uploaded your file. Do not buy separately in the LemonSqueezy store before Step 2.</p>
+
+        <h2>After payment</h2>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Your browser may open the <strong>report page</strong> automatically (<strong>GDPR Audit Report</strong>).</li>
+          <li>Email with subject <strong>"Your AI GDPR Audit report is ready"</strong> — click <strong>Open full report</strong>.</li>
+          <li>Use either the post-payment page or the email button.</li>
+          <li>Analysis usually takes a few minutes; scanned PDFs may take longer.</li>
+          <li>We do <strong>not</strong> keep your original file — save your report if needed.</li>
+        </ol>
+
+        <h2>Problems?</h2>
+        <div class="legal-page-table-wrap"><table>
+          <thead><tr><th>Issue</th><th>What to do</th></tr></thead>
+          <tbody>
+            <tr><td>No report after paying</td><td>Wait 5–15 min., check spam, open the email and click <strong>Open full report</strong>.</td></tr>
+            <tr><td>Paid in LemonSqueezy store before upload</td><td>Contact <a href="https://t.me/aigdprauditsupport_bot" target="_blank" rel="noopener noreferrer">support</a> with your order number.</td></tr>
+            <tr><td>Report not found</td><td>Use <strong>Open full report</strong> in our email.</td></tr>
+            <tr><td>PDF cannot be read</td><td>Convert via <a href="https://smallpdf.com/pdf-to-word" target="_blank" rel="noopener noreferrer">smallpdf.com</a> and upload again.</td></tr>
+            <tr><td>Document too long</td><td>Max 25 pages / 5 MB per file.</td></tr>
+            <tr><td>Wrong document</td><td>One payment = one document. New file — new purchase.</td></tr>
+          </tbody>
+        </table></div>
+        <p class="text-gray-500 text-sm italic">Automated compliance screening, not legal advice.</p>
+      </div>
+    </article>
+
+    <!-- LV -->
+    <article data-lang="lv" class="space-y-8">
+      <div>
+        <a href="index.html" class="text-emerald font-syne text-sm hover:underline">&#8592; Atpaka&#316; uz vietni</a>
+        <h1 class="font-syne text-2xl md:text-3xl font-bold text-white mt-4">Digit&#257;lie produkti</h1>
+      </div>
+
+      <div class="glass-card rounded-2xl p-6 md:p-8">
+        <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+          <a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer" class="product-card-media shrink-0 block rounded-2xl overflow-hidden border border-emerald/30 hover:border-emerald hover:shadow-[0_0_20px_rgba(0,255,127,0.25)] transition-all">
+            <img src="images/GDPR_image.jpg" alt="AI GDPR Audit Tool" width="128" height="128" class="w-28 h-28 md:w-32 md:h-32 object-cover">
+          </a>
+          <div class="flex-1 min-w-0 w-full text-center sm:text-left">
+            <h2 class="font-syne text-xl md:text-2xl font-bold text-white mb-2">AI GDPR Audit Tool</h2>
+            <p class="text-gray-400 text-sm leading-relaxed">Automatiz&#275;ts AI GDPR audita r&#299;ks vienam dokumentam (PDF/DOCX). Bezmaksas demo, pilns p&#257;rskats — €12,49.</p>
+            <p class="product-disclaimer text-gray-500 text-xs leading-relaxed mt-3">&#352;is pakalpojums ir m&#257;ksl&#299;g&#257; intelekta r&#299;ks informat&#299;viem nol&#363;kiem un automatiz&#275;tai anal&#299;zei. Tas nav kvalific&#275;ta juridiska konsult&#257;cija, neaizst&#257;j juristu un nerada attiec&#299;bas &quot;advok&#257;ts — klients&quot;. Gal&#299;go l&#275;mumu par dokumenta atbilst&#299;bu un t&#257; labojumiem pie&#326;em pats lietot&#257;js (cilv&#275;ks).</p>
+            <div class="product-actions flex flex-wrap gap-2 mt-4 w-full">
+              <a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex px-4 py-2 rounded-full bg-emerald/10 border border-emerald text-emerald text-xs font-syne font-semibold hover:bg-emerald hover:text-anthracite transition-colors">Atv&#275;rt lietotni</a>
+              <a href="ai-gdpr-auditor-privacy.html?lang=lv" data-legal-lang class="inline-flex px-4 py-2 rounded-full border border-darkBorder text-gray-300 text-xs font-syne font-semibold hover:border-emerald/50 hover:text-emerald transition-colors">Priv&#257;tuma politika</a>
+              <a href="ai-gdpr-auditor-terms.html?lang=lv" data-legal-lang class="inline-flex px-4 py-2 rounded-full border border-darkBorder text-gray-300 text-xs font-syne font-semibold hover:border-emerald/50 hover:text-emerald transition-colors">Lieto&#353;anas noteikumi</a>
+              <button type="button" data-support-open class="inline-flex px-4 py-2 rounded-full border border-emerald/50 text-emerald text-xs font-syne font-semibold hover:bg-emerald/10 transition-colors">Klientu atbalsts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="legal-page product-guide glass-card rounded-2xl">
+        <h2 class="!text-white !text-xl !mt-0">K&#257; sa&#326;emt pilnu auditu</h2>
+        <p><strong>Paldies par interesi par m&#363;su pakalpojumu.</strong></p>
+        <p>&#352;is produkts <strong>nav lejupiel&#257;d&#275;jams p&#257;rskata fails</strong>. J&#363;s sa&#326;emat <strong>person&#299;gu GDPR auditu</strong> <strong>vienam dokumentam</strong> m&#363;su vietn&#275;. <strong>Dokumentu oblig&#257;ti j&#257;aug&#353;upiel&#257;d&#275; vietn&#275; pirms apmaksas.</strong></p>
+
+        <h2>Ko j&#363;s sa&#326;emat</h2>
+        <ul>
+          <li><strong>Viens pilns AI GDPR audita r&#299;ks</strong> <strong>vienam dokumentam</strong> (PDF vai DOCX, <strong>ne vair&#257;k k&#257; 25 lpp.</strong>, <strong>ne vair&#257;k k&#257; 5 MB</strong>)</li>
+          <li>Atkl&#257;jumi ar risku l&#299;me&#326;iem, juridisk&#257;m atsauc&#275;m un p&#257;rformul&#275;&#353;anas ieteikumiem</li>
+          <li><strong>Priv&#257;ta saite</strong> uz p&#257;rskatu e-past&#257; p&#275;c apmaksas</li>
+        </ul>
+        <p><strong>Cena:</strong> €12,49 — viens maks&#257;jums par vienu dokumentu.</p>
+
+        <h2>K&#257; sa&#326;emt auditu (iev&#275;rojiet sec&#299;bu)</h2>
+        <h3>1. solis — Atveriet m&#363;su vietni</h3>
+        <p><a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer">https://ai-gdpr-auditor.vercel.app</a></p>
+
+        <h3>2. solis — Aug&#353;upiel&#257;d&#275;jiet dokumentu</h3>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Izv&#275;lieties <strong>saskarnes valodu</strong></li>
+          <li>Nor&#257;diet <strong>valsti / nacion&#257;lo likumu</strong></li>
+          <li>Ievadiet <strong>e-pastu</strong></li>
+          <li>Aug&#353;upiel&#257;d&#275;jiet <strong>PDF vai DOCX</strong> (<strong>maks. 25 lappuses un 5 MB</strong>)</li>
+          <li>Nospiediet <strong>P&#257;rbaud&#299;t dokumentu bez maksas (demo)</strong></li>
+        </ol>
+
+        <h3>3. solis — Apmaks&#257;jiet no vietnes</h3>
+        <p>Nospiediet <strong>Atblo&#311;&#275;t pilnu auditu — €12,49</strong> p&#275;c demo. Nep&#275;rciet produktu LemonSqueezy veikal&#257; pirms 2. so&#316;a.</p>
+
+        <h2>P&#275;c apmaksas</h2>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Var atv&#275;rties <strong>p&#257;rskata lapa</strong> (<strong>GDPR Audit Report</strong>).</li>
+          <li>E-pasts <strong>"Your AI GDPR Audit report is ready"</strong> — <strong>Open full report</strong>.</li>
+          <li><strong>Ori&#291;in&#257;lo failu m&#275;s nepast&#257;v&#299;gi neglab&#257;jam</strong>.</li>
+        </ol>
+
+        <h2>Probl&#275;mas?</h2>
+        <div class="legal-page-table-wrap"><table>
+          <thead><tr><th>Probl&#275;ma</th><th>Risin&#257;jums</th></tr></thead>
+          <tbody>
+            <tr><td>Nav p&#257;rskata p&#275;c apmaksas</td><td>Pagaidiet 5–15 min., p&#257;rbaudiet spamu, nospiediet <strong>Open full report</strong>.</td></tr>
+            <tr><td>Maks&#257;jums veikal&#257; pirms aug&#353;upiel&#257;des</td><td>Rakstiet <a href="https://t.me/aigdprauditsupport_bot" target="_blank" rel="noopener noreferrer">atbalstam</a>.</td></tr>
+            <tr><td>Report not found</td><td>Izmantojiet <strong>Open full report</strong> m&#363;su e-past&#257;.</td></tr>
+            <tr><td>PDF nevar nolas&#299;t</td><td>Konvert&#275;jiet ar <a href="https://smallpdf.com/pdf-to-word" target="_blank" rel="noopener noreferrer">smallpdf.com</a>.</td></tr>
+          </tbody>
+        </table></div>
+        <p class="text-gray-500 text-sm italic">Automatiz&#275;ta p&#257;rbaude, ne juridiska konsult&#257;cija.</p>
+      </div>
+    </article>
+
+    <p class="text-center text-xs text-gray-600 mt-8 font-syne">Vibecoder by Ilona Samovica</p>
+  </div>
+
+  <!-- Support modal -->
+  <div id="support-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="support-modal-title">
+    <div id="support-backdrop" class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+    <div class="modal-panel relative glass-card rounded-2xl p-5 sm:p-6 max-w-sm w-full border border-emerald/30">
+      <button type="button" id="support-close" class="support-close absolute top-2 right-2 text-gray-400 hover:text-white text-2xl leading-none" aria-label="Close">&times;</button>
+
+      <h2 id="support-modal-title" class="font-syne text-lg font-bold text-white mb-1 is-active" data-lang="ru">Поддержка покупателей</h2>
+      <h2 class="font-syne text-lg font-bold text-white mb-1" data-lang="en">Customer support</h2>
+      <h2 class="font-syne text-lg font-bold text-white mb-1" data-lang="lv">Klientu atbalsts</h2>
+
+      <p class="text-gray-400 text-sm mb-6 is-active" data-lang="ru">Выберите удобный способ связи:</p>
+      <p class="text-gray-400 text-sm mb-6" data-lang="en">Choose how you would like to contact us:</p>
+      <p class="text-gray-400 text-sm mb-6" data-lang="lv">Izv&#275;lieties sazi&#326;as veidu:</p>
+
+      <div class="flex flex-col gap-3">
+        <a href="https://t.me/aigdprauditsupport_bot" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl border border-darkBorder hover:border-emerald/50 hover:bg-emerald/5 transition-colors group">
+          <img src="images/Telegram_logo.png" alt="" width="40" height="40" class="w-10 h-10 rounded-lg object-contain">
+          <span class="font-syne font-semibold text-white group-hover:text-emerald transition-colors">Telegram</span>
+        </a>
+
+        <a href="https://wa.me/message/A425QV5CIIDYB1" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl border border-darkBorder hover:border-emerald/50 hover:bg-emerald/5 transition-colors group">
+          <img src="images/WhatsApp_logo.png" alt="" width="40" height="40" class="w-10 h-10 rounded-lg object-contain">
+          <span class="font-syne font-semibold text-white group-hover:text-emerald transition-colors">WhatsApp</span>
+        </a>
+
+        <a href="mailto:isdone.com@gmail.com" class="flex items-center gap-4 p-4 rounded-xl border border-darkBorder hover:border-emerald/50 hover:bg-emerald/5 transition-colors group">
+          <div class="w-10 h-10 rounded-lg bg-emerald/10 flex items-center justify-center text-emerald text-lg font-bold">@</div>
+          <div class="min-w-0">
+            <span class="font-syne font-semibold text-white group-hover:text-emerald transition-colors block">Email</span>
+            <span class="text-xs text-gray-500 truncate block mt-0.5">isdone.com@gmail.com</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="digital-products.js"></script>
+</body>
+</html>
