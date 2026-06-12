@@ -40,14 +40,14 @@
       <p>4.2. <strong>Запрет на обучение ИИ-моделей:</strong> Содержимое документов Пользователя и находящиеся в них данные <strong>ни в коем случае не используются</strong> для обучения или улучшения моделей искусственного интеллекта (включая Google Gemini).</p>
       <p>4.3. Оператор хранит только минимальные метаданные сессий и платежей (см. п. 2.2 и 2.3), чтобы обеспечить Пользователю доступ к оплаченному отчету в течение определенного периода времени и для решения возможных технических инцидентов.</p>
       <p><strong>5\. Обработка платежей</strong></p>
-      <p>5.1. Обработку платежей и расчет применимых налогов (включая НДС/VAT) от имени Оператора осуществляет официальный торговый посредник <strong>LemonSqueezy</strong> (действует как <em>Merchant of Record</em>).</p>
-      <p>5.2. Оператор не имеет доступа к данным банковских карт или других платежных средств Пользователя, не обрабатывает и не хранит их. Оператор получает от LemonSqueezy только статус платежа и связанные метаданные транзакции.</p>
+      <p>5.1. Обработку платежей и расчет применимых налогов (включая НДС/VAT) от имени Оператора осуществляет <strong>платёжный посредник (Merchant of Record)</strong>.</p>
+      <p>5.2. Оператор не имеет доступа к данным банковских карт или других платежных средств Пользователя, не обрабатывает и не хранит их. Оператор получает от платёжного посредника только статус платежа и связанные метаданные транзакции.</p>
       <p><strong>6\. Передача данных третьим лицам (Процессоры)</strong></p>
       <p>Для обеспечения работы Приложения данные передаются следующим доверенным поставщикам услуг:</p>
       <ul>
       <li><strong>6.1. Google Cloud / GeminiAI API:</strong> Содержимое документа передается в зашифрованном виде для проведения анализа. Обработка данных осуществляется на серверах, расположенных на территории Европейского Союза (ЕС) (например, в Бельгии или Нидерландах), что обеспечивает полное соответствие стандартам защиты данных ЕС.</li>
       <li><strong>6.2. Supabase:</strong> Используется в качестве инфраструктуры базы данных для безопасного хранения сессий, метаданных доступа и email-адреса пользователя.</li>
-      <li><strong>6.3. LemonSqueezy:</strong> Получает данные, необходимые для оформления покупки и отправки чека Пользователю.</li>
+      <li><strong>6.3. Платёжный посредник (MoR):</strong> Получает данные, необходимые для оформления покупки и отправки чека Пользователю.</li>
       </ul>
       <p><strong>7\. Правовое основание обработки и соответствие законодательству ЕС</strong></p>
       <p>7.1. Правовым основанием для обработки персональных данных является:</p>
@@ -94,14 +94,14 @@
       <p>4.2. <strong>AI Model Training Prohibition:</strong> The content of the User's documents and the data contained therein <strong>under no circumstances</strong> are used to train or improve artificial intelligence models (including Google Gemini).</p>
       <p>4.3. The Data Controller stores only minimal session and payment metadata (see Sections 2.2 and 2.3) to provide the User with access to the paid report for a specific period and to resolve potential technical incidents.</p>
       <p><strong>5\. Payment Processing</strong></p>
-      <p>5.1. Payment processing and the calculation of applicable taxes (including VAT) are handled on behalf of the Data Controller by the legal financial intermediary <strong>LemonSqueezy</strong> (acting as the <em>Merchant of Record</em>).</p>
-      <p>5.2. The Data Controller does not access, process, or store the User's bank card or other payment method data. The Data Controller only receives the payment status and related transaction metadata from LemonSqueezy.</p>
+      <p>5.1. Payment processing and the calculation of applicable taxes (including VAT) are handled on behalf of the Data Controller by the <strong>Merchant of Record (MoR) payment provider</strong>.</p>
+      <p>5.2. The Data Controller does not access, process, or store the User's bank card or other payment method data. The Data Controller only receives the payment status and related transaction metadata from the payment provider.</p>
       <p><strong>6\. Data Disclosure to Third Parties (Data Processors)</strong></p>
       <p>To ensure the operation of the Application, data is transferred to the following trusted service providers:</p>
       <ul>
       <li><strong>6.1. Google Cloud / GeminiAI API:</strong> Document content is transmitted in an encrypted format for analysis. Data processing takes place on servers located within the European Union (EU) (e.g., Belgium or the Netherlands), ensuring full compliance with EU data protection standards.</li>
       <li><strong>6.2. Supabase:</strong> Utilized as the database infrastructure to securely store sessions, access metadata, and the user's email address.</li>
-      <li><strong>6.3. LemonSqueezy:</strong> Receives the data necessary to process the purchase transaction and issue a receipt to the User.</li>
+      <li><strong>6.3. Payment provider (MoR):</strong> Receives the data necessary to process the purchase transaction and issue a receipt to the User.</li>
       </ul>
       <p><strong>7\. Legal Basis for Processing and EU Compliance</strong></p>
       <p>7.1. The legal basis for processing personal data is:</p>
@@ -146,13 +146,13 @@
       <p>4.2. <strong>AI modeļu apmācības aizliegums:</strong> Lietotāja augšupielādēto dokumentu saturs un tajos esošie dati <strong>nekādā gadījumā netiek izmantoti</strong> mākslīgā intelekta modeļu (tostarp Google Gemini) apmācībai vai uzlabošanai.</p>
       <p>4.3. Pārzinis glabā tikai minimālos sesijas un maksājumu metadatus (sk. 2.2. un 2.3. punktu), lai nodrošinātu Lietotājam piekļuvi apmaksātajam ziņojumam noteiktā laika periodā un risinātu iespējamos tehniskos incidentus.</p>
       <h2>5\. Maksājumu apstrāde</h2>
-      <p>5.1. Maksājumu apstrādi un nodokļu (tostarp PVN/VAT) aprēķināšanu Pārziņa vārdā veic tiesiskais darījuma starpnieks <strong>LemonSqueezy</strong> (darbojas kā <em>Merchant of Record</em>). 5.2. Pārzinis nepiekļūst, neapstrādā un neglabā Lietotāja bankas karšu vai citu maksājumu līdzekļu datus. Pārzinis saņem tikai LemonSqueezy nosūtīto maksājuma statusu un saistītos transakcijas metadatus.</p>
+      <p>5.1. Maksājumu apstrādi un nodokļu (tostarp PVN/VAT) aprēķināšanu Pārziņa vārdā veic <strong>Merchant of Record (MoR) maksājumu starpnieks</strong>. 5.2. Pārzinis nepiekļūst, neapstrādā un neglabā Lietotāja bankas karšu vai citu maksājumu līdzekļu datus. Pārzinis saņem tikai maksājumu starpnieka nosūtīto maksājuma statusu un saistītos transakcijas metadatus.</p>
       <h2>6\. Datu nodošana trešajām personām (Apstrādātāji)</h2>
       <p>Lietotnes darbības nodrošināšanai dati tiek nodoti šādiem uzticamiem pakalpojumu sniedzējiem:</p>
       <ul>
       <li><strong>6.1. Google Cloud / GeminiAI API:</strong> Dokumenta saturs šifrētā veidā tiek nodots analīzes veikšanai. Datu apstrāde tiek veikta serveros, kas atrodas Eiropas Savienības (ES) teritorijā (piemēram, Beļģijā vai Nīderlandē), nodrošinot pilnīgu atbilstību ES datu aizsardzības standartiem.</li>
       <li><strong>6.2. Supabase:</strong> Tiek izmantota kā datubāzes infrastruktūra sesiju, piekļuves metadatu un lietotāja e-pasta drošai glabāšanai.</li>
-      <li><strong>6.3. LemonSqueezy:</strong> Saņem nepieciešamos datus pirkuma darījuma noformēšanai un čeka nosūtīšanai Lietotājam.</li>
+      <li><strong>6.3. Maksājumu starpnieks (MoR):</strong> Saņem nepieciešamos datus pirkuma darījuma noformēšanai un čeka nosūtīšanai Lietotājam.</li>
       </ul>
       <h2>7\. Apstrādes tiesiskais pamats un Atbilstība ES tiesību aktiem</h2>
       <p>7.1. Personas datu apstrādes tiesiskais pamats ir:</p>
