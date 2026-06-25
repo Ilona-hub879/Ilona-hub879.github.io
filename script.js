@@ -1,3 +1,6 @@
+// Set true when digital-products page is active again.
+const DIGITAL_PRODUCTS_LINKS_VISIBLE = false;
+
 // 1. Translations Dictionary (RU, EN, LV)
 const translations = {
   ru: {
@@ -235,8 +238,11 @@ function updateDigitalProductsLinks() {
   const url = `digital-products.html?lang=${encodeURIComponent(currentLang)}`;
   const nav = document.getElementById('nav-products-link');
   const footer = document.getElementById('footer-products-link');
-  if (nav) nav.href = url;
-  if (footer) footer.href = url;
+  [nav, footer].forEach((el) => {
+    if (!el) return;
+    el.classList.toggle('hidden', !DIGITAL_PRODUCTS_LINKS_VISIBLE);
+    if (DIGITAL_PRODUCTS_LINKS_VISIBLE) el.href = url;
+  });
 }
 
 function legalDocLang() {
