@@ -23,6 +23,7 @@ const translations = {
     gal_3_d: 'Связка всего со всем без единого разрыва.',
     pr_title: 'Цены',
     pr_sub: '* Цены на 5-8% ниже рынка благодаря автоматизации моих собственных процессов разработки.',
+    pr_more: 'Подробнее',
     pr_b_t: 'Базовый',
     pr_b_p: 'от €200',
     pr_b_d: 'Простые скрипты и боты. Идеально для старта автоматизации.',
@@ -80,6 +81,7 @@ const translations = {
     gal_3_d: 'Connecting everything seamlessly without breaking.',
     pr_title: 'Pricing',
     pr_sub: '* Prices are 5-8% below market average thanks to the automation of my own dev processes.',
+    pr_more: 'Learn more',
     pr_b_t: 'Basic',
     pr_b_p: 'from €200',
     pr_b_d: 'Simple scripts and bots. Perfect for starting out.',
@@ -136,6 +138,7 @@ const translations = {
     gal_3_d: 'Sasaiste starp visu bez neviena pārrāvuma.',
     pr_title: 'Cenas',
     pr_sub: '* Cenas ir par 5-8% zemākas nekā tirgū, pateicoties manu izstrādes procesu automatizācijai.',
+    pr_more: 'Sīkāk',
     pr_b_t: 'Bāzes',
     pr_b_p: 'no €200',
     pr_b_d: 'Vienkārši skripti un boti. Ideāli sākumam.',
@@ -258,10 +261,11 @@ function updateFooterLegalLinks() {
 }
 
 function updateHeroPricelistLink() {
-  const a = document.getElementById('hero-pricing-link');
-  if (a) {
-    a.href = `pricelist.html?lang=${encodeURIComponent(currentLang)}`;
-  }
+  const url = `pricelist.html?lang=${encodeURIComponent(currentLang)}`;
+  ['hero-pricing-link', 'prices-pricelist-link'].forEach((id) => {
+    const a = document.getElementById(id);
+    if (a) a.href = url;
+  });
 }
 
 /** Vercel web app reads ?lang=ru|en|lv (see frontend resolveQuizLanguage). */
