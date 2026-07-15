@@ -5,6 +5,11 @@
   var openBtn = document.getElementById('support-open');
   var closeBtn = document.getElementById('support-close');
   var backdrop = document.getElementById('support-backdrop');
+  var pageTitles = {
+    ru: 'Цифровые продукты — ProSolvely by Ilona Samovica',
+    en: 'Digital products — ProSolvely by Ilona Samovica',
+    lv: 'Digitālie produkti — ProSolvely by Ilona Samovica'
+  };
 
   function setLang(code) {
     blocks.forEach(function (el) {
@@ -15,6 +20,7 @@
       btn.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
     document.documentElement.lang = code === 'ru' ? 'ru' : code === 'lv' ? 'lv' : 'en';
+    document.title = pageTitles[code] || pageTitles.en;
     try {
       localStorage.setItem('lang', code);
     } catch (e) {}

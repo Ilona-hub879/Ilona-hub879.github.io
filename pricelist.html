@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="format-detection" content="telephone=no">
   <meta name="theme-color" content="#121212">
-  <title>Vibecoder — Price list</title>
+  <title>ProSolvely — Price list</title>
   <meta name="description" content="Autonomous AI solutions for business — price list (RU / EN / LV).">
-  <meta property="og:title" content="Vibecoder — Price list">
+  <meta property="og:title" content="ProSolvely — Price list">
   <meta property="og:description" content="Autonomous AI solutions for business. RU / EN / LV.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,7 +64,7 @@
 
   <div class="max-w-2xl mx-auto">
     <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-      <div class="font-syne font-bold text-lg tracking-wider text-emerald">Vibecoder<span class="text-emerald">.</span></div>
+      <div class="font-syne font-bold text-lg tracking-wider text-emerald">ProSolvely<span class="text-emerald">.</span></div>
       <div class="flex flex-wrap gap-2" role="group" aria-label="Language">
         <button type="button" class="lang-btn px-3 py-1.5 rounded-full border border-darkBorder text-xs font-syne font-semibold uppercase tracking-widest text-gray-300 hover:border-emerald/50 transition-colors" data-set-lang="ru" aria-pressed="true">RU</button>
         <button type="button" class="lang-btn px-3 py-1.5 rounded-full border border-darkBorder text-xs font-syne font-semibold uppercase tracking-widest text-gray-300 hover:border-emerald/50 transition-colors" data-set-lang="en" aria-pressed="false">EN</button>
@@ -204,13 +204,18 @@
       </div>
     </article>
 
-    <p class="text-center text-xs text-gray-600 mt-6 font-syne">Vibecoder by Ilona Samovica</p>
+    <p class="text-center text-xs text-gray-600 mt-6 font-syne">ProSolvely by Ilona Samovica</p>
   </div>
 
   <script>
     (function () {
       var buttons = document.querySelectorAll('[data-set-lang]');
       var blocks = document.querySelectorAll('[data-lang]');
+      var pageTitles = {
+        ru: 'ProSolvely — Прайс-лист',
+        en: 'ProSolvely — Price list',
+        lv: 'ProSolvely — Cenu lapa'
+      };
       function setLang(code) {
         blocks.forEach(function (el) {
           el.classList.toggle('is-active', el.getAttribute('data-lang') === code);
@@ -220,6 +225,7 @@
           btn.setAttribute('aria-pressed', on ? 'true' : 'false');
         });
         document.documentElement.lang = code === 'ru' ? 'ru' : code === 'lv' ? 'lv' : 'en';
+        document.title = pageTitles[code] || pageTitles.en;
         try {
           localStorage.setItem('lang', code);
         } catch (e) {}

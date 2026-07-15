@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lieto&#353;anas noteikumi — Vibecoder by Ilona Samovica</title>
+  <title>Terms of Service — ProSolvely by Ilona Samovica</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Syne:wght@600;700&amp;display=swap" rel="stylesheet">
@@ -127,11 +127,16 @@
     (function () {
       var blocks = document.querySelectorAll('[data-lang]');
       var back = document.getElementById('legal-back');
+      var pageTitles = {
+        lv: 'Lietošanas noteikumi — ProSolvely by Ilona Samovica',
+        en: 'Terms of Service — ProSolvely by Ilona Samovica'
+      };
       function setLang(code) {
         blocks.forEach(function (el) {
           el.classList.toggle('is-active', el.getAttribute('data-lang') === code);
         });
         document.documentElement.lang = code;
+        document.title = pageTitles[code] || pageTitles.lv;
         if (back) {
           back.innerHTML = code === 'en' ? '&#8592; Back to the site' : '&#8592; Atpaka&#316; uz vietni';
         }
