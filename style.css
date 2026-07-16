@@ -199,6 +199,36 @@ body {
   margin-top: 0;
 }
 
+.product-guide-accordion summary.product-guide-summary {
+  list-style: none;
+}
+
+.product-guide-accordion summary.product-guide-summary::-webkit-details-marker {
+  display: none;
+}
+
+.product-guide-accordion summary.product-guide-summary::after {
+  content: '+';
+  margin-left: 0.5rem;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.product-guide-accordion[open] summary.product-guide-summary::after {
+  content: '−';
+}
+
+.product-guide-accordion .product-guide-panel {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.product-guide-accordion .product-guide-panel > h2:first-child,
+.product-guide-accordion .product-guide-panel > p:first-child {
+  margin-top: 0;
+}
+
 .legal-page.product-guide p,
 .legal-page.product-guide li {
   padding-left: 0.125rem;
