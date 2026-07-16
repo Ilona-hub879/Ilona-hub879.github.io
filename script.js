@@ -24,15 +24,19 @@ const translations = {
     pr_title: 'Цены',
     pr_sub: '* Цены на 5-8% ниже рынка благодаря автоматизации моих собственных процессов разработки.',
     pr_more: 'Подробнее',
-    pr_b_t: 'Базовый',
-    pr_b_p: 'от €200',
-    pr_b_d: 'Простые скрипты и боты. Идеально для старта автоматизации.',
-    pr_p_t: 'Про',
+    pr_b_t: 'Боты',
+    pr_b_p: 'от €600',
+    pr_b_d: 'Кастомные решения с соблюдением требований защиты личных данных.',
+    pr_p_t: 'Парсеры',
     pr_p_p: 'от €500',
     pr_p_d: 'Сложные интеграции, парсеры и цепочки данных.',
-    pr_c_t: 'Корп',
+    pr_c_t: 'CRM интеграции',
     pr_c_p: 'Индивидуально',
     pr_c_d: 'Полная автоматизация бизнеса, поддержка и SLA.',
+    dp_title: 'Цифровые продукты',
+    dp_intro: 'Это готовые ИТ-инструменты для бизнеса, которые автоматизируют ваши задачи.',
+    dp_how_title: 'Как это работает:',
+    dp_how_text: 'Вы получаете доступ к готовому софту и графическим ресурсам без трат на разработку с нуля. Оплата происходит в удобном для вас формате: по подписке (ежемесячный доступ для постоянных задач) или в формате разового использования (оплата за одну услугу, проверку или скачивание конкретного продукта).',
     ft_rights: '© 2026 ProSolvely by Ilona Samovica. Все права защищены.',
     nav_products: 'Цифровые продукты',
     ft_products: 'Цифровые продукты',
@@ -82,15 +86,19 @@ const translations = {
     pr_title: 'Pricing',
     pr_sub: '* Prices are 5-8% below market average thanks to the automation of my own dev processes.',
     pr_more: 'Learn more',
-    pr_b_t: 'Basic',
-    pr_b_p: 'from €200',
-    pr_b_d: 'Simple scripts and bots. Perfect for starting out.',
-    pr_p_t: 'Pro',
+    pr_b_t: 'Bots',
+    pr_b_p: 'from €600',
+    pr_b_d: 'Custom solutions with personal data protection compliance.',
+    pr_p_t: 'Parsers',
     pr_p_p: 'from €500',
     pr_p_d: 'Complex integrations, parsers, and data pipelines.',
-    pr_c_t: 'Corp',
+    pr_c_t: 'CRM integrations',
     pr_c_p: 'Custom',
     pr_c_d: 'Full business automation, dedicated support, SLA.',
+    dp_title: 'Digital Products',
+    dp_intro: 'Ready-to-use IT tools for business designed to automate your tasks.',
+    dp_how_title: 'How it works:',
+    dp_how_text: 'You get instant access to production-ready software and graphic resources without spending time and budget on custom development from scratch. We offer flexible pricing options: a monthly subscription for ongoing tasks or a pay-per-use model for single services, document checks, or individual asset downloads.',
     ft_rights: '© 2026 ProSolvely by Ilona Samovica. All rights reserved.',
     nav_products: 'Digital products',
     ft_products: 'Digital products',
@@ -139,15 +147,19 @@ const translations = {
     pr_title: 'Cenas',
     pr_sub: '* Cenas ir par 5-8% zemākas nekā tirgū, pateicoties manu izstrādes procesu automatizācijai.',
     pr_more: 'Sīkāk',
-    pr_b_t: 'Bāzes',
-    pr_b_p: 'no €200',
-    pr_b_d: 'Vienkārši skripti un boti. Ideāli sākumam.',
-    pr_p_t: 'Pro',
+    pr_b_t: 'Boti',
+    pr_b_p: 'no €600',
+    pr_b_d: 'Pielāgoti risinājumi ar personas datu aizsardzības prasību ievērošanu.',
+    pr_p_t: 'Parsētāji',
     pr_p_p: 'no €500',
     pr_p_d: 'Sarežģītas integrācijas, pārseri un datu ķēdes.',
-    pr_c_t: 'Korp',
+    pr_c_t: 'CRM integrācijas',
     pr_c_p: 'Individuāli',
     pr_c_d: 'Pilna biznesa automatizācija, atbalsts un SLA.',
+    dp_title: 'Digitālie produkti',
+    dp_intro: 'Gatavi IT rīki uzņēmējdarbībai, kas automatizē jūsu ikdienas uzdevumus.',
+    dp_how_title: 'Kā tas strādā:',
+    dp_how_text: 'Jūs iegūstat piekļuvi gatavai programmatūrai un grafiskajiem resursiem, netērējot laiku un budžetu izstrādei no nulles. Norēķini notiek jums ērtā formātā: izvēloties abonementu (ikmēneša piekļuve pastāvīgiem uzdevumiem) vai maksājot par vienreizēju izmantošanu (maksa par konkrētu pakalpojumu, pārbaudi vai viena produkta lejupielādi).',
     ft_rights: '© 2026 ProSolvely by Ilona Samovica. Visas tiesības aizsargātas.',
     nav_products: 'Digitālie produkti',
     ft_products: 'Digitālie produkti',
@@ -239,13 +251,13 @@ function applyTranslations() {
 
 function updateDigitalProductsLinks() {
   const url = `digital-products.html?lang=${encodeURIComponent(currentLang)}`;
-  const nav = document.getElementById('nav-products-link');
   const footer = document.getElementById('footer-products-link');
-  [nav, footer].forEach((el) => {
-    if (!el) return;
-    el.classList.toggle('hidden', !DIGITAL_PRODUCTS_LINKS_VISIBLE);
-    if (DIGITAL_PRODUCTS_LINKS_VISIBLE) el.href = url;
-  });
+  const more = document.getElementById('digital-products-more-link');
+  if (footer) {
+    footer.classList.toggle('hidden', !DIGITAL_PRODUCTS_LINKS_VISIBLE);
+    if (DIGITAL_PRODUCTS_LINKS_VISIBLE) footer.href = url;
+  }
+  if (more) more.href = url;
 }
 
 function legalDocLang() {

@@ -2,7 +2,7 @@
 
 **Last Updated:** June 25, 2026
 
-This Refund and Right of Withdrawal Policy (hereinafter referred to as the "Policy") governs the procedures for product/service returns and the exercise of the right of withdrawal on the website \[https://ilona-hub879.github.io\](https://ilona-hub879.github.io) (hereinafter referred to as the "Website") and within associated automated Telegram chat-bots (hereinafter referred to as "Chat-bots").
+This Refund and Right of Withdrawal Policy (hereinafter referred to as the "Policy") governs the procedures for product/service returns and the exercise of the right of withdrawal on the website https://ilona-hub879.github.io (hereinafter referred to as the "Website") and within associated automated Telegram chat-bots (hereinafter referred to as "Chat-bots").
 
 This Policy has been established in strict compliance with the Consumer Rights Protection Law of the Republic of Latvia and Regulation No. 255 of the Cabinet of Ministers of the Republic of Latvia "Regulations on Distance Contracts" (hereinafter referred to as the "Cabinet Regulation No. 255"), which transpose European Union consumer protection directives.
 
@@ -18,8 +18,9 @@ This Policy has been established in strict compliance with the Consumer Rights P
 
 2.1. If the User orders a digital service (e.g., custom chat-bot development, consultation, use of automated AI tools, technical installation):
 
-- Pursuant to Section 22.1 of Cabinet Regulation No. 255, the User has the right to withdraw from a service agreement within 14 days of its conclusion **only if the performance of the service has not yet begun**.
+- Pursuant to Cabinet Regulation No. 255, the User has the right to withdraw from a service agreement within 14 days of its conclusion **only if the performance of the service has not yet begun**.
 - If the performance of the service has initiated during the 14-day withdrawal period at the User's explicit request but is not yet fully completed, the User exercising their right of withdrawal is obligated to pay the Provider an amount proportional to the work actually performed up to the moment the withdrawal request was submitted.
+- If the performance of the service (including access to subscription-based services) has begun during the withdrawal period at the User's explicit request, no refund shall be issued for the already paid period in the event of withdrawal. In this case, the service and its features will remain fully active and accessible to the User until the end of the current paid billing cycle/term, after which the service will be terminated and the subscription will not be renewed.
 - If the service has been fully performed (e.g., a consultation has taken place or custom development has been completed and delivered), no refund is possible pursuant to Section 22.1 of Cabinet Regulation No. 255.
 
 **3\. EXCEPTIONS AND TECHNICAL ERRORS**
@@ -27,7 +28,9 @@ This Policy has been established in strict compliance with the Consumer Rights P
 3.1. A refund may be issued exclusively under the following circumstances:
 
 - Due to a technical error or system glitch, the User's bank account was charged multiple times for the same single purchase.
-- The digital product is unavailable for download or fails to operate as described due to technical reasons, and the Owner is unable to resolve this technical issue within 5 (five) business days of receiving the claim. 3.2. Any claims regarding digital content non-conformity or technical issues must be sent to: **\[Your Email Address\]**, accompanied by proof of payment and a description of the error.
+- The digital product is unavailable for download or fails to operate as described due to technical reasons, and the Owner is unable to resolve this technical issue within 5 (five) business days of receiving the claim.
+
+3.2. Any claims regarding digital content non-conformity or technical issues must be sent to: **\[Your Email Address\]**, accompanied by proof of payment and a description of the error.
 
 **4\. DISPUTE RESOLUTION**
 

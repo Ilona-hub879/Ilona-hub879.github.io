@@ -10,6 +10,44 @@
     en: 'Digital products — ProSolvely by Ilona Samovica',
     lv: 'Digitālie produkti — ProSolvely by Ilona Samovica'
   };
+  var footerLabels = {
+    ru: {
+      rights: '© 2026 ProSolvely by Ilona Samovica. Все права защищены.',
+      privacy: 'Privātuma Politika',
+      terms: 'Lietošanas noteikumi'
+    },
+    en: {
+      rights: '© 2026 ProSolvely by Ilona Samovica. All rights reserved.',
+      privacy: 'Privacy Policy',
+      terms: 'Terms of Service'
+    },
+    lv: {
+      rights: '© 2026 ProSolvely by Ilona Samovica. Visas tiesības aizsargātas.',
+      privacy: 'Privātuma Politika',
+      terms: 'Lietošanas noteikumi'
+    }
+  };
+
+  function legalDocLang(code) {
+    return code === 'en' ? 'en' : 'lv';
+  }
+
+  function updateFooter(code) {
+    var labels = footerLabels[code] || footerLabels.en;
+    var rights = document.getElementById('footer-rights');
+    var privacy = document.getElementById('footer-privacy-link');
+    var terms = document.getElementById('footer-terms-link');
+    var docLang = legalDocLang(code);
+    if (rights) rights.textContent = labels.rights;
+    if (privacy) {
+      privacy.textContent = labels.privacy;
+      privacy.href = 'privacy2.html?lang=' + encodeURIComponent(docLang);
+    }
+    if (terms) {
+      terms.textContent = labels.terms;
+      terms.href = 'terms.html?lang=' + encodeURIComponent(docLang);
+    }
+  }
 
   function setLang(code) {
     blocks.forEach(function (el) {
@@ -33,6 +71,7 @@
       var base = a.getAttribute('href').split('?')[0];
       a.href = base + '?lang=' + encodeURIComponent(code);
     });
+    updateFooter(code);
   }
 
   buttons.forEach(function (btn) {
