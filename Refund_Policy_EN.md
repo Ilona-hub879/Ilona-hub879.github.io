@@ -30,7 +30,7 @@ This Policy has been established in strict compliance with the Consumer Rights P
 - Due to a technical error or system glitch, the User's bank account was charged multiple times for the same single purchase.
 - The digital product is unavailable for download or fails to operate as described due to technical reasons, and the Owner is unable to resolve this technical issue within 5 (five) business days of receiving the claim.
 
-3.2. Any claims regarding digital content non-conformity or technical issues must be sent to: **\[Your Email Address\]**, accompanied by proof of payment and a description of the error.
+3.2. Any claims regarding digital content non-conformity or technical issues must be sent to: **info@prosolvely.com**, accompanied by proof of payment and a description of the error.
 
 **4\. DISPUTE RESOLUTION**
 

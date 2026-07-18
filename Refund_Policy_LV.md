@@ -2,7 +2,7 @@
 
 **Pēdējās izmaiņas:** 25.06.2026.
 
-Šī Atteikuma tiesību un naudas atgriešanas politika (turpmāk – "Politika") nosaka kārtību, kādā tiek veidoti preču un pakalpojumu atgriešanas un atteikuma tiesību procesi vietnē \[https://ilona-hub879.github.io) (turpmāk – "Vietne") un saistītajos Telegram čat-botos (turpmāk – "Čat-boti").
+Šī Atteikuma tiesību un naudas atgriešanas politika (turpmāk – "Politika") nosaka kārtību, kādā tiek veidoti preču un pakalpojumu atgriešanas un atteikuma tiesību procesi vietnē https://ilona-hub879.github.io (turpmāk – "Vietne") un saistītajos Telegram čat-botos (turpmāk – "Čat-boti").
 
 Politika ir izstrādāta saskaņā ar Latvijas Republikas Patērētāju tiesību aizsardzības likumu un LR Ministru kabineta noteikumiem Nr. 255 "Noteikumi par distances līgumu" (turpmāk – "MK noteikumi Nr. 255").
 
@@ -30,7 +30,7 @@ Politika ir izstrādāta saskaņā ar Latvijas Republikas Patērētāju tiesību
 - No Lietotāja bankas konta tehniskas kļūmes/kļūdas dēļ par vienu un to pašu produktu nauda ir norakstīta vairākas reizes.
 - Digitālais produkts tehnisku iemeslu dēļ nav pieejams lejupielādei vai nedarbojas, kā aprakstīts, un Īpašnieks nevar novērst šo tehnisko kļūdu 5 (piecu) darba dienu laikā kopš pretenzijas saņemšanas.
 
-3.2. Pretenzijas par digitālā satura neatbilstību vai tehniskām kļūdām jānosūta uz e-pastu: **\[Jūsu e-pasts\]**, pievienojot maksājuma apliecinājumu un kļūdas aprakstu.
+3.2. Pretenzijas par digitālā satura neatbilstību vai tehniskām kļūdām jānosūta uz e-pastu: **info@prosolvely.com**, pievienojot maksājuma apliecinājumu un kļūdas aprakstu.
 
 **4\. STRĪDU RISINĀŠANA**
 
