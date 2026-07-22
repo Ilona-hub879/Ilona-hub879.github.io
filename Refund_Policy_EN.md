@@ -1,39 +1,39 @@
-**REFUND AND RIGHT OF WITHDRAWAL POLICY (REFUND POLICY)**
+**RIGHT OF WITHDRAWAL AND REFUND POLICY**
 
-**Last Updated:** June 25, 2026
+**Last updated:** July 22, 2026
 
-This Refund and Right of Withdrawal Policy (hereinafter referred to as the "Policy") governs the procedures for product/service returns and the exercise of the right of withdrawal on the website https://ilona-hub879.github.io (hereinafter referred to as the "Website") and within associated automated Telegram chat-bots (hereinafter referred to as "Chat-bots").
+This Right of Withdrawal and Refund Policy (hereinafter referred to as the **"Policy"**) sets out the procedure for handling returns, refunds, and the right of withdrawal for goods and services offered on the website https://www.prosolvely.com (hereinafter referred to as the **"Website"**) and associated Telegram chatbots (hereinafter referred to as **"Chatbots"**).
 
-This Policy has been established in strict compliance with the Consumer Rights Protection Law of the Republic of Latvia and Regulation No. 255 of the Cabinet of Ministers of the Republic of Latvia "Regulations on Distance Contracts" (hereinafter referred to as the "Cabinet Regulation No. 255"), which transpose European Union consumer protection directives.
+This Policy has been drafted in accordance with the Consumer Rights Protection Law of the Republic of Latvia and Cabinet Regulation No. 255 _"Regulations Regarding Distance Contracts"_ (hereinafter referred to as **"Cabinet Regulation No. 255"**).
 
 **1\. DIGITAL CONTENT (DIGITAL PRODUCTS)**
 
-1.1. Under this Policy, "Digital Content" refers to programming codes, chat-bot scripts, automation tools, videos, audio materials, and any other data supplied in a digital format (via download or online access).
-
-1.2. Pursuant to Section 22.13 of Cabinet Regulation No. 255 (implementing EU Directive 2011/83/EU), **the User loses their right of withdrawal (the right to request a refund within 14 days) once the performance/delivery of digital content has begun with the consumer’s prior express consent and acknowledgment that they thereby lose their right of withdrawal.**
-
-1.3. By making a payment for a digital product and receiving immediate access or a download link, the User gives their express consent for immediate delivery and acknowledges that they forfeit their right of withdrawal. **No refunds will be issued for successfully delivered digital content.**
+- **1.1.** For the purposes of this Policy, digital content refers to software code, chatbot scripts, automation tools, video and audio materials, and other data supplied in digital format (via download or online access).
+- **1.2.** In accordance with Paragraph 22.13 of Cabinet Regulation No. 255, the User loses their right of withdrawal (the right to obtain a refund within 14 days) once the performance or supply of digital content has begun, provided that the supply commenced with the consumer’s prior express consent and acknowledgment of the loss of their right of withdrawal.
+- **1.3.** By making a payment for a digital product and receiving immediate access or a download link, the User explicitly consents to immediate performance at the time of purchase and acknowledges the loss of their right of withdrawal. Consequently, payments for successfully delivered digital content are non-refundable.
 
 **2\. DIGITAL SERVICES**
 
-2.1. If the User orders a digital service (e.g., custom chat-bot development, consultation, use of automated AI tools, technical installation):
-
-- Pursuant to Cabinet Regulation No. 255, the User has the right to withdraw from a service agreement within 14 days of its conclusion **only if the performance of the service has not yet begun**.
-- If the performance of the service has initiated during the 14-day withdrawal period at the User's explicit request but is not yet fully completed, the User exercising their right of withdrawal is obligated to pay the Provider an amount proportional to the work actually performed up to the moment the withdrawal request was submitted.
-- If the performance of the service (including access to subscription-based services) has begun during the withdrawal period at the User's explicit request, no refund shall be issued for the already paid period in the event of withdrawal. In this case, the service and its features will remain fully active and accessible to the User until the end of the current paid billing cycle/term, after which the service will be terminated and the subscription will not be renewed.
-- If the service has been fully performed (e.g., a consultation has taken place or custom development has been completed and delivered), no refund is possible pursuant to Section 22.1 of Cabinet Regulation No. 255.
+- **2.1.** If the User orders a digital service (e.g., custom chatbot development, consulting, automated AI tool integration, or technical setup):
+    - **2.1.1.** In accordance with Paragraph 22.1 of Cabinet Regulation No. 255, the User has the right to withdraw from the service contract within 14 days of its conclusion, provided that performance of the service has not yet commenced.
+    - **2.1.2.** If the performance of the service has commenced during the 14-day withdrawal period at the User’s explicit request but has not been fully completed, the User exercising the right of withdrawal remains obligated to pay the service provider an amount proportional to the work actually performed up to the time of notification of withdrawal.
+    - **2.1.3.** If the service (including access to subscription-based services) has commenced prior to the expiration of the withdrawal period at the User's explicit request, no refund will be issued for the prepaid billing period upon exercising withdrawal after commencement. In such cases, the service and its functionality will remain fully active and accessible to the User until the end of the current paid billing period, after which access will terminate and the subscription will not renew.
+    - **2.1.4.** Once a service has been fully performed (e.g., a consultation has taken place or custom development has been completed and delivered), no refund can be granted (pursuant to Paragraph 22.1 of Cabinet Regulation No. 255).
 
 **3\. EXCEPTIONS AND TECHNICAL ERRORS**
 
-3.1. A refund may be issued exclusively under the following circumstances:
-
-- Due to a technical error or system glitch, the User's bank account was charged multiple times for the same single purchase.
-- The digital product is unavailable for download or fails to operate as described due to technical reasons, and the Owner is unable to resolve this technical issue within 5 (five) business days of receiving the claim.
-
-3.2. Any claims regarding digital content non-conformity or technical issues must be sent to: **info@prosolvely.com**, accompanied by proof of payment and a description of the error.
+- **3.1.** A refund may be issued under the following circumstances:
+    - A duplicate charge occurred on the User’s bank account due to a technical error.
+    - The digital product is technically inaccessible for download or fails to function as described, and the Owner is unable to resolve the technical error within five (5) business days of receiving the claim.
+- **3.2.** Claims regarding non-conformity or technical errors in digital content must be submitted via email to **info@prosolvely.com**, accompanied by proof of payment and a description of the issue.
 
 **4\. DISPUTE RESOLUTION**
 
-4.1. If the User (consumer) believes their rights have been infringed, any complaint must first be submitted electronically to the Owner for amicable resolution.
+- **4.1.** If a User (acting as a consumer) considers that their rights have been violated, the claim shall primarily be addressed electronically by contacting the Owner.
+- **4.2.** If an agreement cannot be reached through direct communication, the consumer has the right to submit a complaint to the Consumer Rights Protection Centre of Latvia (_Patērētāju tiesību aizsardzības centrs – PTAC_, Brīvības iela 55, Riga, LV-1010, [www.ptac.gov.lv](https://www.ptac.gov.lv/)) for out-of-court dispute resolution.
 
-4.2. If a mutual agreement cannot be reached, the consumer has the right to contact the Consumer Rights Protection Centre of Latvia (PTAC; Brīvības iela 55, Rīga, LV-1010, www.ptac.gov.lv) for out-of-court dispute resolution, or utilize the European Commission’s Online Dispute Resolution (ODR) platform
+**5\. PROCESSING OF PERSONAL DATA**
+
+- **5.1.** When submitting a claim or refund request under this Policy, the User provides personal data (such as name, email address, and payment information). This data is processed strictly to review and resolve the User’s request.
+
+For further details regarding the processing of personal data, legal bases, purposes, and your statutory rights, please consult our Privacy Policy.

@@ -1,8 +1,8 @@
 **ATTEIKUMA TIESĪBU UN NAUDAS ATGRIEŠANAS POLITIKA (REFUND POLICY)**
 
-**Pēdējās izmaiņas:** 25.06.2026.
+**Pēdējās izmaiņas:** 22.07.2026.
 
-Šī Atteikuma tiesību un naudas atgriešanas politika (turpmāk – "Politika") nosaka kārtību, kādā tiek veidoti preču un pakalpojumu atgriešanas un atteikuma tiesību procesi vietnē https://ilona-hub879.github.io (turpmāk – "Vietne") un saistītajos Telegram čat-botos (turpmāk – "Čat-boti").
+Šī Atteikuma tiesību un naudas atgriešanas politika (turpmāk – "Politika") nosaka kārtību, kādā tiek veidoti preču un pakalpojumu atgriešanas un atteikuma tiesību procesi vietnē https://www.prosolvely.com (turpmāk – "Vietne") un saistītajos Telegram čat-botos (turpmāk – "Čat-boti").
 
 Politika ir izstrādāta saskaņā ar Latvijas Republikas Patērētāju tiesību aizsardzības likumu un LR Ministru kabineta noteikumiem Nr. 255 "Noteikumi par distances līgumu" (turpmāk – "MK noteikumi Nr. 255").
 
@@ -37,3 +37,9 @@ Politika ir izstrādāta saskaņā ar Latvijas Republikas Patērētāju tiesību
 4.1. Ja Lietotājs (patērētājs) uzskata, ka viņa tiesības ir pārkāptas, pretenzija primāri tiek risināta elektroniski, sazinoties ar Īpašnieku.
 
 4.2. Ja vienošanās netiek panākta, patērētājam ir tiesības vērsties Patērētāju tiesību aizsardzības centrā (PTAC, Brīvības iela 55, Rīga, LV-1010, www.ptac.gov.lv) strīda ārpustiesas risināšanai.
+
+**5\. PERSONAS DATU APSTRĀDE**
+
+5.1. Iesniedzot pretenziju vai naudas atgriešanas pieprasījumu saskaņā ar šo Politiku, Lietotājs iesniedz savus personas datus (piemēram, vārdu, e-pasta adresi, maksājuma informāciju). Šie dati tiek apstrādāti, lai izskatītu Lietotāja pieprasījumu.
+
+Sīkāku informāciju par Lietotāja personas datu apstrādi, mērķiem, juridisko pamatu un tiesībām lūdzam skatīt mūsu Privātuma politikā.
