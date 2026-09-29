@@ -70,26 +70,27 @@
             <h2 class="font-syne text-xl md:text-2xl font-bold text-white mb-2">AI GDPR Audit Tool</h2>
 
             <div class="product-description mt-3 space-y-4 text-gray-400 text-sm leading-relaxed text-left">
-              <p>AI GDPR Audit Tool - умный сервис для автоматической проверки документов на соответствие требованиям Генерального регламента ЕС о защите персональных данных (GDPR). Инструмент помогает европейским компаниям мгновенно находить, удалять или маскировать конфиденциальную информацию (PII) без риска утечки данных.</p>
+              <p>AI GDPR Audit Tool — автоматизированный сервис на базе ИИ для <strong>первичного GDPR-скрининга</strong> (экспресс-аудита) загруженных документов: выявляет возможные риски, даёт правовые ссылки (GDPR + выбранное национальное право) и рекомендации по переформулировке. Это <strong>не</strong> квалифицированная юридическая консультация.</p>
               <div>
-                <h3 class="font-syne font-semibold text-white text-sm mb-2">Главные сценарии использования:</h3>
+                <h3 class="font-syne font-semibold text-white text-sm mb-2">Для кого и типичные сценарии</h3>
                 <ul class="list-disc ml-5 space-y-1.5">
-                  <li><strong>HR-департаменты:</strong> быстрое сканирование резюме соискателей на предмет избыточных личных данных перед сохранением в ATS-системы.</li>
-                  <li><strong>Финтех и бухгалтерия:</strong> автоматическое обнаружение и маскирование персональных данных в инвойсах, счетах и банковских выписках.</li>
-                  <li><strong>Юристы и нотариусы:</strong> глубокий анализ договоров (NDA, DPA, соглашений купли-продажи) на наличие обязательных условий защиты данных согласно европейскому законодательству.</li>
+                  <li><strong>HR и compliance:</strong> быстрая проверка, соответствуют ли положения и уведомления об обработке персональных данных требованиям GDPR.</li>
+                  <li><strong>Бизнес и самозанятые:</strong> перед подписанием или публикацией — первичная проверка политик конфиденциальности, DPA, NDA, договоров и внутренних документов.</li>
+                  <li><strong>Fintech и бухгалтерия:</strong> скрининг счетов, договоров и внутренних документов на соответствие (это <strong>не</strong> автоматическое маскирование или удаление PII).</li>
                 </ul>
               </div>
               <div>
-                <h3 class="font-syne font-semibold text-white text-sm mb-2">Безопасность и соответствие закону:</h3>
+                <h3 class="font-syne font-semibold text-white text-sm mb-2">Безопасность и доверие</h3>
                 <ul class="list-disc ml-5 space-y-1.5">
-                  <li><strong>Локализация в ЕС:</strong> все серверные мощности и базы данных физически расположены в Европе (Франкфурт и Стокгольм).</li>
-                  <li><strong>Политика Zero-Retention:</strong> сервис обрабатывает файлы «на лету» в оперативной памяти и не сохраняет их на диске после окончания сессии.</li>
-                  <li><strong>Конфиденциальность ИИ:</strong> загружаемые документы не передаются сторонним компаниям и не используются для обучения языковых моделей.</li>
+                  <li><strong>Zero-Retention для исходного файла:</strong> загруженные документы не хранятся постоянно; временная копия может сохраняться только до завершения анализа или, для неоплаченной сессии, не более 7 дней. После успешного анализа временный файл удаляется.</li>
+                  <li><strong>Результат аудита:</strong> структурированный отчёт хранится, чтобы вы могли открыть персональную ссылку <strong>до 45 дней</strong> после оплаты — затем удаляется. Сохраните отчёт у себя.</li>
+                  <li><strong>Конфиденциальность ИИ:</strong> содержимое передаётся доверенным обработчикам (например, Google Cloud / Gemini API) только для вызовов API анализа; оно <strong>не используется</strong> для обучения моделей.</li>
+                  <li><strong>Облачные провайдеры:</strong> для работы сервиса используются надёжные провайдеры (в том числе за пределами ЕС/ЕЭЗ); передача данных защищена мерами по GDPR. Подробнее: <a href="https://ai-gdpr-auditor.vercel.app/privacy?lang=ru" target="_blank" rel="noopener noreferrer" class="text-emerald hover:underline">Политика конфиденциальности</a>.</li>
                 </ul>
               </div>
             </div>
 
-            <p class="product-disclaimer text-gray-500 text-xs leading-relaxed mt-3">Этот сервис - инструмент на базе искусственного интеллекта для информационных целей и автоматизированного анализа. Он не является квалифицированной юридической консультацией, не заменяет юриста и не создаёт отношений «адвокат — клиент». Окончательное решение о соответствии документа и внесении правок принимает сам пользователь (человек).</p>
+            <p class="product-disclaimer text-gray-500 text-xs leading-relaxed mt-3">Сервис — инструмент ИИ для информационных целей и автоматизированного анализа. Он не заменяет юриста и не создаёт отношений «адвокат — клиент». Окончательное решение о соответствии документа и правках принимает пользователь (человек).</p>
             <div class="product-actions flex flex-wrap gap-2 mt-4 w-full">
               <a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex px-4 py-2 rounded-full bg-emerald/10 border border-emerald text-emerald text-xs font-syne font-semibold hover:bg-emerald hover:text-anthracite transition-colors">Открыть приложение</a>
               <a href="ai-gdpr-auditor-privacy.html?lang=ru" data-legal-lang class="inline-flex px-4 py-2 rounded-full border border-darkBorder text-gray-300 text-xs font-syne font-semibold hover:border-emerald/50 hover:text-emerald transition-colors">Политика конфиденциальности</a>
@@ -104,66 +105,81 @@
         <summary class="product-guide-summary font-syne font-semibold text-emerald hover:text-white cursor-pointer text-base md:text-lg select-none">Как получить полный аудит</summary>
         <div class="product-guide-panel">
         <p><strong>Спасибо за интерес к нашему сервису.</strong></p>
-        <p>Этот продукт <strong>не является скачиваемым файлом отчёта</strong>. Загружаемые вами документы <strong>не хранятся на постоянной основе</strong> и <strong>не записываются в базы данных Оператора</strong>. Обработка содержимого документа происходит в оперативной памяти в реальном времени, и файл <strong>полностью удаляется сразу после завершения анализа и создания отчёта</strong>. Вы получаете <strong>персональный GDPR-аудит</strong> для ваших документов в нашем приложении и <strong>ссылку на него по вашему электронному адресу</strong>. <strong>Документы загружаются до оплаты.</strong></p>
+        <p>Этот продукт <strong>не является скачиваемым файлом отчёта</strong>. Исходный загруженный документ не хранится постоянно; временная копия может сохраняться только до завершения анализа или до 7 дней для неоплаченной сессии. Структурированный отчёт хранится, чтобы вы могли открыть персональную ссылку по email <strong>до 45 дней</strong> после оплаты. Чтобы связать оплату с конкретным файлом, документ нужно <strong>загрузить на сайте до оплаты</strong> (разовая покупка и первый документ по подписке).</p>
 
         <h2>Что вы получаете</h2>
         <ul>
           <li><strong>Полный AI GDPR-аудит документа</strong> (PDF или DOCX, <strong>не более 15 стр.</strong>, <strong>не более 1 МБ</strong>)</li>
           <li>Выводы с уровнями риска, правовыми ссылками (GDPR + выбранное национальное законодательство) и рекомендациями по переформулировке</li>
-          <li><strong>Приватную ссылку</strong> на отчёт по email после подтверждения оплаты</li>
+          <li><strong>Персональная ссылка</strong> на отчёт по email после подтверждения оплаты (доступ до 45 дней)</li>
         </ul>
 
         <h2>Варианты оплаты</h2>
-        <p>Вы можете выбрать один из двух вариантов оплаты прямо на сайте:</p>
         <ol class="list-decimal ml-5 space-y-1">
           <li><strong>Разовая покупка:</strong> €12,49 — один платёж за проверку одного документа.</li>
-          <li><strong>Подписка на месяц:</strong> €62,49 / месяц — пакет из <strong>30 проверок документов</strong> (действует 30 дней с момента оплаты).</li>
+          <li><strong>Подписка на месяц:</strong> €62,49 / месяц — до <strong>30 проверок документов</strong> за расчётный период; лимит обновляется при продлении подписки.</li>
         </ol>
 
-        <h2>Как получить аудит (соблюдайте порядок)</h2>
-        <h3>Шаг 1 - Откройте наше приложение</h3>
+        <h3>A) Разовая проверка (€12,49)</h3>
+        <h3>Шаг 1 — Откройте приложение</h3>
         <p><a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer">https://ai-gdpr-auditor.vercel.app</a></p>
 
-        <h3>Шаг 2 - Загрузите свой документ и введите необходимые параметры</h3>
+        <h3>Шаг 2 — Загрузите документ и укажите параметры</h3>
         <ol class="list-decimal ml-5 space-y-1">
           <li>Выберите <strong>язык интерфейса</strong></li>
           <li>Укажите <strong>страну / национальное законодательство</strong></li>
-          <li>Введите <strong>email</strong> (используйте этот же адрес при оплате)</li>
-          <li>Загрузите <strong>PDF или DOCX</strong> (<strong>максимум 15 страниц и 1 МБ</strong>)</li>
-          <li>Нажмите <strong>Проверить документ бесплатно (демо)</strong> и дождитесь предпросмотра</li>
+          <li>Введите <strong>email</strong> (тот же адрес используйте при оплате)</li>
+          <li>Загрузите <strong>PDF или DOCX</strong> (максимум <strong>15 страниц</strong> и <strong>1 МБ</strong>)</li>
+          <li>Нажмите <strong>Check document for free (demo)</strong> / кнопку бесплатной проверки (демо) и дождитесь превью</li>
         </ol>
+        <p class="text-gray-500 text-sm italic">Бесплатное демо: до 2 полных AI-проверок в день (email, IP и отпечаток браузера). Если лимит исчерпан, превью может не появиться, но вы всё равно можете оплатить полный аудит.</p>
 
-        <h3>Шаг 3 - После появления демо нажмите кнопку оплаты</h3>
+        <h3>Шаг 3 — После демо нажмите кнопку оплаты</h3>
         <ul>
-          <li><strong>Для разовой проверки:</strong> нажмите <strong>Разблокировать полный аудит — €12,49</strong></li>
-          <li><strong>Для покупки подписки:</strong> нажмите <strong>Купить подписку на 30 документов — €62,49/мес</strong></li>
+          <li>Нажмите <strong>Unlock full audit — €12.49</strong> (на сайте может быть перевод, например «Разблокировать полный аудит»)</li>
         </ul>
         <p>Откроется <strong>страница оплаты платёжного посредника</strong>.</p>
-        <p><strong>Важно:</strong> Оплату нужно начать кнопкой на сайте <strong>после</strong> загрузки файла. <strong>Не покупайте</strong> продукт отдельно в магазине платёжного посредника <strong>до</strong> шага 2.</p>
+        <p><strong>Важно:</strong> оплату нужно начать кнопкой на сайте <strong>после</strong> загрузки файла. <strong>Не покупайте</strong> продукт отдельно в магазине посредника <strong>до</strong> загрузки.</p>
+
+        <h3>B) Новая месячная подписка (€62,49)</h3>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Шаги 1–2 как выше (язык, страна, email; при необходимости загрузите файл).</li>
+          <li>На сайте выберите план <strong>Monthly — €62.49 (up to 30 documents)</strong>, примите условия и нажмите <strong>Subscribe — €62.49/month</strong> (или <strong>Pay €62.49 — open checkout</strong>).</li>
+          <li>Если файл загружен до оплаты, после оплаты он будет проаудирован автоматически и засчитается как 1 из 30. Демо-превью для первой оплаты подписки <strong>не обязательно</strong>.</li>
+        </ol>
+        <p><strong>Важно:</strong> не оплачивайте подписку отдельно в магазине посредника до загрузки, если нужно связать оплату с конкретным документом.</p>
+
+        <h3>C) Активная подписка (следующие документы)</h3>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Откройте приложение с <strong>тем же email</strong>, что при оплате подписки.</li>
+          <li>Загрузите новый PDF/DOCX и нажмите <strong>Run full audit (subscription)</strong> — отдельная оплата за этот документ не нужна (списывается 1 из 30 за период).</li>
+          <li>Отчёт откроется в браузере и/или придёт на email после завершения анализа.</li>
+        </ol>
 
         <h2>После оплаты</h2>
         <ul>
-          <li>Браузер может автоматически открыть <strong>страницу отчёта</strong> (заголовок <strong>GDPR Audit Report</strong>)</li>
-          <li>На ваш email придёт письмо с темой <strong>"Your AI GDPR Audit report is ready"</strong> — используйте в нём кнопку <strong>Open full report</strong></li>
-          <li>Если у вас оформлена <strong>подписка</strong>, вы сможете загружать и проверять следующие документы в рамках вашего лимита (<strong>до 30 документов в месяц</strong>), используя <strong>тот же email</strong></li>
+          <li>Браузер может автоматически открыть <strong>страницу отчёта</strong> (заголовок зависит от языка интерфейса, например <strong>GDPR Audit Report</strong>)</li>
+          <li>На email придёт письмо с темой <strong>«Your GDPR audit report is ready»</strong> — нажмите <strong>Open full report</strong></li>
+          <li>При активной <strong>подписке</strong> загружайте следующие документы через <strong>Run full audit (subscription)</strong> (<strong>до 30 документов</strong> за расчётный период, <strong>тот же email</strong>)</li>
           <li>Анализ обычно занимает несколько минут; сканы PDF — дольше</li>
-          <li><strong>Оригинальный файл мы не храним постоянно</strong> — обязательно сохраните отчёт</li>
+          <li><strong>Исходный файл мы не храним постоянно</strong> — сохраните отчёт (ссылка действует до 45 дней)</li>
         </ul>
 
         <h2>Проблемы?</h2>
         <div class="legal-page-table-wrap"><table>
           <thead><tr><th>Проблема</th><th>Решение</th></tr></thead>
           <tbody>
-            <tr><td>Нет отчёта после оплаты</td><td>Подождите 5–15 мин., проверьте спам, откройте письмо и нажмите <strong>Open full report</strong></td></tr>
-            <tr><td>Оплата у платёжного посредника до загрузки</td><td>Напишите в <a href="https://t.me/aigdprauditsupport_bot" target="_blank" rel="noopener noreferrer">поддержку</a>, указав номер заказа и ваш email</td></tr>
+            <tr><td>Нет отчёта после оплаты</td><td>Подождите 5–15 мин., проверьте спам, откройте письмо с темой <strong>Your GDPR audit report is ready</strong> и нажмите <strong>Open full report</strong></td></tr>
+            <tr><td>Оплата у посредника до загрузки на сайте</td><td>Напишите в <a href="https://t.me/aigdprauditsupport_bot" target="_blank" rel="noopener noreferrer">поддержку</a>, укажите номер заказа и email</td></tr>
             <tr><td><strong>Report not found</strong></td><td>Используйте кнопку <strong>Open full report</strong> в нашем письме</td></tr>
-            <tr><td>PDF не читается</td><td>Конвертируйте файл через <a href="https://smallpdf.com/pdf-to-word" target="_blank" rel="noopener noreferrer">smallpdf.com</a> и загрузите снова</td></tr>
-            <tr><td>Документ слишком длинный</td><td>До <strong>15 стр. / 1 МБ</strong> на один файл. Разделите документ на части, если необходимо</td></tr>
-            <tr><td>Неправильный документ</td><td><strong>Для разовой оплаты:</strong> один платёж = один документ. Новый файл — новая покупка. <strong>Для подписки:</strong> вы можете загрузить новый файл, это спишет 1 лимит из ваших 30 доступных проверок</td></tr>
-            <tr><td>Закончился лимит подписки</td><td>Лимит в 30 документов обновляется раз в месяц при продлении подписки. Если лимит исчерпан раньше времени, вы можете докупить разовую проверку за €12,49 или дождаться обновления подписки</td></tr>
+            <tr><td>PDF не читается</td><td>Конвертируйте через <a href="https://smallpdf.com/pdf-to-word" target="_blank" rel="noopener noreferrer">smallpdf.com</a> и загрузите снова</td></tr>
+            <tr><td>Документ слишком длинный</td><td>До <strong>15 стр. / 1 МБ</strong> на файл. При необходимости разделите документ</td></tr>
+            <tr><td>Неправильный документ</td><td><strong>Разовая оплата:</strong> один платёж = один документ. Новый файл — новая покупка. <strong>Подписка:</strong> загрузите новый файл и нажмите <strong>Run full audit (subscription)</strong> (1 из 30)</td></tr>
+            <tr><td>Лимит подписки исчерпан</td><td>Лимит обновляется при продлении подписки. Можно купить разовую проверку за €12,49 или дождаться нового периода</td></tr>
+            <tr><td>Исчерпан лимит демо (2/день)</td><td>Нажмите <strong>Unlock full audit — €12.49</strong>; полный анализ начнётся после оплаты</td></tr>
           </tbody>
         </table></div>
-        <p class="text-gray-500 text-sm italic">Автоматизированная проверка, не является юридической консультацией.</p>
+        <p class="text-gray-500 text-sm italic">Автоматизированная проверка, не юридическая консультация.</p>
         </div>
       </details>
     </article>
@@ -187,26 +203,27 @@
             <h2 class="font-syne text-xl md:text-2xl font-bold text-white mb-2">AI GDPR Audit Tool</h2>
 
             <div class="product-description mt-3 space-y-4 text-gray-400 text-sm leading-relaxed text-left">
-              <p>AI GDPR Audit Tool is an intelligent service designed to automatically scan and verify any uploaded document for compliance with the EU General Data Protection Regulation (GDPR). It helps European businesses instantly identify, redact, or mask personally identifiable information (PII) with zero data leak risks.</p>
+              <p>AI GDPR Audit Tool is an automated service that uses artificial intelligence to perform an initial GDPR compliance screening (express audit) of uploaded documents: it highlights potential risks, cites legal references (GDPR + selected national law), and suggests rewording. It is not qualified legal advice.</p>
               <div>
-                <h3 class="font-syne font-semibold text-white text-sm mb-2">Target Audience &amp; Use Cases:</h3>
+                <h3 class="font-syne font-semibold text-white text-sm mb-2">Target audience and use cases</h3>
                 <ul class="list-disc ml-5 space-y-1.5">
-                  <li><strong>HR Departments:</strong> Instantly scan candidate resumes to detect and remove excessive personal data before saving them to your ATS.</li>
-                  <li><strong>Fintech &amp; Accounting:</strong> Automatically find and mask PII within invoices, bills, and bank statements.</li>
-                  <li><strong>Lawyers &amp; Notaries:</strong> Perform deep analyses of contracts (NDAs, DPAs, sales agreements) to ensure all mandatory EU data protection clauses are present and compliant.</li>
+                  <li><strong>HR and compliance:</strong> quick checks whether personal-data processing clauses and notices meet GDPR requirements.</li>
+                  <li><strong>Businesses and freelancers:</strong> before signing or publishing — initial review of privacy policies, DPAs, NDAs, contracts, and internal policies.</li>
+                  <li><strong>Fintech and accounting:</strong> compliance screening of invoices, contracts, and internal documents (not automatic PII redaction or masking).</li>
                 </ul>
               </div>
               <div>
-                <h3 class="font-syne font-semibold text-white text-sm mb-2">Built-In Security &amp; Trust:</h3>
+                <h3 class="font-syne font-semibold text-white text-sm mb-2">Built-in security and trust</h3>
                 <ul class="list-disc ml-5 space-y-1.5">
-                  <li><strong>Strict EU Data Residency:</strong> All servers and databases are physically hosted in European data centers (Frankfurt and Stockholm).</li>
-                  <li><strong>Zero-Retention Policy:</strong> Your files are processed on the fly in temporary memory and are permanently wiped immediately after your session ends.</li>
-                  <li><strong>Privacy-First AI:</strong> Uploaded documents are never shared with third parties or used to train artificial intelligence models.</li>
+                  <li><strong>Zero-retention for the original file:</strong> uploaded documents are not stored permanently; a temporary copy may be kept only until analysis completes or, for unpaid sessions, for up to 7 days. After successful analysis, the temporary file is deleted.</li>
+                  <li><strong>Audit results:</strong> a structured report is stored so you can open a private link for <strong>up to 45 days</strong> after payment — then it is removed. Download and save your report.</li>
+                  <li><strong>Privacy-first AI:</strong> content is sent to trusted processors (e.g. Google Cloud / Gemini API) for analysis API calls only; it is <strong>not used</strong> to train AI models.</li>
+                  <li><strong>Global cloud providers:</strong> we use trusted providers to run the service (including outside the EU/EEA); transfers use GDPR-appropriate safeguards. Details: <a href="https://ai-gdpr-auditor.vercel.app/privacy?lang=en" target="_blank" rel="noopener noreferrer" class="text-emerald hover:underline">Privacy Policy</a>.</li>
                 </ul>
               </div>
             </div>
 
-            <p class="product-disclaimer text-gray-500 text-xs leading-relaxed mt-3">This service is an artificial intelligence tool for informational purposes and automated analysis. It is not qualified legal advice, does not replace a lawyer, and does not create an attorney–client relationship. The final decision on document compliance and any amendments rests with the user (a human).</p>
+            <p class="product-disclaimer text-gray-500 text-xs leading-relaxed mt-3">This service is an AI tool for informational purposes and automated analysis. It is not qualified legal advice, does not replace a lawyer, and does not create an attorney–client relationship. The final decision on document compliance and any amendments rests with the user (a human).</p>
             <div class="product-actions flex flex-wrap gap-2 mt-4 w-full">
               <a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex px-4 py-2 rounded-full bg-emerald/10 border border-emerald text-emerald text-xs font-syne font-semibold hover:bg-emerald hover:text-anthracite transition-colors">Open app</a>
               <a href="ai-gdpr-auditor-privacy.html?lang=en" data-legal-lang class="inline-flex px-4 py-2 rounded-full border border-darkBorder text-gray-300 text-xs font-syne font-semibold hover:border-emerald/50 hover:text-emerald transition-colors">Privacy Policy</a>
@@ -221,27 +238,26 @@
         <summary class="product-guide-summary font-syne font-semibold text-emerald hover:text-white cursor-pointer text-base md:text-lg select-none">How to receive your full audit</summary>
         <div class="product-guide-panel">
         <p><strong>Thank you for your interest in our service.</strong></p>
-        <p>This product is <strong>not a downloadable report file</strong>. Documents you upload are <strong>not stored permanently</strong> and are <strong>not written to the Operator's databases</strong>. Document content is processed in real time in volatile memory, and the file is <strong>fully deleted immediately after the analysis and report are complete</strong>. You receive a <strong>personal GDPR audit</strong> for your documents in our application and a <strong>link to it at your email address</strong>. <strong>Documents must be uploaded before payment.</strong></p>
+        <p>This product is <strong>not a downloadable report file</strong>. The original uploaded document is not stored permanently; a temporary copy may be kept only until analysis completes or for up to 7 days for an unpaid session. A structured audit report is stored so you can open a private link by email for <strong>up to 45 days</strong> after payment. To link payment to a specific file, you must upload the document on the website <strong>before</strong> paying (one-time purchase and first subscription document).</p>
 
         <h2>What you get</h2>
         <ul>
           <li><strong>A full AI GDPR audit of your document</strong> (PDF or DOCX, <strong>max 15 pages</strong>, <strong>max 1 MB</strong>)</li>
           <li>Findings with risk levels, legal references (GDPR + selected national law), and rewrite suggestions</li>
-          <li>A <strong>private report link</strong> by email after payment is confirmed</li>
+          <li>A <strong>private report link</strong> by email after payment is confirmed (access for up to 45 days)</li>
         </ul>
 
         <h2>Payment options</h2>
-        <p>You can choose one of two payment options directly on the website:</p>
         <ol class="list-decimal ml-5 space-y-1">
           <li><strong>One-time purchase:</strong> €12.49 — one payment for one document check.</li>
-          <li><strong>Monthly subscription:</strong> €62.49 / month — a bundle of <strong>30 document checks</strong> (valid for 30 days from payment).</li>
+          <li><strong>Monthly subscription:</strong> €62.49 / month — up to <strong>30 document checks</strong> per billing period; the quota renews when the subscription renews.</li>
         </ol>
 
-        <h2>How to get your audit (follow this order)</h2>
-        <h3>Step 1 - Open our application</h3>
+        <h3>A) One-time check (€12.49)</h3>
+        <h3>Step 1 — Open our app</h3>
         <p><a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer">https://ai-gdpr-auditor.vercel.app</a></p>
 
-        <h3>Step 2 - Upload your document and enter the required details</h3>
+        <h3>Step 2 — Upload your document and enter details</h3>
         <ol class="list-decimal ml-5 space-y-1">
           <li>Choose your <strong>interface language</strong></li>
           <li>Select <strong>country / national law</strong></li>
@@ -249,35 +265,51 @@
           <li>Upload <strong>PDF or DOCX</strong> (<strong>maximum 15 pages and 1 MB</strong>)</li>
           <li>Click <strong>Check document for free (demo)</strong> and wait for the preview</li>
         </ol>
+        <p class="text-gray-500 text-sm italic">Free demo: up to 2 full AI checks per day (email, IP, and browser fingerprint). If the limit is reached, the preview may not appear, but you can still pay for the full audit.</p>
 
-        <h3>Step 3 - After the demo appears, click a payment button</h3>
+        <h3>Step 3 — After the demo, click the payment button</h3>
         <ul>
-          <li><strong>For a one-time check:</strong> click <strong>Unlock full audit — €12.49</strong></li>
-          <li><strong>For a subscription:</strong> click <strong>Buy subscription for 30 documents — €62.49/month</strong></li>
+          <li>Click <strong>Unlock full audit — €12.49</strong></li>
         </ul>
         <p>A <strong>payment provider checkout page</strong> will open.</p>
-        <p><strong>Important:</strong> Payment must be started from a button on the website <strong>after</strong> uploading your file. <strong>Do not</strong> buy the product separately in the payment provider's store <strong>before</strong> Step 2.</p>
+        <p><strong>Important:</strong> Payment must be started from a button on the website <strong>after</strong> uploading your file. <strong>Do not</strong> buy the product separately in the payment provider's store <strong>before</strong> uploading.</p>
+
+        <h3>B) New monthly subscription (€62.49)</h3>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Steps 1–2 as above (language, country, email; upload a file if you want the first audit tied to payment).</li>
+          <li>On the site, select <strong>Monthly — €62.49 (up to 30 documents)</strong>, accept the terms, and click <strong>Subscribe — €62.49/month</strong> (or <strong>Pay €62.49 — open checkout</strong>).</li>
+          <li>If you uploaded a file before paying, it will be audited automatically after payment and counted as 1 of 30. A demo preview is <strong>not required</strong> for the first subscription payment.</li>
+        </ol>
+        <p><strong>Important:</strong> Do not pay for the subscription separately in the payment provider's store before uploading if you want that payment linked to a specific document.</p>
+
+        <h3>C) Active subscription (further documents)</h3>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Open the app with the <strong>same email</strong> you used for the subscription.</li>
+          <li>Upload a new PDF/DOCX and click <strong>Run full audit (subscription)</strong> — no new payment for that document (uses 1 of your 30 checks in the current period).</li>
+          <li>The report opens in the browser and/or by email when analysis is complete.</li>
+        </ol>
 
         <h2>After payment</h2>
         <ul>
-          <li>Your browser may automatically open the <strong>report page</strong> (heading <strong>GDPR Audit Report</strong>)</li>
-          <li>You will receive an email with subject <strong>"Your AI GDPR Audit report is ready"</strong> — use the <strong>Open full report</strong> button in that email</li>
-          <li>If you have an active <strong>subscription</strong>, you can upload and check further documents within your limit (<strong>up to 30 documents per month</strong>) using the <strong>same email</strong></li>
+          <li>Your browser may automatically open the <strong>report page</strong> (heading depends on interface language, e.g. <strong>GDPR Audit Report</strong>)</li>
+          <li>You will receive an email with subject <strong>«Your GDPR audit report is ready»</strong> — use the <strong>Open full report</strong> button</li>
+          <li>With an active <strong>subscription</strong>, upload further documents with <strong>Run full audit (subscription)</strong> (<strong>up to 30 documents</strong> per billing period, <strong>same email</strong>)</li>
           <li>Analysis usually takes a few minutes; scanned PDFs may take longer</li>
-          <li>We do <strong>not</strong> keep your original file permanently — be sure to save your report</li>
+          <li>We do <strong>not</strong> keep your original file permanently — save your report (link valid for up to 45 days)</li>
         </ul>
 
         <h2>Problems?</h2>
         <div class="legal-page-table-wrap"><table>
           <thead><tr><th>Issue</th><th>What to do</th></tr></thead>
           <tbody>
-            <tr><td>No report after payment</td><td>Wait 5–15 minutes, check spam, open the email and click <strong>Open full report</strong></td></tr>
+            <tr><td>No report after payment</td><td>Wait 5–15 minutes, check spam, open the email with subject <strong>Your GDPR audit report is ready</strong> and click <strong>Open full report</strong></td></tr>
             <tr><td>Paid via payment provider before uploading</td><td>Contact <a href="https://t.me/aigdprauditsupport_bot" target="_blank" rel="noopener noreferrer">support</a> with your order number and email</td></tr>
             <tr><td><strong>Report not found</strong></td><td>Use the <strong>Open full report</strong> button in our email</td></tr>
             <tr><td>PDF cannot be read</td><td>Convert the file via <a href="https://smallpdf.com/pdf-to-word" target="_blank" rel="noopener noreferrer">smallpdf.com</a> and upload again</td></tr>
             <tr><td>Document too long</td><td>Up to <strong>15 pages / 1 MB</strong> per file. Split the document if needed</td></tr>
-            <tr><td>Wrong document</td><td><strong>One-time payment:</strong> one payment = one document. A new file requires a new purchase. <strong>Subscription:</strong> you can upload a new file; it uses 1 of your 30 available checks</td></tr>
-            <tr><td>Subscription limit reached</td><td>The 30-document limit renews monthly when the subscription renews. If you run out early, buy a one-time check for €12.49 or wait for renewal</td></tr>
+            <tr><td>Wrong document</td><td><strong>One-time payment:</strong> one payment = one document. A new file requires a new purchase. <strong>Subscription:</strong> upload a new file and click <strong>Run full audit (subscription)</strong> (1 of 30)</td></tr>
+            <tr><td>Subscription limit reached</td><td>The quota renews when the subscription renews. If you run out early, buy a one-time check for €12.49 or wait for renewal</td></tr>
+            <tr><td>Demo daily limit reached (2/day)</td><td>You can still click <strong>Unlock full audit — €12.49</strong>; full analysis runs after payment</td></tr>
           </tbody>
         </table></div>
         <p class="text-gray-500 text-sm italic">Automated screening, not legal advice.</p>
@@ -304,21 +336,22 @@
             <h2 class="font-syne text-xl md:text-2xl font-bold text-white mb-2">AI GDPR Audit Tool</h2>
 
             <div class="product-description mt-3 space-y-4 text-gray-400 text-sm leading-relaxed text-left">
-              <p>AI GDPR Audit Tool ir inteli&#291;ents pakalpojums, kas autom&#257;tiski sken&#275; un p&#257;rbauda aug&#353;upiel&#257;d&#275;tus dokumentus atbilst&#299;bai ES Visp&#257;r&#299;gajai datu aizsardz&#299;bas regulai (GDPR). Tas pal&#299;dz Eiropas uz&#326;&#275;mumiem acumirkl&#299; identific&#275;t, redi&#291;&#275;t vai mask&#275;t personu identific&#275;jo&#353;u inform&#257;ciju (PII) bez datu nopl&#363;des riska.</p>
+              <p>AI GDPR Audit Tool ir automatiz&#275;ts r&#299;ks, kas ar m&#257;ksl&#299;g&#257; intelekta pal&#299;dz&#299;bu veic dokumentu s&#257;kotn&#275;jo GDPR atbilst&#299;bas skr&#299;ningu (iepriek&#353;&#275;ju auditu): atkl&#257;j iesp&#275;jamos riskus, nor&#257;da juridisk&#257;s atsauces (VDAR + izv&#275;l&#275;tais nacion&#257;lais likums) un sniedz p&#257;rformul&#275;&#353;anas ieteikumus. Tas nav kvalific&#275;ta juridiska konsult&#257;cija.</p>
               <div>
-                <h3 class="font-syne font-semibold text-white text-sm mb-2">M&#275;r&#311;auditorija un lieto&#353;anas scen&#257;riji:</h3>
+                <h3 class="font-syne font-semibold text-white text-sm mb-2">M&#275;r&#311;auditorija un lieto&#353;anas scen&#257;riji</h3>
                 <ul class="list-disc ml-5 space-y-1.5">
-                  <li><strong>HR noda&#316;as:</strong> &#257;tra kandid&#257;tu CV sken&#275;&#353;ana, lai atkl&#257;tu un no&#326;emtu liekos person&#299;gos datus pirms saglab&#257;&#353;anas ATS sist&#275;m&#257;s.</li>
-                  <li><strong>Fintech un gr&#257;matved&#299;ba:</strong> autom&#257;tiska PII atra&#353;ana un mask&#275;&#353;ana r&#275;&#311;inos, pavadz&#299;m&#275;s un bankas izdruk&#257;s.</li>
-                  <li><strong>Juristi un not&#257;ri:</strong> padzi&#316;in&#257;ta l&#299;gumu (NDA, DPA, pirkuma-l&#299;gumu) anal&#299;ze, lai nodro&#353;in&#257;tu oblig&#257;to ES datu aizsardz&#299;bas klauzulu kl&#257;tb&#363;tni un atbilst&#299;bu.</li>
+                  <li><strong>HR un atbilst&#299;ba:</strong> &#257;tra p&#257;rbaude, vai personas datu apstr&#257;des klauzulas un pazi&#326;ojumi atbilst VDAR pras&#299;b&#257;m.</li>
+                  <li><strong>Uz&#326;&#275;mumi un pa&#353;nodarbin&#257;tie:</strong> pirms parakst&#299;&#353;anas — priv&#257;tuma politikas, DPA, NDA, l&#299;gumu un iek&#353;&#275;jo noteikumu s&#257;kotn&#275;ja p&#257;rbaude.</li>
+                  <li><strong>Fintech un gr&#257;matved&#299;ba:</strong> r&#275;&#311;inu, l&#299;gumu un iek&#353;&#275;jo dokumentu atbilst&#299;bas skr&#299;nings (ne autom&#257;tiska PII mask&#275;&#353;ana vai redi&#291;&#275;&#353;ana).</li>
                 </ul>
               </div>
               <div>
-                <h3 class="font-syne font-semibold text-white text-sm mb-2">Ieb&#363;v&#275;ta dro&#353;&#299;ba un uztic&#299;ba:</h3>
+                <h3 class="font-syne font-semibold text-white text-sm mb-2">Dro&#353;&#299;ba un uztic&#299;ba</h3>
                 <ul class="list-disc ml-5 space-y-1.5">
-                  <li><strong>Stingra ES datu rezidence:</strong> visi serveri un datub&#257;zes fiziski izvietoti Eiropas datu centros (Frankfurt&#275; un Stokholm&#257;).</li>
-                  <li><strong>Zero-Retention politika:</strong> faili tiek apstr&#257;d&#257;ti re&#257;llaik&#257; pagaidu atmi&#326;&#257; un neatgriezeniski dz&#275;sti t&#363;l&#299;t p&#275;c sesijas beig&#257;m.</li>
-                  <li><strong>Priv&#257;tumam orient&#275;ts MI:</strong> aug&#353;upiel&#257;d&#275;tie dokumenti netiek nodoti tre&#353;aj&#257;m person&#257;m un netiek izmantoti m&#257;ksl&#299;g&#257; intelekta mode&#316;u apm&#257;c&#299;bai.</li>
+                  <li><strong>Zero-Retention ori&#291;in&#257;lam failam:</strong> aug&#353;upiel&#257;d&#275;tais dokuments netiek glab&#257;ts past&#257;v&#299;gi; pagaidu kopija var tikt tur&#275;ta tikai l&#299;dz anal&#299;zes pabeig&#353;anai vai ne ilg&#257;k par neapmaks&#257;tas sesijas termi&#326;u (l&#299;dz 7 dien&#257;m). P&#275;c veiksm&#299;gas anal&#299;zes pagaidu fails tiek dz&#275;sts.</li>
+                  <li><strong>Audita rezult&#257;ts:</strong> struktur&#275;ts p&#257;rskats tiek glab&#257;ts, lai nodro&#353;in&#257;tu piek&#316;uvi ar priv&#257;tu saiti <strong>l&#299;dz 45 dien&#257;m</strong> p&#275;c apmaksas — p&#275;c tam tiek dz&#275;sts. Lejupiel&#257;d&#275;jiet un saglab&#257;jiet p&#257;rskatu.</li>
+                  <li><strong>Priv&#257;tumam orient&#275;ts MI:</strong> saturs tiek nos&#363;t&#299;ts uzticamiem apstr&#257;d&#257;t&#257;jiem (piem., Google Cloud / Gemini API) tikai anal&#299;zes izsaukumiem; tas <strong>netiek izmantots</strong> MI mode&#316;u apm&#257;c&#299;bai.</li>
+                  <li><strong>Glob&#257;lie m&#257;ko&#326;a sniedz&#275;ji:</strong> pakalpojuma uztur&#275;&#353;anai izmantojam uzticamus sniedz&#275;jus (tostarp &#257;rpus ES/EEZ); datu p&#257;rs&#363;t&#299;&#353;anai tiek piem&#275;roti VDAR atbilsto&#353;i aizsardz&#299;bas pas&#257;kumi. S&#299;k&#257;k: <a href="https://ai-gdpr-auditor.vercel.app/privacy?lang=lv" target="_blank" rel="noopener noreferrer" class="text-emerald hover:underline">Priv&#257;tuma politika</a>.</li>
                 </ul>
               </div>
             </div>
@@ -338,27 +371,26 @@
         <summary class="product-guide-summary font-syne font-semibold text-emerald hover:text-white cursor-pointer text-base md:text-lg select-none">K&#257; sa&#326;emt pilnu auditu</summary>
         <div class="product-guide-panel">
         <p><strong>Paldies par interesi par m&#363;su pakalpojumu.</strong></p>
-        <p>&#352;is produkts <strong>nav lejupiel&#257;d&#275;jams p&#257;rskata fails</strong>. Aug&#353;upiel&#257;d&#275;tie dokumenti <strong>netiek glab&#257;ti past&#257;v&#299;gi</strong> un <strong>netiek ierakst&#299;ti Operatora datub&#257;z&#275;s</strong>. Dokumenta satura apstr&#257;de notiek operat&#299;vaj&#257; atmi&#326;&#257; re&#257;llaik&#257;, un fails <strong>tiek piln&#299;ba dz&#275;sts t&#363;l&#299;t p&#275;c anal&#299;zes un p&#257;rskata izveides</strong>. J&#363;s sa&#326;emat <strong>person&#299;gu GDPR auditu</strong> saviem dokumentiem m&#363;su lietotn&#275; un <strong>saiti uz to sav&#257; e-pasta adres&#275;</strong>. <strong>Dokumenti j&#257;aug&#353;upiel&#257;d&#275; pirms apmaksas.</strong></p>
+        <p>&#352;is produkts <strong>nav lejupiel&#257;d&#275;jams p&#257;rskata fails</strong>. Ori&#291;in&#257;lais aug&#353;upiel&#257;d&#275;tais dokuments netiek glab&#257;ts past&#257;v&#299;gi; pagaidu kopija var tikt tur&#275;ta tikai l&#299;dz anal&#299;zes pabeig&#353;anai vai ne ilg&#257;k par 7 dien&#257;m neapmaks&#257;tai sesijai. Struktur&#275;ts audita p&#257;rskats tiek glab&#257;ts, lai j&#363;s var&#275;tu atv&#275;rt priv&#257;tu saiti e-past&#257; <strong>l&#299;dz 45 dien&#257;m</strong> p&#275;c apmaksas. Lai maks&#257;jumu saist&#299;tu ar konkr&#275;tu failu, dokumentu j&#257;aug&#353;upiel&#257;d&#275; vietn&#275; <strong>pirms</strong> apmaksas (vienreiz&#275;jai p&#257;rbaud&#275;i un pirmajam abonementa dokumentam).</p>
 
         <h2>Ko j&#363;s sa&#326;emat</h2>
         <ul>
           <li><strong>Pilns AI GDPR audits dokumentam</strong> (PDF vai DOCX, <strong>ne vair&#257;k k&#257; 15 lpp.</strong>, <strong>ne vair&#257;k k&#257; 1 MB</strong>)</li>
           <li>Atkl&#257;jumi ar risku l&#299;me&#326;iem, juridisk&#257;m atsauc&#275;m (GDPR + izv&#275;l&#275;tais nacion&#257;lais likums) un p&#257;rformul&#275;&#353;anas ieteikumiem</li>
-          <li><strong>Priv&#257;ta saite</strong> uz p&#257;rskatu e-past&#257; p&#275;c apmaksas apstiprin&#257;&#353;anas</li>
+          <li><strong>Priv&#257;ta saite</strong> uz p&#257;rskatu e-past&#257; p&#275;c apmaksas apstiprin&#257;&#353;anas (piek&#316;uve l&#299;dz 45 dien&#257;m)</li>
         </ul>
 
         <h2>Apmaksas varianti</h2>
-        <p>Vietn&#275; varat izv&#275;l&#275;ties vienu no diviem apmaksas variantiem:</p>
         <ol class="list-decimal ml-5 space-y-1">
           <li><strong>Vienreiz&#275;js pirkums:</strong> €12,49 — viens maks&#257;jums par viena dokumenta p&#257;rbaudi.</li>
-          <li><strong>M&#275;ne&#353;a abonements:</strong> €62,49 / m&#275;nes&#299; — <strong>30 dokumentu p&#257;rbaudes</strong> pakete (der&#299;ga 30 dienas no apmaksas br&#299;&#382;a).</li>
+          <li><strong>M&#275;ne&#353;a abonements:</strong> €62,49 / m&#275;nes&#299; — l&#299;dz <strong>30 dokumentu p&#257;rbaud&#275;m</strong> nor&#275;&#311;inu period&#257;; limits atjaunojas, kad abonements tiek atjaunots.</li>
         </ol>
 
-        <h2>K&#257; sa&#326;emt auditu (iev&#275;rojiet sec&#299;bu)</h2>
-        <h3>1. solis - Atveriet m&#363;su lietotni</h3>
+        <h3>A) Vienreiz&#275;ja p&#257;rbaude (€12,49)</h3>
+        <h3>1. solis — Atveriet m&#363;su lietotni</h3>
         <p><a href="https://ai-gdpr-auditor.vercel.app/" target="_blank" rel="noopener noreferrer">https://ai-gdpr-auditor.vercel.app</a></p>
 
-        <h3>2. solis - Aug&#353;upiel&#257;d&#275;jiet dokumentu un ievadiet parametrus</h3>
+        <h3>2. solis — Aug&#353;upiel&#257;d&#275;jiet dokumentu un ievadiet parametrus</h3>
         <ol class="list-decimal ml-5 space-y-1">
           <li>Izv&#275;lieties <strong>saskarnes valodu</strong></li>
           <li>Nor&#257;diet <strong>valsti / nacion&#257;lo likumu</strong></li>
@@ -366,35 +398,51 @@
           <li>Aug&#353;upiel&#257;d&#275;jiet <strong>PDF vai DOCX</strong> (maksimums <strong>15 lappuses</strong> un <strong>1 MB</strong>)</li>
           <li>Nospiediet <strong>P&#257;rbaud&#299;t dokumentu bez maksas (demo)</strong> un pagaidiet priek&#353;skat&#299;jumu</li>
         </ol>
+        <p class="text-gray-500 text-sm italic">Bezmaksas demo: l&#299;dz 2 piln&#257;m AI p&#257;rbaud&#275;m dien&#257; (e-pasts, IP un p&#257;rl&#363;ka identifikators). Ja limits sasniegts, priek&#353;skat&#299;jums var nepar&#257;d&#299;ties, bet joproj&#257;m varat maks&#257;t par pilnu auditu.</p>
 
-        <h3>3. solis - Kad par&#257;d&#257;s demo, nospiediet apmaksas pogu</h3>
+        <h3>3. solis — P&#275;c demo nospiediet apmaksas pogu</h3>
         <ul>
-          <li><strong>Vienreiz&#275;jai p&#257;rbaud&#275;i:</strong> nospiediet <strong>Atblo&#311;&#275;t pilnu auditu — €12,49</strong></li>
-          <li><strong>Abonementam:</strong> nospiediet <strong>Pirkt abonementu 30 dokumentiem — €62,49/m&#275;n.</strong></li>
+          <li>Nospiediet <strong>Atblo&#311;&#275;t pilnu auditu — €12,49</strong></li>
         </ul>
         <p>Atv&#275;rsies <strong>maks&#257;jumu starpnieka apmaksas lapa</strong>.</p>
-        <p><strong>Svar&#299;gi:</strong> Apmaksa j&#257;s&#257;k ar pogu vietn&#275; <strong>p&#275;c</strong> faila aug&#353;upiel&#257;des. <strong>Nep&#275;rciet</strong> produktu atsevi&#353;&#311;i maks&#257;jumu starpnieka veikal&#257; <strong>pirms</strong> 2. so&#316;a.</p>
+        <p><strong>Svar&#299;gi:</strong> Apmaksa j&#257;s&#257;k ar pogu vietn&#275; <strong>p&#275;c</strong> faila aug&#353;upiel&#257;des. <strong>Nep&#275;rciet</strong> produktu atsevi&#353;&#311;i maks&#257;jumu starpnieka veikal&#257; <strong>pirms</strong> aug&#353;upiel&#257;des.</p>
+
+        <h3>B) Jaunais m&#275;ne&#353;a abonements (€62,49)</h3>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>1.–2. solis — t&#257;pat (valoda, valsts, e-pasts; v&#275;lams aug&#353;upiel&#257;d&#275;t failu).</li>
+          <li>Vietn&#275; izv&#275;lieties pl&#257;nu <strong>M&#275;nes&#299; — €62.49 (l&#299;dz 30 dokumentiem)</strong>, apstipriniet noteikumus un nospiediet <strong>Abon&#275;t — €62.49/m&#275;nes&#299;</strong> (vai <strong>Maks&#257;t €62.49 — atv&#275;rt apmaksu</strong>).</li>
+          <li>Ja aug&#353;upiel&#257;d&#275;j&#257;t failu pirms apmaksas, p&#275;c apmaksas tas tiks audit&#275;ts autom&#257;tiski un ieskait&#299;ts k&#257; 1 no 30. Demo priek&#353;skat&#299;jums pirmajai abonementa apmaksai <strong>nav oblig&#257;ts</strong>.</li>
+        </ol>
+        <p><strong>Svar&#299;gi:</strong> Nemaks&#257;jiet abonementu atsevi&#353;&#311;i maks&#257;jumu starpnieka veikal&#257; pirms aug&#353;upiel&#257;des, ja v&#275;laties saist&#299;t maks&#257;jumu ar konkr&#275;tu dokumentu.</p>
+
+        <h3>C) Akt&#299;vs abonements (n&#257;kamie dokumenti)</h3>
+        <ol class="list-decimal ml-5 space-y-1">
+          <li>Atveriet lietotni ar <strong>to pa&#353;u e-pastu</strong>, ar kuru apmaks&#257;j&#257;t abonementu.</li>
+          <li>Aug&#353;upiel&#257;d&#275;jiet jaunu PDF/DOCX un nospiediet <strong>Veikt pilnu auditu (abonements)</strong> — jauna apmaksa par &#353;o dokumentu nav nepiecie&#353;ama (tiek izmantots 1 no 30 perioda kvot&#257;).</li>
+          <li>P&#257;rskats atveras p&#257;rl&#363;k&#257; un/vai e-past&#257;, kad anal&#299;ze pabeigta.</li>
+        </ol>
 
         <h2>P&#275;c apmaksas</h2>
         <ul>
-          <li>P&#257;rl&#363;k&#257; var autom&#257;tiski atv&#275;rties <strong>p&#257;rskata lapa</strong> (virsraksts <strong>GDPR Audit Report</strong>)</li>
-          <li>E-past&#257; sa&#326;emsiet v&#275;stuli ar tematu <strong>"Your AI GDPR Audit report is ready"</strong> — izmantojiet pogu <strong>Open full report</strong></li>
-          <li>Ja jums ir <strong>abonements</strong>, varat aug&#353;upiel&#257;d&#275;t un p&#257;rbaud&#299;t n&#257;kosos dokumentus savas limits ietvaros (<strong>l&#299;dz 30 dokumentiem m&#275;nes&#299;</strong>), izmantojot <strong>to pa&#353;u e-pastu</strong></li>
+          <li>P&#257;rl&#363;k&#257; var autom&#257;tiski atv&#275;rties <strong>p&#257;rskata lapa</strong> (virsraksts atkar&#299;gs no saskarnes valodas, piem. <strong>GDPR Audit Report</strong>)</li>
+          <li>E-past&#257; sa&#326;emsiet v&#275;stuli ar tematu <strong>&#171;Your GDPR audit report is ready&#187;</strong> — izmantojiet pogu <strong>Open full report</strong></li>
+          <li>Ja jums ir <strong>abonements</strong>, n&#257;kosos dokumentus aug&#353;upiel&#257;d&#275;jiet ar <strong>Veikt pilnu auditu (abonements)</strong> (<strong>l&#299;dz 30 dokumentiem</strong> nor&#275;&#311;inu period&#257;, <strong>tas pats e-pasts</strong>)</li>
           <li>Anal&#299;ze parasti aiz&#326;em da&#382;as min&#363;tes; sken&#275;ti PDF — ilg&#257;k</li>
-          <li><strong>Ori&#291;in&#257;lo failu m&#275;s nepast&#257;v&#299;gi neglab&#257;jam</strong> — oblig&#257;ti saglab&#257;jiet p&#257;rskatu</li>
+          <li><strong>Ori&#291;in&#257;lo failu m&#275;s nepast&#257;v&#299;gi neglab&#257;jam</strong> — oblig&#257;ti saglab&#257;jiet p&#257;rskatu (saite der&#299;ga l&#299;dz 45 dien&#257;m)</li>
         </ul>
 
         <h2>Probl&#275;mas?</h2>
         <div class="legal-page-table-wrap"><table>
           <thead><tr><th>Probl&#275;ma</th><th>Risin&#257;jums</th></tr></thead>
           <tbody>
-            <tr><td>Nav p&#257;rskata p&#275;c apmaksas</td><td>Pagaidiet 5–15 min., p&#257;rbaudiet spamu, atveriet e-pastu un nospiediet <strong>Open full report</strong></td></tr>
+            <tr><td>Nav p&#257;rskata p&#275;c apmaksas</td><td>Pagaidiet 5–15 min., p&#257;rbaudiet spamu, atveriet e-pastu ar tematu <strong>Your GDPR audit report is ready</strong> un nospiediet <strong>Open full report</strong></td></tr>
             <tr><td>Apmaksa maks&#257;jumu starpnieka veikal&#257; pirms aug&#353;upiel&#257;des</td><td>Rakstiet <a href="https://t.me/aigdprauditsupport_bot" target="_blank" rel="noopener noreferrer">atbalstam</a>, nor&#257;dot pas&#363;t&#299;juma numuru un e-pastu</td></tr>
             <tr><td><strong>Report not found</strong></td><td>Izmantojiet pogu <strong>Open full report</strong> m&#363;su e-past&#257;</td></tr>
             <tr><td>PDF nevar nolas&#299;t</td><td>Konvert&#275;jiet failu ar <a href="https://smallpdf.com/pdf-to-word" target="_blank" rel="noopener noreferrer">smallpdf.com</a> un aug&#353;upiel&#257;d&#275;jiet v&#275;lreiz</td></tr>
             <tr><td>Dokuments p&#257;r&#257;k gar&#353;</td><td>L&#299;dz <strong>15 lpp. / 1 MB</strong> vienam failam. Sadaliet dokumentu da&#316;&#257;s, ja nepiecie&#353;ams</td></tr>
-            <tr><td>Nepareizs dokuments</td><td><strong>Vienreiz&#275;jai apmaksai:</strong> viens maks&#257;jums = viens dokuments. Jaunam failam — jauns pirkums. <strong>Abonementam:</strong> varat aug&#353;upiel&#257;d&#275;t jaunu failu; tas ietver 1 no j&#363;su 30 pieejamaj&#257;m p&#257;rbaud&#275;m</td></tr>
-            <tr><td>Abonementa limits izsmelts</td><td>30 dokumentu limits atjaunojas reizi m&#275;nes&#299;, atjaunojot abonementu. Ja limits beidzas agr&#257;k, varat nopirkt vienreiz&#275;ju p&#257;rbaudi par €12,49 vai gaid&#299;t abonementa atjauno&#353;anu</td></tr>
+            <tr><td>Nepareizs dokuments</td><td><strong>Vienreiz&#275;jai apmaksai:</strong> viens maks&#257;jums = viens dokuments. Jaunam failam — jauns pirkums. <strong>Abonementam:</strong> aug&#353;upiel&#257;d&#275;jiet jaunu failu un nospiediet <strong>Veikt pilnu auditu (abonements)</strong> (1 no 30)</td></tr>
+            <tr><td>Abonementa limits izsmelts</td><td>Limits atjaunojas, kad abonements tiek atjaunots. Ja limits beidzas agr&#257;k, varat nopirkt vienreiz&#275;ju p&#257;rbaudi par €12,49 vai gaid&#299;t perioda atjauno&#353;anu</td></tr>
+            <tr><td>Sasniegts demo limits (2/dien&#257;)</td><td>Joproj&#257;m nospiediet <strong>Atblo&#311;&#275;t pilnu auditu — €12,49</strong>; pilna anal&#299;ze s&#257;kas p&#275;c apmaksas</td></tr>
           </tbody>
         </table></div>
         <p class="text-gray-500 text-sm italic">Automatiz&#275;ta p&#257;rbaude, ne juridiska konsult&#257;cija.</p>
