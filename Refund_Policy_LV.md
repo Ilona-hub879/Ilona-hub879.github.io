@@ -1,8 +1,8 @@
 **ATTEIKUMA TIESĪBU UN NAUDAS ATGRIEŠANAS POLITIKA (REFUND POLICY)**
 
-**Pēdējās izmaiņas:** 22.07.2026.
+**Pēdējās izmaiņas:** 14.09.2026.
 
-Šī Atteikuma tiesību un naudas atgriešanas politika (turpmāk – "Politika") nosaka kārtību, kādā tiek veidoti preču un pakalpojumu atgriešanas un atteikuma tiesību procesi vietnē https://www.prosolvely.com (turpmāk – "Vietne") un saistītajos Telegram čat-botos (turpmāk – "Čat-boti").
+Šī Atteikuma tiesību un naudas atgriešanas politika (turpmāk – "Politika") nosaka kārtību, kādā tiek veidoti preču un pakalpojumu atgriešanas un atteikuma tiesību procesi vietnē [https://www.prosolvely.com](https://www.prosolvely.com/) (turpmāk – "Vietne") un saistītajos digitālos pielikumos un abonementu.
 
 Politika ir izstrādāta saskaņā ar Latvijas Republikas Patērētāju tiesību aizsardzības likumu un LR Ministru kabineta noteikumiem Nr. 255 "Noteikumi par distances līgumu" (turpmāk – "MK noteikumi Nr. 255").
 
@@ -28,18 +28,22 @@ Politika ir izstrādāta saskaņā ar Latvijas Republikas Patērētāju tiesību
 3.1. Naudas atgriešana ir iespējama šādos gadījumos:
 
 - No Lietotāja bankas konta tehniskas kļūmes/kļūdas dēļ par vienu un to pašu produktu nauda ir norakstīta vairākas reizes.
-- Digitālais produkts tehnisku iemeslu dēļ nav pieejams lejupielādei vai nedarbojas, kā aprakstīts, un Īpašnieks nevar novērst šo tehnisko kļūdu 5 (piecu) darba dienu laikā kopš pretenzijas saņemšanas.
+- Digitālais produkts tehnisku iemeslu dēļ nav pieejams un Īpašnieks nevar novērst šo tehnisko kļūdu 5 (piecu) darba dienu laikā kopš pretenzijas saņemšanas.
 
 3.2. Pretenzijas par digitālā satura neatbilstību vai tehniskām kļūdām jānosūta uz e-pastu: **info@prosolvely.com**, pievienojot maksājuma apliecinājumu un kļūdas aprakstu.
+
+3.3. Rēķinus, maksājumu sniedzēja apstrādātās atmaksas un atkārtotu plānu atcelšanu nodrošina maksājumu sniedzēja klientu rīki (piemēram, klientu portāla saite pakalpojuma e-pastos) vai izpildītāja atbalsta kontakts **info@prosolvely.com**
 
 **4\. STRĪDU RISINĀŠANA**
 
 4.1. Ja Lietotājs (patērētājs) uzskata, ka viņa tiesības ir pārkāptas, pretenzija primāri tiek risināta elektroniski, sazinoties ar Īpašnieku.
 
-4.2. Ja vienošanās netiek panākta, patērētājam ir tiesības vērsties Patērētāju tiesību aizsardzības centrā (PTAC, Brīvības iela 55, Rīga, LV-1010, www.ptac.gov.lv) strīda ārpustiesas risināšanai.
+4.2. Ja vienošanās netiek panākta, patērētājam ir tiesības vērsties Patērētāju tiesību aizsardzības centrā (PTAC, Brīvības iela 55, Rīga, LV-1010, [www.ptac.gov.lv](https://www.ptac.gov.lv)) strīdu ārpustiesas risināšanai.
 
 **5\. PERSONAS DATU APSTRĀDE**
 
 5.1. Iesniedzot pretenziju vai naudas atgriešanas pieprasījumu saskaņā ar šo Politiku, Lietotājs iesniedz savus personas datus (piemēram, vārdu, e-pasta adresi, maksājuma informāciju). Šie dati tiek apstrādāti, lai izskatītu Lietotāja pieprasījumu.
+Dati tiks glabāti saskaņā ar grāmatvedības likumdošanu vai kamēr iestājas noilgums.
+Jums ir tiesības piekļūt saviem datiem, tos labot, dzēst un izmantot citas tiesības.
 
-Sīkāku informāciju par Lietotāja personas datu apstrādi, mērķiem, juridisko pamatu un tiesībām lūdzam skatīt mūsu Privātuma politikā.
+Sīkāku informāciju par Lietotāja personas datu apstrādi, mērķiem, juridisko pamatu un tiesībām lūdzam skatīt mūsu [Privātuma politikā](privacy2.html?lang=lv).

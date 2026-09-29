@@ -1,0 +1,9 @@
+{
+  "name": "prosolvely-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:legal": "node scripts/build-legal.mjs && node scripts/build-ai-gdpr-legal.mjs",
+    "build:ai-gdpr": "node scripts/build-ai-gdpr-legal.mjs"
+  }
+}
