@@ -3,7 +3,7 @@
  * Run: node scripts/build-legal.mjs
  *
  * Sources (edit these):
- *   PRIVACY _POLICY_LV.md / PRIVACY _POLICY_EN.md  -> privacy2.html
+ *   PRIVACY _POLICY_LV.md / PRIVACY _POLICY_EN.md / PRIVACY_POLICY_RU.md -> privacy2.html
  *   Terms_of_service_LV.md / Terms_of_service_EN.md -> terms.html
  *   Refund_Policy_LV.md / Refund_Policy_EN.md       -> refund-policy.html
  */
@@ -14,7 +14,54 @@ import { fileURLToPath } from 'url';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 function readMd(name) {
-  return readFileSync(join(ROOT, name), 'utf8');
+  return cleanMd(readFileSync(join(ROOT, name), 'utf8'));
+}
+
+function cleanMd(md) {
+  let text = md.replace(/\r\n/g, '\n');
+  text = text.replace(/\[\[([^\]]+)\]\{\.underline\}\]\(([^)]+)\)/g, '[$1]($2)');
+  text = text.replace(/<https:\/\/([^>]+)>/g, 'https://$1');
+  text = text.replace(/\\"/g, '"');
+  text = text.replace(/ --- /g, ' — ');
+  text = text.replace(/\\\s*\n/g, ' ');
+
+  const lines = text.split('\n');
+  const merged = [];
+  for (let i = 0; i < lines.length; i++) {
+    let line = lines[i];
+    const isListStart = (l) => /^[-*]\s/.test(l.trim()) || /^-\s{2,}/.test(l);
+
+    if (isListStart(line)) {
+      while (i + 1 < lines.length) {
+        const nxt = lines[i + 1];
+        const nt = nxt.trim();
+        if (!nt) break;
+        if (isListStart(nxt) || /^(#{1,6})\s/.test(nt) || /^\|/.test(nt) || /^\*\*\d+\./.test(nt) || /^\d+\.\d+\./.test(nt)) break;
+        line = `${line.trimEnd()} ${nt}`;
+        i += 1;
+      }
+      merged.push(line);
+      i += 1;
+      continue;
+    }
+
+    while (i + 1 < lines.length) {
+      const t = line.trimEnd();
+      const n = lines[i + 1].trim();
+      if (!t || !n) break;
+      if (/^(#{1,6}\s|\||[-*]\s|-\s{2,}|\*\*\d|[\d]+\.\d+\.)/.test(n)) break;
+      if (/^(#{1,6}\s|\||[-*]\s)/.test(t.trim())) break;
+      if (/^\*\*[^*]+\*\*$/.test(t.trim()) && /^\*\*/.test(n)) break;
+      if (!/[.!?:;]$/.test(t) && /^[a-zа-яё0-9(«"\[]/i.test(n)) {
+        line = `${t} ${n}`;
+        i += 1;
+        continue;
+      }
+      break;
+    }
+    merged.push(line);
+  }
+  return merged.join('\n');
 }
 
 function escapeHtml(text) {
@@ -40,7 +87,7 @@ function inlineMarkdown(text) {
 }
 
 function mdToBody(md) {
-  const lines = md.replace(/\r\n/g, '\n').trim().split('\n');
+  const lines = md.trim().split('\n');
   const html = [];
   let i = 0;
 
@@ -53,6 +100,36 @@ function mdToBody(md) {
       continue;
     }
 
+    if (/^\|/.test(trimmed) && trimmed.includes('|')) {
+      const tableLines = [];
+      while (i < lines.length && /^\|/.test(lines[i].trim())) {
+        tableLines.push(lines[i].trim());
+        i += 1;
+      }
+      if (tableLines.length >= 2) {
+        const bodyRows = tableLines.filter((row) => {
+          const cells = row.split('|').slice(1, -1).map((c) => c.trim());
+          return !cells.every((c) => /^:?-+:?$/.test(c));
+        });
+        const rows = bodyRows.map((row) =>
+          row
+            .split('|')
+            .slice(1, -1)
+            .map((cell) => inlineMarkdown(cell.trim()))
+        );
+        if (rows.length) {
+          html.push('<div class="legal-page-table-wrap"><table>');
+          html.push('<thead><tr>' + rows[0].map((c) => `<th>${c}</th>`).join('') + '</tr></thead>');
+          html.push('<tbody>');
+          for (let r = 1; r < rows.length; r += 1) {
+            html.push('<tr>' + rows[r].map((c) => `<td>${c}</td>`).join('') + '</tr>');
+          }
+          html.push('</tbody></table></div>');
+        }
+      }
+      continue;
+    }
+
     const heading = trimmed.match(/^(#{1,6})\s+(.+)$/);
     if (heading) {
       const level = Math.min(heading[1].length, 2);
@@ -62,11 +139,32 @@ function mdToBody(md) {
       continue;
     }
 
-    if (/^[-*]\s+/.test(trimmed)) {
+    const sectionBold = trimmed.match(/^\*\*(.+)\*\*$/);
+    if (sectionBold && (/^\d+\.\s/.test(sectionBold[1]) || sectionBold[1] === sectionBold[1].toUpperCase())) {
+      html.push(`<h2>${inlineMarkdown(sectionBold[1])}</h2>`);
+      i += 1;
+      continue;
+    }
+
+    const subSection = trimmed.match(/^(\d+\.\d+\.)\s*(.+)$/);
+    if (subSection) {
+      html.push(`<h3>${inlineMarkdown(subSection[1] + ' ' + subSection[2])}</h3>`);
+      i += 1;
+      continue;
+    }
+
+    if (/^[-*]\s+/.test(trimmed) || /^-\s{2,}/.test(line)) {
       html.push('<ul>');
-      while (i < lines.length && /^[-*]\s+/.test(lines[i].trim())) {
-        html.push(`<li>${inlineMarkdown(lines[i].trim().replace(/^[-*]\s+/, ''))}</li>`);
-        i += 1;
+      while (i < lines.length) {
+        const t = lines[i].trim();
+        if (!t) {
+          i += 1;
+          continue;
+        }
+        if (/^[-*]\s+/.test(t) || /^-\s{2,}/.test(lines[i])) {
+          html.push(`<li>${inlineMarkdown(t.replace(/^[-*]\s+/, '').replace(/^-\s{2,}/, ''))}</li>`);
+          i += 1;
+        } else break;
       }
       html.push('</ul>');
       continue;
@@ -107,6 +205,9 @@ const LEGAL_STYLE = `  <style>
     .legal-page a { color: #00ff7f; text-decoration: none; }
     .legal-page a:hover { text-decoration: underline; }
     .legal-page .back { display: inline-block; margin-bottom: 1.5rem; color: #00ff7f; font-family: 'Syne', sans-serif; font-size: 0.875rem; }
+    .legal-page-table-wrap { overflow-x: auto; margin: 1rem 0; }
+    .legal-page-table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    .legal-page-table-wrap th, .legal-page-table-wrap td { border: 1px solid rgba(255,255,255,0.12); padding: 0.5rem 0.65rem; text-align: left; vertical-align: top; }
     [data-lang] { display: none; }
     [data-lang].is-active { display: block; }
   </style>`;
@@ -219,17 +320,47 @@ function indent(text, spaces) {
   return text.split('\n').map((line) => (line ? pad + line : line)).join('\n');
 }
 
+function buildPrivacyPage() {
+  const ruBody = mdToBody(readMd('PRIVACY_POLICY_RU.md'));
+  const enBody = mdToBody(readMd('PRIVACY _POLICY_EN.md'));
+  const lvBody = mdToBody(readMd('PRIVACY _POLICY_LV.md'));
+
+  const html = `<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — ProSolvely by Ilona Samovica</title>
+${LEGAL_HEAD}
+${LEGAL_STYLE}
+</head>
+<body class="bg-anthracite text-gray-200 pb-20" data-back-href="index.html">
+  <div class="legal-page">
+    <a href="index.html?lang=ru" class="back" id="legal-back">&#8592; На главную</a>
+
+    <article data-lang="ru" class="is-active">
+${indent(ruBody, 6)}
+    </article>
+
+    <article data-lang="en">
+${indent(enBody, 6)}
+    </article>
+
+    <article data-lang="lv">
+${indent(lvBody, 6)}
+    </article>
+  </div>
+  <script src="legal-lang.js"></script>
+</body>
+</html>
+`;
+
+  writeFileSync(join(ROOT, 'privacy2.html'), html, 'utf8');
+  console.log('  ✓ privacy2.html');
+}
+
 console.log('Building legal pages from Markdown…');
-buildLvEnPage({
-  title: 'Privacy Policy — ProSolvely by Ilona Samovica',
-  lvMd: 'PRIVACY _POLICY_LV.md',
-  enMd: 'PRIVACY _POLICY_EN.md',
-  pageTitles: {
-    lv: 'Privātuma politika — ProSolvely by Ilona Samovica',
-    en: 'Privacy Policy — ProSolvely by Ilona Samovica'
-  },
-  outFile: 'privacy2.html'
-});
+buildPrivacyPage();
 buildLvEnPage({
   title: 'Terms of Service — ProSolvely by Ilona Samovica',
   lvMd: 'Terms_of_service_LV.md',

@@ -4,6 +4,11 @@
   var backBase = document.body.getAttribute('data-back-href') || 'digital-products.html';
   var pageKey = (window.location.pathname.split('/').pop() || '').toLowerCase();
   var pageTitlesByFile = {
+    'privacy2.html': {
+      ru: 'Политика конфиденциальности — ProSolvely by Ilona Samovica',
+      en: 'Privacy Policy — ProSolvely by Ilona Samovica',
+      lv: 'Privātuma politika — ProSolvely by Ilona Samovica'
+    },
     'ai-gdpr-auditor-privacy.html': {
       ru: 'Политика конфиденциальности — AI GDPR Audit Tool',
       en: 'Privacy Policy — AI GDPR Audit Tool',
@@ -21,6 +26,18 @@
     }
   };
   var pageTitles = pageTitlesByFile[pageKey] || pageTitlesByFile['ai-gdpr-auditor-privacy.html'];
+  var backLabelsByFile = {
+    'privacy2.html': {
+      ru: '&#8592; На главную',
+      en: '&#8592; Back to the site',
+      lv: '&#8592; Atpaka&#316; uz vietni'
+    }
+  };
+  var backLabels = backLabelsByFile[pageKey] || {
+    ru: '&#8592; К цифровым продуктам',
+    en: '&#8592; Back to digital products',
+    lv: '&#8592; Atpaka&#316; uz digit&#257;lajiem produktiem'
+  };
 
   function setLang(code) {
     blocks.forEach(function (el) {
@@ -29,13 +46,9 @@
     document.documentElement.lang = code === 'ru' ? 'ru' : code === 'lv' ? 'lv' : 'en';
     document.title = pageTitles[code] || pageTitles.en;
     if (back) {
-      var labels = {
-        ru: '&#8592; К цифровым продуктам',
-        en: '&#8592; Back to digital products',
-        lv: '&#8592; Atpaka&#316; uz digit&#257;lajiem produktiem'
-      };
-      back.href = backBase + '?lang=' + encodeURIComponent(code);
-      back.innerHTML = labels[code] || labels.en;
+      var base = backBase.split('?')[0];
+      back.href = base + '?lang=' + encodeURIComponent(code);
+      back.innerHTML = backLabels[code] || backLabels.en;
     }
   }
 
