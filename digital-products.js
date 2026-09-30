@@ -114,4 +114,15 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeModal();
   });
+
+  document.querySelectorAll('.product-catalog-item').forEach(function (details) {
+    details.addEventListener('toggle', function () {
+      if (!details.open) return;
+      var article = details.closest('article[data-lang]');
+      if (!article) return;
+      article.querySelectorAll('.product-catalog-item').forEach(function (other) {
+        if (other !== details && other.open) other.open = false;
+      });
+    });
+  });
 })();
