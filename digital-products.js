@@ -123,6 +123,15 @@
       article.querySelectorAll('.product-catalog-item').forEach(function (other) {
         if (other !== details && other.open) other.open = false;
       });
+      details.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  document.querySelectorAll('[data-close-product]').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var details = btn.closest('.product-catalog-item');
+      if (details) details.open = false;
     });
   });
 })();

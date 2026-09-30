@@ -48,11 +48,13 @@
 
   <!-- Header -->
   <header class="fixed w-full top-0 z-50 glass-header border-b border-darkBorder">
-    <div class="max-w-6xl mx-auto px-4 h-16 flex justify-between items-center gap-3">
-      <div class="font-syne font-bold text-lg sm:text-xl tracking-wider text-emerald shrink-0">ProSolvely<span class="text-emerald">.</span></div>
-      
+    <div class="max-w-6xl mx-auto px-4 h-16 grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+      <div class="font-syne font-bold text-lg sm:text-xl tracking-wider text-emerald justify-self-start shrink-0">ProSolvely<span class="text-emerald">.</span></div>
+
+      <a id="nav-products-link" href="digital-products.html?lang=ru" class="justify-self-center text-xs sm:text-sm font-syne font-semibold text-gray-300 hover:text-emerald transition-colors text-center px-2 min-w-0 max-w-[10rem] sm:max-w-none truncate" data-i18n="nav_products">Цифровые продукты</a>
+
       <!-- Elegant Language Switcher -->
-      <div class="relative group">
+      <div class="relative group justify-self-end">
         <select id="lang-select" class="appearance-none bg-darkGlass border border-darkBorder hover:border-emerald text-white py-1.5 pl-4 pr-9 rounded-full cursor-pointer focus:outline-none transition-colors text-sm font-medium font-syne uppercase tracking-widest backdrop-blur-md">
           <option class="bg-anthracite text-white" value="ru">RU</option>
           <option class="bg-anthracite text-white" value="en">EN</option>
@@ -232,7 +234,7 @@
     <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
       <div class="text-gray-500 text-sm" data-i18n="ft_rights">© 2026 ProSolvely by Ilona Samovica. Все права защищены.</div>
       <div class="flex flex-col items-center md:items-end gap-2 text-sm">
-        <a id="footer-products-link" href="digital-products.html" class="hidden text-emerald hover:text-white transition-colors underline-offset-2 hover:underline" data-i18n="ft_products">Цифровые продукты</a>
+        <a id="footer-products-link" href="digital-products.html?lang=ru" class="text-emerald hover:text-white transition-colors underline-offset-2 hover:underline" data-i18n="ft_products">Цифровые продукты</a>
         <a id="footer-privacy-link" href="privacy2.html?lang=lv" class="text-emerald hover:text-white transition-colors underline-offset-2 hover:underline" data-i18n="ft_privacy">Privātuma Politika</a>
         <a id="footer-terms-link" href="terms.html?lang=lv" class="text-emerald hover:text-white transition-colors underline-offset-2 hover:underline" data-i18n="ft_terms">Lietošanas noteikumi</a>
       </div>
