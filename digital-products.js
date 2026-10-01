@@ -94,6 +94,10 @@
   }
   setLang(lang);
 
+  if (window.AiGdprPricing && typeof window.AiGdprPricing.mount === 'function') {
+    window.AiGdprPricing.mount();
+  }
+
   function openModal() {
     if (!modal) return;
     modal.classList.add('is-open');
