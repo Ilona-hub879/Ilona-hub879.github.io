@@ -313,6 +313,11 @@ body {
   min-height: 44px;
 }
 
+.product-open-after-pricing {
+  min-height: 44px;
+  align-items: center;
+}
+
 @media (min-width: 640px) {
   .product-catalog-item:not([open]) .product-tile-summary {
     flex-direction: row;
