@@ -263,7 +263,10 @@ function updateDigitalProductsLinks() {
 }
 
 function legalDocLang() {
-  return currentLang === 'en' ? 'en' : 'lv';
+  if (currentLang === 'en' || currentLang === 'lv' || currentLang === 'ru') {
+    return currentLang;
+  }
+  return 'ru';
 }
 
 function updateFooterLegalLinks() {

@@ -9,6 +9,11 @@
       en: 'Privacy Policy — ProSolvely by Ilona Samovica',
       lv: 'Privātuma politika — ProSolvely by Ilona Samovica'
     },
+    'terms.html': {
+      ru: 'Условия использования — ProSolvely by Ilona Samovica',
+      en: 'Terms of Service — ProSolvely by Ilona Samovica',
+      lv: 'Lietošanas noteikumi — ProSolvely by Ilona Samovica'
+    },
     'ai-gdpr-auditor-privacy.html': {
       ru: 'Политика конфиденциальности — AI GDPR Audit Tool',
       en: 'Privacy Policy — AI GDPR Audit Tool',
@@ -28,6 +33,11 @@
   var pageTitles = pageTitlesByFile[pageKey] || pageTitlesByFile['ai-gdpr-auditor-privacy.html'];
   var backLabelsByFile = {
     'privacy2.html': {
+      ru: '&#8592; На главную',
+      en: '&#8592; Back to the site',
+      lv: '&#8592; Atpaka&#316; uz vietni'
+    },
+    'terms.html': {
       ru: '&#8592; На главную',
       en: '&#8592; Back to the site',
       lv: '&#8592; Atpaka&#316; uz vietni'

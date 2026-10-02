@@ -29,7 +29,10 @@
   };
 
   function legalDocLang(code) {
-    return code === 'en' ? 'en' : 'lv';
+    if (code === 'en' || code === 'lv' || code === 'ru') {
+      return code;
+    }
+    return 'ru';
   }
 
   function updateFooter(code) {

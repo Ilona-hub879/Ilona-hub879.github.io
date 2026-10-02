@@ -4,7 +4,7 @@
  *
  * Sources (edit these):
  *   PRIVACY _POLICY_LV.md / PRIVACY _POLICY_EN.md / PRIVACY_POLICY_RU.md -> privacy2.html
- *   Terms_of_service_LV.md / Terms_of_service_EN.md -> terms.html
+ *   Terms_of_service_RU.md / Terms_of_service_EN.md / Terms_of_service_LV.md -> terms.html
  *   Refund_Policy_LV.md / Refund_Policy_EN.md       -> refund-policy.html
  */
 import { readFileSync, writeFileSync } from 'fs';
@@ -320,6 +320,45 @@ function indent(text, spaces) {
   return text.split('\n').map((line) => (line ? pad + line : line)).join('\n');
 }
 
+function buildTermsPage() {
+  const ruBody = mdToBody(readMd('Terms_of_service_RU.md'));
+  const enBody = mdToBody(readMd('Terms_of_service_EN.md'));
+  const lvBody = mdToBody(readMd('Terms_of_service_LV.md'));
+
+  const html = `<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Service — ProSolvely by Ilona Samovica</title>
+${LEGAL_HEAD}
+${LEGAL_STYLE}
+</head>
+<body class="bg-anthracite text-gray-200 pb-20" data-back-href="index.html">
+  <div class="legal-page">
+    <a href="index.html?lang=ru" class="back" id="legal-back">&#8592; На главную</a>
+
+    <article data-lang="ru" class="is-active">
+${indent(ruBody, 6)}
+    </article>
+
+    <article data-lang="en">
+${indent(enBody, 6)}
+    </article>
+
+    <article data-lang="lv">
+${indent(lvBody, 6)}
+    </article>
+  </div>
+  <script src="legal-lang.js"></script>
+</body>
+</html>
+`;
+
+  writeFileSync(join(ROOT, 'terms.html'), html, 'utf8');
+  console.log('  ✓ terms.html');
+}
+
 function buildPrivacyPage() {
   const ruBody = mdToBody(readMd('PRIVACY_POLICY_RU.md'));
   const enBody = mdToBody(readMd('PRIVACY _POLICY_EN.md'));
@@ -361,15 +400,6 @@ ${indent(lvBody, 6)}
 
 console.log('Building legal pages from Markdown…');
 buildPrivacyPage();
-buildLvEnPage({
-  title: 'Terms of Service — ProSolvely by Ilona Samovica',
-  lvMd: 'Terms_of_service_LV.md',
-  enMd: 'Terms_of_service_EN.md',
-  pageTitles: {
-    lv: 'Lietošanas noteikumi — ProSolvely by Ilona Samovica',
-    en: 'Terms of Service — ProSolvely by Ilona Samovica'
-  },
-  outFile: 'terms.html'
-});
+buildTermsPage();
 buildRefundPage();
 console.log('Done.');
