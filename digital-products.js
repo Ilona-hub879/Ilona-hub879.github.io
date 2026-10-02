@@ -94,8 +94,8 @@
   }
   setLang(lang);
 
-  if (window.AiGdprPricing && typeof window.AiGdprPricing.mount === 'function') {
-    window.AiGdprPricing.mount();
+  if (window.CatalogPricing && typeof window.CatalogPricing.mount === 'function') {
+    window.CatalogPricing.mount();
   }
 
   function openModal() {

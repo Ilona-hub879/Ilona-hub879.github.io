@@ -8,13 +8,13 @@ Before using the Services, please carefully review these Terms and our [Privacy 
 
 ### 1\. GENERAL PROVISIONS AND OWNER
 
-- **1.1.** The owner, administrator, and data controller of the Services is Ilona Samoviča, a self-employed person registered in the Republic of Latvia (hereinafter referred to as the **"Owner"**).
+- **1.1.** The owner, administrator, and data controller of the Services is Ilona Samoviča (Nr.LV07098010209, adress: Gaismas iela 6, Daugavpils, Latvia), a self-employed person registered in the Republic of Latvia (hereinafter referred to as the **"Owner"**).
 - **1.2.** These Terms constitute a legally binding agreement between the user (hereinafter referred to as the **"User"**) and the Owner regarding the use of the Services.
 - **1.3.** At its current stage, this Website operates as a digital business card and is informational in nature, unless otherwise specified in a specific section.
 
 ### 2\. AGE RESTRICTIONS (TARGET AUDIENCE)
 
-- **2.1.** The Website, Chatbots, and all materials available therein are intended solely for adults (individuals aged 18 and older).
+- **2.1.** The Website, Chatbots (MI sistem), and all materials available therein are intended solely for adults (individuals aged 18 and older).
 - **2.2.** By commencing the use of the Services or launching the Chatbots, the User represents and warrants that they are at least 18 years of age and possess full legal capacity and competence to assume the obligations set forth in these Terms.
 
 ### 3\. PAID SERVICES AND SPECIAL TERMS
@@ -44,7 +44,7 @@ Before using the Services, please carefully review these Terms and our [Privacy 
 
 - **7.1.** The Owner reserves the right to modify these Terms at any time. We will notify you of substantial changes, particularly those affecting the processing of your personal data, by publishing the updated version on the Website and indicating the date of the latest revisions. We recommend reviewing these Terms regularly.
 - **7.2.** The revised version of the Terms enters into force at the moment it is published on the Website, accompanied by the date of the latest revisions.
-- **7.3.** If the User continues to use the Services after the amendments enter into force, the User is deemed to have fully accepted the revised Terms.
+- **7.3.** If the User continues to use the Services after the amendments enter into force, the User is deemed to have fully accepted the revised Terms. If changes require renewed consent under applicable law, we will request it separately.
 
 ### 8\. APPLICABLE LAW AND DISPUTE RESOLUTION
 

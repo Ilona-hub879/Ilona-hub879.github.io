@@ -1,5 +1,5 @@
 /**
- * Build AI GDPR Audit Tool legal HTML from Markdown (legal/ai-gdpr/*.md).
+ * Build AI GDPR Audit Tool legal HTML from Markdown (catalog/products/ai-gdpr-audit/legal/*.md).
  * Run: node scripts/build-ai-gdpr-legal.mjs
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs';
@@ -7,7 +7,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const MD_DIR = join(ROOT, 'legal', 'ai-gdpr');
+const MD_DIR = join(ROOT, 'catalog', 'products', 'ai-gdpr-audit', 'legal');
 
 function readMd(name) {
   const path = join(MD_DIR, name);

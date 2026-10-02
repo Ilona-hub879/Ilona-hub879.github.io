@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "shopRefundPolicy": "refund-policy.html",
+  "products": [
+    {
+      "id": "ai-gdpr-audit",
+      "dir": "products/ai-gdpr-audit"
+    }
+  ]
+}

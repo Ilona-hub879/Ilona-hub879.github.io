@@ -1,6 +1,6 @@
 # VIETNES UN SERVISU LIETOŠANAS NOTEIKUMI (TERMS OF SERVICE)
 
-**Pēdējās izmaiņas:** 22.07.2026.
+**Pēdējās izmaiņas:** 14.09.2026.
 
 Laipni lūdzam tīmekļa vietnē [https://www.prosolvely.com](https://www.prosolvely.com/) (turpmāk – "Vietne"). Pirms uzsākat Vietnes, saistīto Telegram tērzēšanas botu (turpmāk – "Čat-boti") vai WhatsApp saziņas kanālu (visi kopā turpmāk – "Servisi") lietošanu, lūdzu, rūpīgi iepazīstieties ar šiem Lietošanas noteikumiem (turpmāk – "Noteikumi").
 
@@ -8,7 +8,7 @@ Pirms uzsākt Servisu lietošanu, lūdzu, rūpīgi iepazīstieties ar šiem Liet
 
 ### 1\. VISPĀRĪGIE NOTEIKUMI UN ĪPAŠNIEKS
 
-1.1. Servisu īpašnieks, administrators un pārzinis ir Latvijas Republikā reģistrēta pašnodarbinātā persona **Ilona Samoviča** (turpmāk – "Īpašnieks").
+1.1. Servisu īpašnieks, administrators un pārzinis ir Latvijas Republikā reģistrēta pašnodarbinātā persona **Ilona Samoviča** (reģ.nr.LV07098010209, adrese: Gaismas iela 6, Daugavpils, Latvija) (turpmāk – "Īpašnieks").
 
 1.2. Šie Noteikumi ir juridiski saistoša vienošanās starp lietotāju (turpmāk – "Lietotājs") un Īpašnieku attiecībā uz Servisu izmantošanu.
 
@@ -16,7 +16,7 @@ Pirms uzsākt Servisu lietošanu, lūdzu, rūpīgi iepazīstieties ar šiem Liet
 
 ### 2\. VECUMA IEROBEŽOJUMI (MĒRĶAUDITORIJA)
 
-2.1. Vietne, Čat-boti un visi tajos pieejamie materiāli ir paredzēti **tikai pilngadīgām personām (no 18 gadu vecuma)**.
+2.1. Vietne, Čat-boti (MI sistēmas) un visi tajos pieejamie materiāli ir paredzēti **tikai pilngadīgām personām (no 18 gadu vecuma)**.
 
 2.2. Uzsākot Servisu lietošanu vai palaižot Čat-botus, Lietotājs apliecina un garantē, ka ir sasniedzis vismaz 18 gadu vecumu un viņam ir pilna tiesītspēja un rīcībspēja, lai uzņemtos šajos Noteikumos paredzētās saistības.
 
@@ -56,7 +56,7 @@ Pirms uzsākt Servisu lietošanu, lūdzu, rūpīgi iepazīstieties ar šiem Liet
 
 7.2. Jaunā Noteikumu redakcija stājas spēkā brīdī, kad tā tiek publicēta Vietnē, un tajā tiek norādīts pēdējo izmaiņu datums.
 
-7.3. Ja Lietotājs turpina izmantot Servisus pēc grozījumu stāšanās spēkā, tiek uzskatīts, ka Lietotājs ir pilnībā piekritis jaunajai Noteikumu redakcijai.
+7.3. Ja Lietotājs turpina izmantot Servisus pēc grozījumu stāšanās spēkā, tiek uzskatīts, ka Lietotājs ir pilnībā piekritis jaunajai Noteikumu redakcijai. Ja grozījumi skar personas datu apstrādi un tiem ir nepieciešama jauna piekrišana saskaņā ar piemērojamiem tiesību aktiem, mēs lūgsim aktīvu piekrišanu atsevišķi.
 
 ### 8\. PIEMĒROJAMIE TIESĪBU AKTI UN STRĪDU RISINĀŠANA
 

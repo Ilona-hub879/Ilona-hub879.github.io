@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build:catalog": "node scripts/build-catalog.mjs",
     "build:legal": "node scripts/build-legal.mjs && node scripts/build-ai-gdpr-legal.mjs",
-    "build:ai-gdpr": "node scripts/build-ai-gdpr-legal.mjs"
+    "build:ai-gdpr": "node scripts/build-ai-gdpr-legal.mjs",
+    "build": "npm run build:legal && npm run build:catalog"
   }
 }

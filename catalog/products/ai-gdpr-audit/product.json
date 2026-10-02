@@ -1,0 +1,66 @@
+{
+  "id": "ai-gdpr-audit",
+  "name": "AI GDPR Audit Tool",
+  "appUrl": "https://audit.prosolvely.com",
+  "image": "images/GDPR_image.jpg",
+  "legal": {
+    "privacyHtml": "ai-gdpr-auditor-privacy.html",
+    "termsHtml": "ai-gdpr-auditor-terms.html"
+  },
+  "guideSummary": {
+    "ru": "Как получить полный аудит",
+    "en": "How to receive your full audit",
+    "lv": "Kā saņemt pilnu auditu"
+  },
+  "currency": "EUR",
+  "symbol": "€",
+  "plans": {
+    "oneTime": {
+      "amount": 12.49,
+      "documents": 1
+    },
+    "subscription": {
+      "amount": 62.49,
+      "period": "month",
+      "documentsPerPeriod": 30
+    }
+  },
+  "pricingLabels": {
+    "ru": {
+      "pricesHeading": "Цены (EUR, €)",
+      "oneTimeBadge": "Разово",
+      "subBadge": "Подписка",
+      "oneTimeTitle": "Разовая проверка",
+      "oneTimeDesc": "1 полный AI GDPR-аудит одного документа (PDF/DOCX)",
+      "subTitle": "Месячная подписка",
+      "subDesc": "До 30 полных проверок документов за расчётный месяц",
+      "perMonth": "/ месяц",
+      "compactOne": "разово · 1 документ",
+      "compactSub": "подписка · до 30 док./мес."
+    },
+    "en": {
+      "pricesHeading": "Pricing (EUR, €)",
+      "oneTimeBadge": "One-time",
+      "subBadge": "Subscription",
+      "oneTimeTitle": "One-time check",
+      "oneTimeDesc": "1 full AI GDPR audit of one document (PDF/DOCX)",
+      "subTitle": "Monthly subscription",
+      "subDesc": "Up to 30 full document checks per billing month",
+      "perMonth": "/ month",
+      "compactOne": "one-time · 1 document",
+      "compactSub": "subscription · up to 30 docs/month"
+    },
+    "lv": {
+      "pricesHeading": "Cenas (EUR, €)",
+      "oneTimeBadge": "Vienreizēji",
+      "subBadge": "Abonements",
+      "oneTimeTitle": "Vienreizēja pārbaude",
+      "oneTimeDesc": "1 pilns AI GDPR audits vienam dokumentam (PDF/DOCX)",
+      "subTitle": "Mēneša abonements",
+      "subDesc": "Līdz 30 pilnām dokumentu pārbaudēm mēnesī",
+      "perMonth": "/ mēnesī",
+      "compactOne": "vienreiz · 1 dokuments",
+      "compactSub": "abonements · līdz 30 dok./mēn."
+    }
+  }
+}
