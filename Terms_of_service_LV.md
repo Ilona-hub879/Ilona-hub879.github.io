@@ -8,11 +8,11 @@ Pirms uzsākt Servisu lietošanu, lūdzu, rūpīgi iepazīstieties ar šiem Liet
 
 ### 1\. VISPĀRĪGIE NOTEIKUMI UN ĪPAŠNIEKS
 
-1.1. Servisu īpašnieks, administrators un pārzinis ir Latvijas Republikā reģistrēta pašnodarbinātā persona **Ilona Samoviča** (reģ.nr.LV07098010209, adrese: Gaismas iela 6, Daugavpils, Latvija) (turpmāk – "Īpašnieks").
+1.1. Servisu īpašnieks un administrators ir Latvijas Republikā reģistrēta pašnodarbinātā persona **Ilona Samoviča** (reģ.nr. LV07098010209, adrese: Gaismas iela 6, Daugavpils, Latvija) (turpmāk – "Īpašnieks"). Attiecībā uz personas datu apstrādi Vietnē, Čat-botos un WhatsApp kanālos Īpašnieks ir pārzinis saskaņā ar [Privātuma politiku](privacy2.html?lang=lv). Atsevišķām lietotnēm (piem., [AI GDPR Audit Tool](https://audit.prosolvely.com/)) var būt savas privātuma un lietošanas noteikumu versijas.
 
 1.2. Šie Noteikumi ir juridiski saistoša vienošanās starp lietotāju (turpmāk – "Lietotājs") un Īpašnieku attiecībā uz Servisu izmantošanu.
 
-1.3. Šī Vietne pašreizējā stadijā darbojas kā vizītkarte un tai ir informatīvs raksturs, ja vien konkrētajā sadaļā nav norādīts citādi.
+1.3. Vietne ir informatīva un reklamējoša: tajā ir informācija par pakalpojumiem, digitālo produktu katalogs un cenas. Pasūtījuma noformēšana, apmaksa un pakalpojuma sniegšana parasti notiek ārpus pašas Vietnes — Čat-botos, WhatsApp, atsevišķās tīmekļa lietotnēs vai maksājumu starpnieka (Merchant of Record) norēķinu procesā.
 
 ### 2\. VECUMA IEROBEŽOJUMI (MĒRĶAUDITORIJA)
 
@@ -24,9 +24,9 @@ Pirms uzsākt Servisu lietošanu, lūdzu, rūpīgi iepazīstieties ar šiem Liet
 
 3.1. Vietnē un saistītajos Čat-botos var tikt izvietoti piedāvājumi par maksas pakalpojumiem, instrukcijas un pakalpojumu tarifi.
 
-3.2. Kārtību, kādā tiek veikts pakalpojumu pasūtījums, apmaksa, izpilde un naudas atgriešana, regulē atsevišķs tiesisks dokuments – **Distances līgums**, kas tiek nodrošināts Lietotājam iepazīšanai un abpusējai apstiprināšanai pirms jebkāda maksājuma veikšanas.
+3.2. Pasūtījuma, apmaksas, izpildes un naudas atgriešanas kārtību nosaka **konkrētā pakalpojuma** noteikumi un norādījumi, kas tiek nodrošināti pirms maksājuma, tostarp: [Naudas atgriešanas politika](refund-policy.html?lang=lv) Vietnē; produkta lietošanas noteikumi (piem., [AI GDPR Audit Tool](ai-gdpr-auditor-terms.html?lang=lv)); maksājumu starpnieka (MoR) noteikumi norēķinu procesā; distances līgums vai cita oferta, ja tā tiek nodrošināta attiecīgajā kanālā (Čat-bots, WhatsApp u.c.) pirms apmaksas.
 
-3.3. Ja rodas pretrunas vai domstarpības starp šiem vispārīgajiem Noteikumiem un specifisko Distances līgumu (vai konkrētā pakalpojuma instrukcijām), **prioritāte vienmēr ir Distances līguma un speciālo instrukciju noteikumiem**.
+3.3. Ja rodas pretrunas starp šiem vispārīgajiem Noteikumiem un **konkrētā produkta noteikumiem**, [Naudas atgriešanas politiku](refund-policy.html?lang=lv), norēķinu procesa noteikumiem vai distances līgumu, **prioritāte ir speciālākajiem un jaunākajiem noteikumiem**, kas tieši attiecas uz attiecīgo pakalpojumu un maksājumu.
 
 ### 4\. INTELEKTUĀLAIS ĪPAŠUMS UN MĀKSLĪGAIS INTELEKTS (AI)
 
@@ -38,7 +38,7 @@ Pirms uzsākt Servisu lietošanu, lūdzu, rūpīgi iepazīstieties ar šiem Liet
 
 ### 5\. SAITES UZ TREŠO PUŠU RESURSIEM
 
-5.1. Servisi satur saites uz trešo pušu tīmekļa vietnēm, lietotnēm vai platformām (tostarp GitHub, kā arī tiešās saites un pārejas uz mesendžeriem Telegram un WhatsApp).
+5.1. Servisi satur saites uz trešo pušu tīmekļa vietnēm, lietotnēm vai platformām (tostarp GitHub, [audit.prosolvely.com](https://audit.prosolvely.com/) un citas saistītās lietotnes, kā arī tiešās saites un pārejas uz mesendžeriem Telegram un WhatsApp). Pārejot uz ārpus Vietnes esošām lietotnēm, attiecināmi to pašu noteikumi un privātuma politikas.
 
 5.2. Informāciju par datu apstrādi un nodošanu trešajām pusēm, kā arī kāda ir šo pušu loma, lūdzu, skatīties mūsu [Privātuma politikā](privacy2.html?lang=lv).
 

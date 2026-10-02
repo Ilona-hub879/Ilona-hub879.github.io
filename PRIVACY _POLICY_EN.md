@@ -1,15 +1,15 @@
 ## PRIVACY POLICY
 
-**Last updated:** September 30, 2026
+**Last updated:** October 2, 2026
 
-This Privacy Policy explains how the self-employed person **Ilona Samoviča** (hereinafter referred to as the **"Data Controller"**) processes personal data of visitors and clients on the website [https://www.prosolvely.com](https://www.prosolvely.com/) (hereinafter referred to as the **"Website"**), associated Telegram chatbots (hereinafter referred to as **"Chatbots"**), and WhatsApp communication channels.
+This Privacy Policy explains how the self-employed person **Ilona Samoviča** (reg. No. LV07098010209, address: Gaismas iela 6, Daugavpils, Latvia) (hereinafter referred to as the **"Data Controller"**) processes personal data of visitors and clients on the website [https://www.prosolvely.com](https://www.prosolvely.com/) (hereinafter referred to as the **"Website"**), associated Telegram chatbots (hereinafter referred to as **"Chatbots"**), and WhatsApp communication channels.
 
 ### 1\. LEGAL BASIS AND PURPOSES OF PROCESSING
 
 The Data Controller processes data in accordance with the General Data Protection Regulation (GDPR), based on:
 
-- **Consent (GDPR Article 6(1)(a)):** e.g., when subscribing to receive updates or newsletters.
-- **Performance of a Contract or Pre-contractual Measures (GDPR Article 6(1)(b)):** to respond to your service requests and fulfill orders.
+- **Consent (GDPR Article 6(1)(a)):** e.g., when you accept or decline the localStorage notice on the homepage (cookie_consent).
+- **Performance of a Contract or Pre-contractual Measures (GDPR Article 6(1)(b)):** to respond to your service inquiries and perform contracts concluded outside the Website (messengers, apps).
 - **Legal Obligation (GDPR Article 6(1)(c)):** to comply with statutory requirements under the laws of the Republic of Latvia (such as accounting and bookkeeping regulations).
 - **Legitimate Interests (GDPR Article 6(1)(f)):** to answer general inquiries not directly related to service ordering, maintain Website security, and, where applicable, remember your selected language preferences on the Website.
 
@@ -24,8 +24,8 @@ Your personal data is **not** subject to automated decision-making or profiling 
 - **Third-Party Resources on the Website:** Some pages load external resources (e.g., Google Fonts, Tailwind CSS CDN). These providers may set technical cookies or similar identifiers according to their own privacy policies. We do not use Google Analytics, Meta Pixel, or similar advertising tracking tools on this Website.
 - **Telegram Profile Data:** Telegram User ID, full name, username (@username), and message content.
 - **WhatsApp Profile Data:** Phone number, WhatsApp profile name, and message content.
-- **Communication Data:** Name, email address, and message content voluntarily provided by the user.
-- **Payment and Customer Data (when ordering services):** Name, surname, and payment details.
+- **Communication Data:** Name, email address, and message content voluntarily provided when contacting us by email, Telegram, or WhatsApp (interactive Website elements such as the homepage calculator **do not** transmit entered text to the Data Controller).
+- **Payment Data on the Website:** There is **no checkout** on [www.prosolvely.com](https://www.prosolvely.com/); payment and customer data for digital products are processed in the app and by the Merchant of Record (MoR) — see the relevant product policy.
 
 #### 2.2. COOKIES, LOCALSTORAGE, AND BROWSER SETTINGS
 
@@ -48,7 +48,9 @@ To deliver our services, we utilize the following third-party solutions:
 - **GitHub (GitHub Pages):** For hosting and storing Website code.
 - **Telegram Messenger (Telegram FZ-LLC / Telegram Inc.):** As a platform for Chatbot operation.
 - **WhatsApp (WhatsApp Ireland Limited / Meta Platforms, Inc.):** As a communication channel. WhatsApp processes data pursuant to its own Privacy Policy.
-- **Payment Institutions:** When making payments, transaction data is transferred directly to licensed financial institutions.
+- **Linked web applications** (e.g., [audit.prosolvely.com](https://audit.prosolvely.com/)): processing there is governed by that app’s documents; the Website only links to them.
+
+- **Payment institutions / MoR:** When paying in an app or via a MoR, data is transferred to licensed financial institutions under their terms, not through checkout on the Website.
 
 We rely on service providers, such as WhatsApp (Meta Platforms, Inc.) and Telegram (Telegram FZ-LLC), whose servers may be located outside the European Union / European Economic Area (EU/EEA), including in the USA. In such cases, data transfers are conducted based on appropriate safeguards, such as European Commission-approved Standard Contractual Clauses (SCCs), supplemented by Transfer Impact Assessments (TIAs) and necessary technical and organizational measures to ensure a level of protection equivalent to EU standards.
 
@@ -58,9 +60,7 @@ _Note:_ Payments for digital products are processed via a Merchant of Record and
 
 ### 4\. TARGET AUDIENCE AND AGE RESTRICTIONS
 
-The Website, Chatbots, communication channels, and paid services are intended for individuals who are at least 18 years old.
-
-If you are 13 years old, under Latvian legislation, this is the minimum statutory age at which an individual may independently consent to personal data processing for information society services. However, if you are a minor, we strongly advise discussing the use of our services with a parent or legal guardian.
+The Website, Chatbots, communication channels, and paid services are intended **only for individuals aged 18 or older**. By using the Services, you confirm that you meet this requirement. Use by anyone under 18 is not permitted.
 
 ### 5\. YOUR RIGHTS AND CONTACT INFORMATION
 

@@ -1,6 +1,6 @@
 # TERMS OF SERVICE
 
-**Last updated:** July 22, 2026
+**Last updated:** September 14, 2026
 
 Welcome to [https://www.prosolvely.com](https://www.prosolvely.com/) (hereinafter referred to as the **"Website"**). Before you start using the Website, associated Telegram chatbots (hereinafter referred to as **"Chatbots"**), or WhatsApp communication channels (all collectively referred to as the **"Services"**), please read these Terms of Service (hereinafter referred to as the **"Terms"**) carefully.
 
@@ -8,20 +8,20 @@ Before using the Services, please carefully review these Terms and our [Privacy 
 
 ### 1\. GENERAL PROVISIONS AND OWNER
 
-- **1.1.** The owner, administrator, and data controller of the Services is Ilona Samoviča (Nr.LV07098010209, adress: Gaismas iela 6, Daugavpils, Latvia), a self-employed person registered in the Republic of Latvia (hereinafter referred to as the **"Owner"**).
+- **1.1.** The owner and administrator of the Services is Ilona Samoviča (reg. No. LV07098010209, address: Gaismas iela 6, Daugavpils, Latvia), a self-employed person registered in the Republic of Latvia (hereinafter referred to as the **"Owner"**). For personal data processed on the Website, in Chatbots, and via WhatsApp, the Owner acts as data controller as described in our [Privacy Policy](privacy2.html?lang=en). Standalone applications (e.g., the [AI GDPR Audit Tool](https://audit.prosolvely.com/)) may have their own privacy and terms documents.
 - **1.2.** These Terms constitute a legally binding agreement between the user (hereinafter referred to as the **"User"**) and the Owner regarding the use of the Services.
-- **1.3.** At its current stage, this Website operates as a digital business card and is informational in nature, unless otherwise specified in a specific section.
+- **1.3.** The Website is informational and promotional: it presents services, a digital product catalog, and pricing. Ordering, payment, and fulfillment usually take place outside the Website itself — in Chatbots, WhatsApp, standalone web applications, or the checkout flow of a Merchant of Record (MoR) payment provider.
 
 ### 2\. AGE RESTRICTIONS (TARGET AUDIENCE)
 
-- **2.1.** The Website, Chatbots (MI sistem), and all materials available therein are intended solely for adults (individuals aged 18 and older).
+- **2.1.** The Website, Chatbots (AI systems), and all materials available therein are intended solely for adults (individuals aged 18 and older).
 - **2.2.** By commencing the use of the Services or launching the Chatbots, the User represents and warrants that they are at least 18 years of age and possess full legal capacity and competence to assume the obligations set forth in these Terms.
 
 ### 3\. PAID SERVICES AND SPECIAL TERMS
 
 - **3.1.** Offers for paid services, instructions, and service tariffs may be posted on the Website and associated Chatbots.
-- **3.2.** The procedures for ordering, payment, execution, and refunds of services are regulated by a separate legal document — a Distance Contract — which is provided to the User for review and mutual approval before any payment is made.
-- **3.3.** In the event of any contradiction or discrepancy between these general Terms and a specific Distance Contract (or instructions for a specific service), the provisions of the Distance Contract and special instructions shall always prevail.
+- **3.2.** Procedures for ordering, payment, fulfillment, and refunds are governed by the **specific service** terms and instructions provided before payment, including: the site [Refund Policy](refund-policy.html?lang=en); product terms (e.g., [AI GDPR Audit Tool](ai-gdpr-auditor-terms.html?lang=en)); Merchant of Record (MoR) terms in the checkout flow; and a distance contract or other offer where provided in the relevant channel (Chatbot, WhatsApp, etc.) before payment.
+- **3.3.** If these general Terms conflict with **product-specific terms**, the [Refund Policy](refund-policy.html?lang=en), checkout terms, or a distance contract, the **more specific rules that directly apply to the relevant service and payment** shall prevail.
 
 ### 4\. INTELLECTUAL PROPERTY AND ARTIFICIAL INTELLIGENCE (AI)
 
@@ -31,7 +31,7 @@ Before using the Services, please carefully review these Terms and our [Privacy 
 
 ### 5\. LINKS TO THIRD-PARTY RESOURCES
 
-- **5.1.** The Services contain links to third-party websites, applications, or platforms (including GitHub, as well as direct links and redirects to the Telegram and WhatsApp messengers).
+- **5.1.** The Services contain links to third-party websites, applications, or platforms (including GitHub, [audit.prosolvely.com](https://audit.prosolvely.com/) and other linked apps, as well as direct links to Telegram and WhatsApp). When you leave the Website for a standalone app, that app’s terms and privacy policy apply.
 - **5.2.** For information regarding data processing, data transfers to third parties, and the roles of such parties, please refer to our [Privacy Policy](privacy2.html?lang=en).
 
 ### 6\. LIMITATION OF LIABILITY (DISCLAIMER)

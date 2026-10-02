@@ -1,15 +1,15 @@
 ### PRIVĀTUMA POLITIKA
 
-**Pēdējās izmaiņas:** 30.09.2026.
+**Pēdējās izmaiņas:** 02.10.2026.
 
-Šī Privātuma politika nosaka, kā pašnodarbinātā persona **Ilona Samoviča** (turpmāk — "Pārzinis") apstrādā apmeklētāju un klientu personas datus tīmekļa vietnē [https://www.prosolvely.com](https://www.prosolvely.com/) (turpmāk — "Vietne"), saistītajos tērzēšanas botos platformā Telegram (turpmāk — "Čat-boti"), kā arī saziņas kanālā WhatsApp.
+Šī Privātuma politika nosaka, kā pašnodarbinātā persona **Ilona Samoviča** (reģ. nr. LV07098010209, adrese: Gaismas iela 6, Daugavpils, Latvija) (turpmāk — "Pārzinis") apstrādā apmeklētāju un klientu personas datus tīmekļa vietnē [https://www.prosolvely.com](https://www.prosolvely.com/) (turpmāk — "Vietne"), saistītajos tērzēšanas botos platformā Telegram (turpmāk — "Čat-boti"), kā arī saziņas kanālā WhatsApp.
 
 #### 1. APSTRĀDES TIESISKAIS PAMATS UN MĒRĶI
 
 Pārzinis apstrādā datus saskaņā ar Vispārīgo datu aizsardzības regulu (VDAR / GDPR), pamatojoties uz:
 
-- **Lietotāja piekrišanu (VDAR 6.(1)(a) pants):** piemēram, pierakstoties jaunumu saņemšanai.
-- **Līguma izpildi vai pirmslīguma pasākumiem (VDAR 6.(1)(b) pants):** lai atbildētu uz jūsu pieprasījumiem par pakalpojumiem un izpildītu pasūtījumus.
+- **Lietotāja piekrišanu (VDAR 6.(1)(a) pants):** piemēram, pieņemot vai noraidot localStorage paziņojumu sākumlapā (cookie_consent).
+- **Līguma izpildi vai pirmslīguma pasākumiem (VDAR 6.(1)(b) pants):** lai atbildētu uz jūsu pieprasījumiem par pakalpojumiem un izpildītu līgumus, kas noslēgti ārpus Vietnes (mesendžeri, lietotnes).
 - **Juridisku pienākumu (VDAR 6.(1)(c) pants):** lai izpildītu Latvijas Republikas normatīvo aktu prasības (grāmatvedība).
 - **Leģitīmo interesi (VDAR 6.(1)(f) pants):** lai atbildētu uz vispārīgiem jautājumiem, kas nav saistīti ar pakalpojumu pasūtīšanu, nodrošinātu Vietnes drošību un, ja piemērojams, atcerētos jūsu izvēlēto saskarnes valodu Vietnē.
 
@@ -24,8 +24,8 @@ Jūsu personas dati netiek izmantoti automatizētā lēmumu pieņemšanā vai pr
 - **Trešo pušu resursi Vietnē:** dažās lapās tiek ielādēti ārēji resursi (piem., **Google Fonts**, **Tailwind CSS CDN**). Šie sniedzēji var iestatīt savas tehniskās sīkdatnes vai līdzīgus identifikatorus atbilstoši savām politikām. **Mēs neizmantojam Google Analytics, Meta Pixel vai līdzīgu reklāmas izsekošanu Vietnē.**
 - **Telegram profila dati:** Telegram User ID, vārds/uzvārds, lietotājvārds (@username), ziņojumu saturs.
 - **WhatsApp profila dati:** tālruņa numurs, WhatsApp profila vārds, nosūtīto ziņojumu saturs.
-- **Saziņas dati:** vārds, e-pasts, ziņojuma saturs, ko lietotājs sniedz brīvprātīgi.
-- **Maksājumu un klientu dati (pasūtot pakalpojumus):** vārds, uzvārds, maksājumu rekvizīti.
+- **Saziņas dati:** vārds, e-pasts, ziņojuma saturs, ko lietotājs brīvprātīgi sniedz, sazinoties pa e-pastu, Telegram vai WhatsApp (interaktīvie elementi Vietnē, piem., kalkulators sākumlapā, **nenosūta** ievadīto tekstu Pārzinim).
+- **Maksājumu dati Vietnē:** [www.prosolvely.com](https://www.prosolvely.com/) **nav** norēķinu formas; maksājumu un klientu datus digitālajiem produktiem apstrādā lietotnē un maksājumu starpnieks (MoR) — sk. attiecīgā produkta politiku.
 
 #### 2.2. SĪKDATNES, LOCALSTORAGE UN PĀRLŪKA IESTATĪJUMI
 
@@ -48,7 +48,9 @@ Pakalpojumu nodrošināšanai tiek izmantoti šādi trešo pušu risinājumi:
 - **GitHub (GitHub Pages):** Vietnes koda glabāšanai un hostingam.
 - **Telegram Messenger (Telegram FZ-LLC / Telegram Inc.):** kā platforma Čat-botu darbībai.
 - **WhatsApp (WhatsApp Ireland Limited / Meta Platforms, Inc.):** kā saziņas kanāls. WhatsApp apstrādā datus saskaņā ar savu privātuma politiku.
-- **Maksājumu iestādes:** veicot apmaksu, dati tiek nodoti tieši licencētiem finanšu uzņēmumiem.
+- **Saistītās tīmekļa lietotnes** (piem., [audit.prosolvely.com](https://audit.prosolvely.com/)): datu apstrāde tur regulēta ar lietotnes dokumentiem; Vietne tikai norāda saiti.
+
+- **Maksājumu iestādes / MoR:** apmaksājot lietotnē vai caur starpnieku, dati nonāk pie licencētiem finanšu uzņēmumiem pēc to noteikumiem, nevis caur norēķiniem Vietnē.
 
 Mēs izmantojam pakalpojumu sniedzējus, piemēram, WhatsApp (Meta Platforms, Inc.) un Telegram (Telegram FZ-LLC), kuru serveri var atrasties ārpus Eiropas Savienības/Eiropas Ekonomiskas zonas, tostarp ASV. Šados gadījumos datu nodošana tiek veikta, pamatojoties uz atbilstošiem aizsardzības mehānismiem, piemēram, Eiropas Komisijas apstiprinātajām standarta līguma klauzulām (SCC), papildināta ar datu nodošanas ietekmes novērtējumu (TIA) un nepieciešamajiem tehniskiem un organizatoriskiem pasākumiem.
 
@@ -58,9 +60,7 @@ _Piezīme:_ Maksājumi par digitālajiem produktiem notiek caur maksājumu starp
 
 #### 4. MĒRĶAUDITORIJA UN VECUMA IEROBEŽOJUMI
 
-Vietne, Čat-boti, saziņas kanāli un maksas pakalpojumi ir paredzēti personām, kuras sasniegušas **18 gadu vecumu**.
-
-Ja jums ir 13 gadi, saskaņā ar Latvijas likumdošanu tas ir minimālais vecums, ar kuru persona var patstāvīgi dot piekrišanu personas datu apstrādei informācijas sabiedrības pakalpojumiem. Ja esat nepilngadīgs, iesakām apspriest mūsu pakalpojumu izmantošanu ar vecākiem vai aizbildņiem.
+Vietne, Čat-boti, saziņas kanāli un maksas pakalpojumi ir paredzēti **tikai personām, kuras sasniegušas 18 gadu vecumu**. Lietojot Servisus, jūs apliecināt, ka atbilstat šim nosacījumam. Personām, kas jaunākas par 18 gadiem, Servisu lietošana nav atļauta.
 
 #### 5. LIETOTĀJA TIESĪBAS UN KONTAKTI
 
