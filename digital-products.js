@@ -62,9 +62,10 @@
     });
     document.documentElement.lang = code === 'ru' ? 'ru' : code === 'lv' ? 'lv' : 'en';
     document.title = pageTitles[code] || pageTitles.en;
-    try {
-      localStorage.setItem('lang', code);
-    } catch (e) {}
+    if (window.SiteConsent) {
+      SiteConsent.persistLang(code);
+      SiteConsent.applyBannerCopy(code);
+    }
     if (window.history && window.history.replaceState) {
       var url = new URL(window.location.href);
       url.searchParams.set('lang', code);
@@ -83,19 +84,18 @@
     });
   });
 
-  var params = new URLSearchParams(window.location.search);
-  var lang = params.get('lang');
-  if (lang !== 'ru' && lang !== 'en' && lang !== 'lv') {
-    try {
-      lang = localStorage.getItem('lang');
-    } catch (e) {
-      lang = null;
-    }
-    if (lang !== 'ru' && lang !== 'en' && lang !== 'lv') {
-      lang = 'ru';
-    }
-  }
+  var lang =
+    window.SiteConsent && typeof SiteConsent.resolveSiteLang === 'function'
+      ? SiteConsent.resolveSiteLang('ru')
+      : 'ru';
   setLang(lang);
+
+  if (window.SiteConsent && typeof SiteConsent.initCookieBanner === 'function') {
+    SiteConsent.initCookieBanner(function () {
+      var active = document.querySelector('article[data-lang].is-active');
+      return active ? active.getAttribute('data-lang') : lang;
+    });
+  }
 
   if (window.CatalogPricing && typeof window.CatalogPricing.mount === 'function') {
     window.CatalogPricing.mount();

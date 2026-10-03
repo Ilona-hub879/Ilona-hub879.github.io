@@ -8,12 +8,14 @@ This Privacy Policy explains how the self-employed person **Ilona Samoviča** (r
 
 The Data Controller processes data in accordance with the General Data Protection Regulation (GDPR), based on:
 
-- **Consent (GDPR Article 6(1)(a)):** e.g., when you accept or decline the localStorage notice on the homepage (cookie_consent).
+- **Consent (GDPR Article 6(1)(a)):** when you accept or decline the cookie notice on the Website (cookie_consent).
 - **Performance of a Contract or Pre-contractual Measures (GDPR Article 6(1)(b)):** to respond to your service inquiries and perform contracts concluded outside the Website (messengers, apps).
 - **Legal Obligation (GDPR Article 6(1)(c)):** to comply with statutory requirements under the laws of the Republic of Latvia (such as accounting and bookkeeping regulations).
 - **Legitimate Interests (GDPR Article 6(1)(f)):** to answer general inquiries not directly related to service ordering, maintain Website security, and, where applicable, remember your selected language preferences on the Website.
 
 Your personal data is **not** subject to automated decision-making or profiling that produces legal effects or similarly significantly affects you.
+
+When using our Chatbots on Telegram, you are informed that you are interacting with an artificial intelligence system.
 
 ### 2\. CATEGORIES OF PROCESSED DATA
 
@@ -33,11 +35,11 @@ The Website is primarily static. Stored in your browser:
 
 | **Key / Item** | **Location** | **Purpose** | **Legal Basis (GDPR)** | **Retention** |
 | --- | --- | --- | --- | --- |
-| lang | localStorage | Remember language selection across pages | Legitimate Interest / Consent (when user changes language) | Stored until cleared by user in browser |
-| cookie_consent | localStorage | Remember if user accepted/rejected banner (on homepage) | Consent (Art. 6(1)(a)) | Stored until cleared by user in browser |
+| lang | localStorage | Remember language selection across pages | Consent (Art. 6(1)(a)) | Stored until cleared by user in browser |
+| cookie_consent | localStorage | Remember if user accepted/rejected the cookie banner | Consent (Art. 6(1)(a)) | Stored until cleared by user in browser |
 | Possible 3rd-Party Cookies | Google Fonts / CDN | Delivery of fonts and stylesheets | Dependent on provider; see their policies | Dependent on provider |
 
-**Note:** A cookie banner is currently displayed only on the homepage. On other Website pages (e.g., digital products, pricing), language preferences are saved in localStorage, but the banner might not be shown. If you reject the banner, we do not deploy additional tracking cookies; technical access to the Website remains fully available, though preferences may not persist.
+**Note:** The cookie notice appears on pages with language selection (homepage, digital products, price list) until you accept or decline it. Language (`lang`) is stored in the browser **only after you click Accept**. If you decline, we do not use marketing cookies; the site remains usable, but language may not be remembered between visits.
 
 ### 3\. THIRD-PARTY SERVICES AND DATA TRANSFERS
 

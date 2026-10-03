@@ -42,9 +42,6 @@ const translations = {
     ft_products: 'Цифровые продукты',
     ft_privacy: 'Privātuma Politika',
     ft_terms: 'Lietošanas noteikumi',
-    cookie_text: 'На главной странице мы сохраняем в браузере (localStorage) язык интерфейса и ваш ответ на это уведомление. Маркетинговые cookie не используем. Подробнее — в Политике конфиденциальности.',
-    cookie_btn: 'Принять',
-    cookie_decline: 'Отклонить',
     sig_label: 'ProSolvely by Ilona Samovica',
     sig_title: 'Решения, которые экономят вам время.',
     sig_desc: 'Автоматизация, боты, парсеры, интеграции.',
@@ -104,9 +101,6 @@ const translations = {
     ft_products: 'Digital products',
     ft_privacy: 'Privacy Policy',
     ft_terms: 'Terms of Service',
-    cookie_text: 'On the homepage we store your language choice and your response to this notice in browser localStorage (not analytics cookies). See our Privacy Policy for details.',
-    cookie_btn: 'Accept',
-    cookie_decline: 'Decline',
     sig_label: 'ProSolvely by Ilona Samovica',
     sig_title: 'Solutions that save you time.',
     sig_desc: 'Automation, bots, parsers, integrations.',
@@ -165,9 +159,6 @@ const translations = {
     ft_products: 'Digitālie produkti',
     ft_privacy: 'Privātuma Politika',
     ft_terms: 'Lietošanas noteikumi',
-    cookie_text: 'Sākumlapā mēs saglabājam pārlūkā (localStorage) saskarnes valodu un jūsu atbildi uz šo paziņojumu. Mārketinga sīkdatnes neizmantojam. Sīkāk — Privātuma politikā.',
-    cookie_btn: 'Pieņemt',
-    cookie_decline: 'Noraidīt',
     sig_label: 'ProSolvely by Ilona Samovica',
     sig_title: 'Risinājumi, kas ietaupa jūsu laiku.',
     sig_desc: 'Automatizācija, boti, parsētāji, integrācijas.',
@@ -189,10 +180,14 @@ const translations = {
   }
 };
 
-let currentLang = localStorage.getItem('lang') || 'ru';
+let currentLang = 'ru';
 
 // 2. Initial Setup
 document.addEventListener('DOMContentLoaded', () => {
+  if (window.SiteConsent) {
+    currentLang = SiteConsent.resolveSiteLang('ru');
+  }
+
   // Init AOS animations
   if (typeof AOS !== 'undefined') {
     AOS.init({ once: true, duration: 800, offset: 50 });
@@ -204,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
     langSelect.value = currentLang;
     langSelect.addEventListener('change', (e) => {
       currentLang = e.target.value;
-      localStorage.setItem('lang', currentLang);
+      if (window.SiteConsent) SiteConsent.persistLang(currentLang);
       applyTranslations();
     });
   }
@@ -212,7 +207,9 @@ document.addEventListener('DOMContentLoaded', () => {
   applyTranslations();
   initTypewriter();
   initCalculator();
-  initCookieBanner();
+  if (window.SiteConsent) {
+    SiteConsent.initCookieBanner(() => currentLang);
+  }
   initCursorBlob();
 });
 
@@ -247,6 +244,8 @@ function applyTranslations() {
   updateHeroPricelistLink();
   updateFooterLegalLinks();
   updateDigitalProductsLinks();
+
+  if (window.SiteConsent) SiteConsent.applyBannerCopy(currentLang);
 }
 
 function updateDigitalProductsLinks() {
@@ -368,34 +367,7 @@ function initCalculator() {
   });
 }
 
-// 6. Cookie Banner Logic
-function initCookieBanner() {
-  const banner = document.getElementById('cookie-banner');
-  const btn = document.getElementById('cookie-accept');
-  const declineBtn = document.getElementById('cookie-decline');
-
-  if (!banner || !btn || !declineBtn) return;
-
-  if (!localStorage.getItem('cookie_consent')) {
-    setTimeout(() => {
-      banner.classList.remove('translate-y-full', 'opacity-0');
-    }, 1500); // Slide in after 1.5 seconds
-  }
-
-  btn.addEventListener('click', () => {
-    localStorage.setItem('cookie_consent', 'accepted');
-    banner.classList.add('translate-y-full', 'opacity-0');
-    setTimeout(() => banner.style.display = 'none', 500);
-  });
-
-  declineBtn.addEventListener('click', () => {
-    localStorage.setItem('cookie_consent', 'declined');
-    banner.classList.add('translate-y-full', 'opacity-0');
-    setTimeout(() => banner.style.display = 'none', 500);
-  });
-}
-
-// 7. Cursor blob effect (gold glow following cursor)
+// 6. Cursor blob effect (gold glow following cursor)
 function initCursorBlob() {
   const blob = document.getElementById('cursor-blob');
   if (!blob) return;

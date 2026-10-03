@@ -8,12 +8,14 @@
 
 Pārzinis apstrādā datus saskaņā ar Vispārīgo datu aizsardzības regulu (VDAR / GDPR), pamatojoties uz:
 
-- **Lietotāja piekrišanu (VDAR 6.(1)(a) pants):** piemēram, pieņemot vai noraidot localStorage paziņojumu sākumlapā (cookie_consent).
+- **Lietotāja piekrišanu (VDAR 6.(1)(a) pants):** pieņemot vai noraidot cookie paziņojumu Vietnē (cookie_consent).
 - **Līguma izpildi vai pirmslīguma pasākumiem (VDAR 6.(1)(b) pants):** lai atbildētu uz jūsu pieprasījumiem par pakalpojumiem un izpildītu līgumus, kas noslēgti ārpus Vietnes (mesendžeri, lietotnes).
 - **Juridisku pienākumu (VDAR 6.(1)(c) pants):** lai izpildītu Latvijas Republikas normatīvo aktu prasības (grāmatvedība).
 - **Leģitīmo interesi (VDAR 6.(1)(f) pants):** lai atbildētu uz vispārīgiem jautājumiem, kas nav saistīti ar pakalpojumu pasūtīšanu, nodrošinātu Vietnes drošību un, ja piemērojams, atcerētos jūsu izvēlēto saskarnes valodu Vietnē.
 
 Jūsu personas dati netiek izmantoti automatizētā lēmumu pieņemšanā vai profilēšanā, kas radītu jums tiesiskas sekas vai jūs līdzīgā veidā būtiski ietekmētu.
+
+Lietojot mūsu Čat-botus platformā Telegram, jūs tiek informēts, ka mijiedarbojaties ar mākslīgā intelekta sistēmu.
 
 #### 2. APSTRĀDĀTO DATU KATEGORIJAS
 
@@ -33,11 +35,11 @@ Vietne galvenokārt ir statiska. Pārlūkā var tikt saglabāts:
 
 | **Atslēga** | **Kur** | **Mērķis** | **Juridiskais pamats (VDAR)** | **Glabāšana** |
 | --- | --- | --- | --- | --- |
-| lang | localStorage | Atcerēties valodas izvēli starp lapām | Leģitīmā interese / piekrišana (mainot valodu) | Līdz izdzēšanai pārlūkā |
-| cookie_consent | localStorage | Atcerēties, vai lietotājs pieņēma/noraidīja paziņojumu (sākumlapā) | Piekrišana (6.(1)(a)) | Līdz izdzēšanai pārlūkā |
+| lang | localStorage | Atcerēties valodas izvēli starp lapām | Piekrišana (6.(1)(a) pants) | Līdz izdzēšanai pārlūkā |
+| cookie_consent | localStorage | Atcerēties, vai lietotājs pieņēma/noraidīja cookie paziņojumu | Piekrišana (6.(1)(a)) | Līdz izdzēšanai pārlūkā |
 | Iespējamās trešo pušu sīkdatnes | Google Fonts / CDN | Fontu un stilu piegāde | Atkarīgs no sniedzēja; sk. viņu politikas | Atkarīgs no sniedzēja |
 
-**Piezīme:** Sīkdatņu paziņojums (cookie banner) šobrīd tiek rādīts **tikai sākumlapā**. Citās Vietnes lapās (piem., digitālie produkti, cenas) valoda tiek saglabāta localStorage, bet banneris var netikt rādīts. Ja noraidāt paziņojumu, Pārzinis **neizvieto** papildu izsekošanas sīkdatnes; tehniskā piekļuve Vietnei joprojām iespējama, bet preferences var netikt saglabātas.
+**Piezīme:** Cookie paziņojums tiek rādīts lapās ar valodas izvēli (sākumlapa, digitālie produkti, cenu lapa), kamēr to nepieņemat vai noraidāt. Valoda (`lang`) pārlūkā tiek saglabāta **tikai pēc «Pieņemt»**. Ja noraidāt, Pārzinis neizmanto mārketinga sīkdatnes; vietne paliek pieejama, bet valoda starp apmeklējumiem var netikt atcerēta.
 
 #### 3. TEHNOLOĢISKIE PARTNERI UN DATU NODOŠANA
 
