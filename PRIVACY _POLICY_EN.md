@@ -27,7 +27,7 @@ When using our Chatbots on Telegram, you are informed that you are interacting w
 - **Telegram Profile Data:** Telegram User ID, full name, username (@username), and message content.
 - **WhatsApp Profile Data:** Phone number, WhatsApp profile name, and message content.
 - **Communication Data:** Name, email address, and message content voluntarily provided when contacting us by email, Telegram, or WhatsApp (interactive Website elements such as the homepage calculator **do not** transmit entered text to the Data Controller).
-- **Payment Data on the Website:** There is **no checkout** on [www.prosolvely.com](https://www.prosolvely.com/); payment and customer data for digital products are processed in the app and by the Merchant of Record (MoR) — see the relevant product policy.
+- **Payment Data on the Website:** There is **no checkout** on [www.prosolvely.com](https://www.prosolvely.com/). For example, [AI GDPR Audit Tool](https://audit.prosolvely.com/) is currently a **free demonstration** (no payment flow) — see that product's privacy policy.
 
 #### 2.2. COOKIES, LOCALSTORAGE, AND BROWSER SETTINGS
 
@@ -58,7 +58,7 @@ We rely on service providers, such as WhatsApp (Meta Platforms, Inc.) and Telegr
 
 The Data Controller guarantees that user personal data and message history are **not** used by the Data Controller for training artificial intelligence (AI) models.
 
-_Note:_ Payments for digital products are processed via a Merchant of Record and/or a standalone app (e.g., AI GDPR Audit Tool). This Policy applies to [www.prosolvely.com](https://www.prosolvely.com/); specific web applications maintain separate policy documents.
+_Note:_ Some digital products may use separate apps and policies (e.g., AI GDPR Audit Tool — currently free demo). This Policy applies to [www.prosolvely.com](https://www.prosolvely.com/); standalone web apps have their own privacy terms.
 
 ### 4\. TARGET AUDIENCE AND AGE RESTRICTIONS
 

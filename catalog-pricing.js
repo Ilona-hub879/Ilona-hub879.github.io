@@ -5,151 +5,77 @@
 (function (global) {
   var CATALOG = {
   "ai-gdpr-audit": {
-    "currency": "EUR",
-    "symbol": "€",
-    "oneTime": {
-      "amount": 12.49,
-      "documents": 1
-    },
-    "subscription": {
-      "amount": 62.49,
-      "period": "month",
-      "documentsPerPeriod": 30
+    "freeDemo": true,
+    "limits": {
+      "auditsPerDay": 2,
+      "maxPages": 15,
+      "maxMb": 1
     },
     "labels": {
       "ru": {
-        "pricesHeading": "Цены (EUR, €)",
-        "oneTimeBadge": "Разово",
-        "subBadge": "Подписка",
-        "oneTimeTitle": "Разовая проверка",
-        "oneTimeDesc": "1 полный AI GDPR-аудит одного документа (PDF/DOCX)",
-        "subTitle": "Месячная подписка",
-        "subDesc": "До 30 полных проверок документов за расчётный месяц",
-        "perMonth": "/ месяц",
-        "compactOne": "разово · 1 документ",
-        "compactSub": "подписка · до 30 док./мес."
+        "pricesHeading": "Бесплатная демонстрация",
+        "badge": "Тестовый продукт",
+        "title": "Полный AI GDPR-аудит",
+        "desc": "Без оплаты — пока хватает мощности ИИ. До 2 полных проверок в день на пользователя.",
+        "note": "Не является платной юридической услугой. Сервис может быть приостановлен при исчерпании лимита ИИ."
       },
       "en": {
-        "pricesHeading": "Pricing (EUR, €)",
-        "oneTimeBadge": "One-time",
-        "subBadge": "Subscription",
-        "oneTimeTitle": "One-time check",
-        "oneTimeDesc": "1 full AI GDPR audit of one document (PDF/DOCX)",
-        "subTitle": "Monthly subscription",
-        "subDesc": "Up to 30 full document checks per billing month",
-        "perMonth": "/ month",
-        "compactOne": "one-time · 1 document",
-        "compactSub": "subscription · up to 30 docs/month"
+        "pricesHeading": "Free demonstration",
+        "badge": "Test product",
+        "title": "Full AI GDPR audit",
+        "desc": "No payment — while AI capacity lasts. Up to 2 full audits per day per user.",
+        "note": "Not a paid legal service. The service may pause when AI capacity is exhausted."
       },
       "lv": {
-        "pricesHeading": "Cenas (EUR, €)",
-        "oneTimeBadge": "Vienreizēji",
-        "subBadge": "Abonements",
-        "oneTimeTitle": "Vienreizēja pārbaude",
-        "oneTimeDesc": "1 pilns AI GDPR audits vienam dokumentam (PDF/DOCX)",
-        "subTitle": "Mēneša abonements",
-        "subDesc": "Līdz 30 pilnām dokumentu pārbaudēm mēnesī",
-        "perMonth": "/ mēnesī",
-        "compactOne": "vienreiz · 1 dokuments",
-        "compactSub": "abonements · līdz 30 dok./mēn."
+        "pricesHeading": "Bezmaksas demonstrācija",
+        "badge": "Testa produkts",
+        "title": "Pilns AI GDPR audits",
+        "desc": "Bez maksas — kamēr pietiek AI jaudas. Līdz 2 pilniem auditiem dienā lietotājam.",
+        "note": "Nav maksas juridiska pakalpojuma. Pakalpojums var apturēties, ja beidzas AI jauda."
       }
     }
   }
 };
 
-  function formatAmount(amount, lang) {
-    var s = Number(amount).toFixed(2);
-    return lang === 'en' ? s : s.replace('.', ',');
-  }
-
-  function priceWithSymbol(catalogEntry, amount, lang) {
-    return catalogEntry.symbol + formatAmount(amount, lang);
-  }
-
   function labels(catalogEntry, lang) {
     return catalogEntry.labels[lang] || catalogEntry.labels.en;
+  }
+
+  function renderFreeDemo(catalogEntry, lang, compact) {
+    var L = labels(catalogEntry, lang);
+    var note = L.note ? '<p class="product-pricing-note text-xs text-gray-400 mt-2">' + L.note + '</p>' : '';
+    if (compact) {
+      return (
+        '<div class="product-pricing-compact" role="group" aria-label="' + L.pricesHeading + '">' +
+        '<p class="product-pricing-compact-heading font-syne text-[10px] uppercase tracking-widest text-emerald/90 mb-2">' +
+        L.pricesHeading + '</p>' +
+        '<p class="product-pricing-compact-free text-sm text-gray-200"><strong>' + L.badge + '</strong> — ' + L.desc + '</p>' +
+        note + '</div>'
+      );
+    }
+    return (
+      '<section class="product-pricing-full" aria-labelledby="pricing-full-demo-' + lang + '">' +
+      '<h3 id="pricing-full-demo-' + lang + '" class="font-syne text-sm font-semibold text-emerald mb-3">' + L.pricesHeading + '</h3>' +
+      '<article class="product-pricing-card">' +
+      '<span class="product-pricing-badge">' + L.badge + '</span>' +
+      '<p class="product-pricing-card-title">' + L.title + '</p>' +
+      '<p class="product-pricing-card-desc">' + L.desc + '</p>' + note +
+      '</article></section>'
+    );
   }
 
   function renderCompact(productId, lang) {
     var c = CATALOG[productId];
     if (!c) return '';
-    var L = labels(c, lang);
-    var ot = priceWithSymbol(c, c.oneTime.amount, lang);
-    var sub = priceWithSymbol(c, c.subscription.amount, lang);
-    return (
-      '<div class="product-pricing-compact" role="group" aria-label="' +
-      L.pricesHeading +
-      '">' +
-      '<p class="product-pricing-compact-heading font-syne text-[10px] uppercase tracking-widest text-emerald/90 mb-2">' +
-      L.pricesHeading +
-      '</p>' +
-      '<ul class="product-pricing-compact-list">' +
-      '<li><span class="product-pricing-amount">' +
-      ot +
-      '</span> <span class="product-pricing-meta">' +
-      L.compactOne +
-      '</span></li>' +
-      '<li><span class="product-pricing-amount">' +
-      sub +
-      L.perMonth +
-      '</span> <span class="product-pricing-meta">' +
-      L.compactSub +
-      '</span></li>' +
-      '</ul></div>'
-    );
+    if (c.freeDemo) return renderFreeDemo(c, lang, true);
+    return '';
   }
 
   function renderFull(productId, lang) {
     var c = CATALOG[productId];
     if (!c) return '';
-    var L = labels(c, lang);
-    var ot = priceWithSymbol(c, c.oneTime.amount, lang);
-    var sub = priceWithSymbol(c, c.subscription.amount, lang);
-    return (
-      '<section class="product-pricing-full" aria-labelledby="pricing-full-' +
-      productId +
-      '-' +
-      lang +
-      '">' +
-      '<h3 id="pricing-full-' +
-      productId +
-      '-' +
-      lang +
-      '" class="font-syne text-sm font-semibold text-emerald mb-3">' +
-      L.pricesHeading +
-      '</h3>' +
-      '<div class="product-pricing-grid">' +
-      '<article class="product-pricing-card">' +
-      '<span class="product-pricing-badge">' +
-      L.oneTimeBadge +
-      '</span>' +
-      '<p class="product-pricing-card-price">' +
-      ot +
-      '</p>' +
-      '<p class="product-pricing-card-title">' +
-      L.oneTimeTitle +
-      '</p>' +
-      '<p class="product-pricing-card-desc">' +
-      L.oneTimeDesc +
-      '</p>' +
-      '</article>' +
-      '<article class="product-pricing-card">' +
-      '<span class="product-pricing-badge product-pricing-badge--sub">' +
-      L.subBadge +
-      '</span>' +
-      '<p class="product-pricing-card-price">' +
-      sub +
-      '<span class="product-pricing-card-period">' +
-      L.perMonth +
-      '</span></p>' +
-      '<p class="product-pricing-card-title">' +
-      L.subTitle +
-      '</p>' +
-      '<p class="product-pricing-card-desc">' +
-      L.subDesc +
-      '</p>' +
-      '</article></div></section>'
-    );
+    if (c.freeDemo) return renderFreeDemo(c, lang, false);
+    return '';
   }
 
   function mount() {

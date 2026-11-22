@@ -8,59 +8,37 @@
     "termsHtml": "ai-gdpr-auditor-terms.html"
   },
   "guideSummary": {
-    "ru": "Как получить полный аудит",
-    "en": "How to receive your full audit",
-    "lv": "Kā saņemt pilnu auditu"
+    "ru": "Как получить бесплатный полный аудит",
+    "en": "How to run your free full audit",
+    "lv": "Kā saņemt bezmaksas pilnu auditu"
   },
-  "currency": "EUR",
-  "symbol": "€",
-  "plans": {
-    "oneTime": {
-      "amount": 12.49,
-      "documents": 1
-    },
-    "subscription": {
-      "amount": 62.49,
-      "period": "month",
-      "documentsPerPeriod": 30
-    }
+  "freeDemo": true,
+  "limits": {
+    "auditsPerDay": 2,
+    "maxPages": 15,
+    "maxMb": 1
   },
   "pricingLabels": {
     "ru": {
-      "pricesHeading": "Цены (EUR, €)",
-      "oneTimeBadge": "Разово",
-      "subBadge": "Подписка",
-      "oneTimeTitle": "Разовая проверка",
-      "oneTimeDesc": "1 полный AI GDPR-аудит одного документа (PDF/DOCX)",
-      "subTitle": "Месячная подписка",
-      "subDesc": "До 30 полных проверок документов за расчётный месяц",
-      "perMonth": "/ месяц",
-      "compactOne": "разово · 1 документ",
-      "compactSub": "подписка · до 30 док./мес."
+      "pricesHeading": "Бесплатная демонстрация",
+      "badge": "Тестовый продукт",
+      "title": "Полный AI GDPR-аудит",
+      "desc": "Без оплаты — пока хватает мощности ИИ. До 2 полных проверок в день на пользователя.",
+      "note": "Не является платной юридической услугой. Сервис может быть приостановлен при исчерпании лимита ИИ."
     },
     "en": {
-      "pricesHeading": "Pricing (EUR, €)",
-      "oneTimeBadge": "One-time",
-      "subBadge": "Subscription",
-      "oneTimeTitle": "One-time check",
-      "oneTimeDesc": "1 full AI GDPR audit of one document (PDF/DOCX)",
-      "subTitle": "Monthly subscription",
-      "subDesc": "Up to 30 full document checks per billing month",
-      "perMonth": "/ month",
-      "compactOne": "one-time · 1 document",
-      "compactSub": "subscription · up to 30 docs/month"
+      "pricesHeading": "Free demonstration",
+      "badge": "Test product",
+      "title": "Full AI GDPR audit",
+      "desc": "No payment — while AI capacity lasts. Up to 2 full audits per day per user.",
+      "note": "Not a paid legal service. The service may pause when AI capacity is exhausted."
     },
     "lv": {
-      "pricesHeading": "Cenas (EUR, €)",
-      "oneTimeBadge": "Vienreizēji",
-      "subBadge": "Abonements",
-      "oneTimeTitle": "Vienreizēja pārbaude",
-      "oneTimeDesc": "1 pilns AI GDPR audits vienam dokumentam (PDF/DOCX)",
-      "subTitle": "Mēneša abonements",
-      "subDesc": "Līdz 30 pilnām dokumentu pārbaudēm mēnesī",
-      "perMonth": "/ mēnesī",
-      "compactOne": "vienreiz · 1 dokuments",
-      "compactSub": "abonements · līdz 30 dok./mēn."
+      "pricesHeading": "Bezmaksas demonstrācija",
+      "badge": "Testa produkts",
+      "title": "Pilns AI GDPR audits",
+      "desc": "Bez maksas — kamēr pietiek AI jaudas. Līdz 2 pilniem auditiem dienā lietotājam.",
+      "note": "Nav maksas juridiska pakalpojuma. Pakalpojums var apturēties, ja beidzas AI jauda."
     }
   }
 }

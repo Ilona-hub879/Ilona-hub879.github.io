@@ -28,11 +28,13 @@ function priceWithSymbol(amount, lang, symbol) {
 }
 
 function applyGuideTokens(md, product, lang) {
-  const { plans, symbol, appUrl } = product;
+  const { appUrl, limits } = product;
+  const lim = limits || { auditsPerDay: 2, maxPages: 15, maxMb: 1 };
   return md
-    .replace(/\{\{price\.oneTime\}\}/g, priceWithSymbol(plans.oneTime.amount, lang, symbol))
-    .replace(/\{\{price\.subscription\}\}/g, priceWithSymbol(plans.subscription.amount, lang, symbol))
-    .replace(/\{\{app\.url\}\}/g, appUrl);
+    .replace(/\{\{app\.url\}\}/g, appUrl)
+    .replace(/\{\{limits\.auditsPerDay\}\}/g, String(lim.auditsPerDay ?? 2))
+    .replace(/\{\{limits\.pages\}\}/g, String(lim.maxPages ?? 15))
+    .replace(/\{\{limits\.mb\}\}/g, String(lim.maxMb ?? 1));
 }
 
 function loadProduct(productEntry) {
@@ -48,10 +50,8 @@ function buildPricingJs(products) {
   const catalog = {};
   for (const { product } of products) {
     catalog[product.id] = {
-      currency: product.currency,
-      symbol: product.symbol,
-      oneTime: product.plans.oneTime,
-      subscription: product.plans.subscription,
+      freeDemo: Boolean(product.freeDemo),
+      limits: product.limits,
       labels: product.pricingLabels
     };
   }
@@ -63,99 +63,45 @@ function buildPricingJs(products) {
 (function (global) {
   var CATALOG = ${JSON.stringify(catalog, null, 2)};
 
-  function formatAmount(amount, lang) {
-    var s = Number(amount).toFixed(2);
-    return lang === 'en' ? s : s.replace('.', ',');
-  }
-
-  function priceWithSymbol(catalogEntry, amount, lang) {
-    return catalogEntry.symbol + formatAmount(amount, lang);
-  }
-
   function labels(catalogEntry, lang) {
     return catalogEntry.labels[lang] || catalogEntry.labels.en;
+  }
+
+  function renderFreeDemo(catalogEntry, lang, compact) {
+    var L = labels(catalogEntry, lang);
+    var note = L.note ? '<p class="product-pricing-note text-xs text-gray-400 mt-2">' + L.note + '</p>' : '';
+    if (compact) {
+      return (
+        '<div class="product-pricing-compact" role="group" aria-label="' + L.pricesHeading + '">' +
+        '<p class="product-pricing-compact-heading font-syne text-[10px] uppercase tracking-widest text-emerald/90 mb-2">' +
+        L.pricesHeading + '</p>' +
+        '<p class="product-pricing-compact-free text-sm text-gray-200"><strong>' + L.badge + '</strong> — ' + L.desc + '</p>' +
+        note + '</div>'
+      );
+    }
+    return (
+      '<section class="product-pricing-full" aria-labelledby="pricing-full-demo-' + lang + '">' +
+      '<h3 id="pricing-full-demo-' + lang + '" class="font-syne text-sm font-semibold text-emerald mb-3">' + L.pricesHeading + '</h3>' +
+      '<article class="product-pricing-card">' +
+      '<span class="product-pricing-badge">' + L.badge + '</span>' +
+      '<p class="product-pricing-card-title">' + L.title + '</p>' +
+      '<p class="product-pricing-card-desc">' + L.desc + '</p>' + note +
+      '</article></section>'
+    );
   }
 
   function renderCompact(productId, lang) {
     var c = CATALOG[productId];
     if (!c) return '';
-    var L = labels(c, lang);
-    var ot = priceWithSymbol(c, c.oneTime.amount, lang);
-    var sub = priceWithSymbol(c, c.subscription.amount, lang);
-    return (
-      '<div class="product-pricing-compact" role="group" aria-label="' +
-      L.pricesHeading +
-      '">' +
-      '<p class="product-pricing-compact-heading font-syne text-[10px] uppercase tracking-widest text-emerald/90 mb-2">' +
-      L.pricesHeading +
-      '</p>' +
-      '<ul class="product-pricing-compact-list">' +
-      '<li><span class="product-pricing-amount">' +
-      ot +
-      '</span> <span class="product-pricing-meta">' +
-      L.compactOne +
-      '</span></li>' +
-      '<li><span class="product-pricing-amount">' +
-      sub +
-      L.perMonth +
-      '</span> <span class="product-pricing-meta">' +
-      L.compactSub +
-      '</span></li>' +
-      '</ul></div>'
-    );
+    if (c.freeDemo) return renderFreeDemo(c, lang, true);
+    return '';
   }
 
   function renderFull(productId, lang) {
     var c = CATALOG[productId];
     if (!c) return '';
-    var L = labels(c, lang);
-    var ot = priceWithSymbol(c, c.oneTime.amount, lang);
-    var sub = priceWithSymbol(c, c.subscription.amount, lang);
-    return (
-      '<section class="product-pricing-full" aria-labelledby="pricing-full-' +
-      productId +
-      '-' +
-      lang +
-      '">' +
-      '<h3 id="pricing-full-' +
-      productId +
-      '-' +
-      lang +
-      '" class="font-syne text-sm font-semibold text-emerald mb-3">' +
-      L.pricesHeading +
-      '</h3>' +
-      '<div class="product-pricing-grid">' +
-      '<article class="product-pricing-card">' +
-      '<span class="product-pricing-badge">' +
-      L.oneTimeBadge +
-      '</span>' +
-      '<p class="product-pricing-card-price">' +
-      ot +
-      '</p>' +
-      '<p class="product-pricing-card-title">' +
-      L.oneTimeTitle +
-      '</p>' +
-      '<p class="product-pricing-card-desc">' +
-      L.oneTimeDesc +
-      '</p>' +
-      '</article>' +
-      '<article class="product-pricing-card">' +
-      '<span class="product-pricing-badge product-pricing-badge--sub">' +
-      L.subBadge +
-      '</span>' +
-      '<p class="product-pricing-card-price">' +
-      sub +
-      '<span class="product-pricing-card-period">' +
-      L.perMonth +
-      '</span></p>' +
-      '<p class="product-pricing-card-title">' +
-      L.subTitle +
-      '</p>' +
-      '<p class="product-pricing-card-desc">' +
-      L.subDesc +
-      '</p>' +
-      '</article></div></section>'
-    );
+    if (c.freeDemo) return renderFreeDemo(c, lang, false);
+    return '';
   }
 
   function mount() {

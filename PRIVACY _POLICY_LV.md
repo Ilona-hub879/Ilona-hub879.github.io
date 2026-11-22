@@ -27,7 +27,7 @@ Lietojot mūsu Čat-botus platformā Telegram, jūs tiek informēts, ka mijiedar
 - **Telegram profila dati:** Telegram User ID, vārds/uzvārds, lietotājvārds (@username), ziņojumu saturs.
 - **WhatsApp profila dati:** tālruņa numurs, WhatsApp profila vārds, nosūtīto ziņojumu saturs.
 - **Saziņas dati:** vārds, e-pasts, ziņojuma saturs, ko lietotājs brīvprātīgi sniedz, sazinoties pa e-pastu, Telegram vai WhatsApp (interaktīvie elementi Vietnē, piem., kalkulators sākumlapā, **nenosūta** ievadīto tekstu Pārzinim).
-- **Maksājumu dati Vietnē:** [www.prosolvely.com](https://www.prosolvely.com/) **nav** norēķinu formas; maksājumu un klientu datus digitālajiem produktiem apstrādā lietotnē un maksājumu starpnieks (MoR) — sk. attiecīgā produkta politiku.
+- **Maksājumu dati Vietnē:** [www.prosolvely.com](https://www.prosolvely.com/) **nav** norēķinu formas. Piemēram, [AI GDPR Audit Tool](https://audit.prosolvely.com/) šobrīd ir **bezmaksas demonstrācija** (bez maksājumu plūsmas) — sk. šī produkta privātuma politiku.
 
 #### 2.2. SĪKDATNES, LOCALSTORAGE UN PĀRLŪKA IESTATĪJUMI
 
@@ -58,7 +58,7 @@ Mēs izmantojam pakalpojumu sniedzējus, piemēram, WhatsApp (Meta Platforms, In
 
 Pārzinis garantē, ka lietotāju personas dati un ziņojumu vēsture **netiek izmantoti** mākslīgā intelekta modeļu apmācībai no Pārziņa puses.
 
-_Piezīme:_ Maksājumi par digitālajiem produktiem notiek caur maksājumu starpnieku (Merchant of Record) un/vai atsevišķu lietotni (piem., AI GDPR Audit Tool). Šī Politika attiecas uz [www.prosolvely.com](https://www.prosolvely.com/); lietotņu politikām — atsevišķi dokumenti.
+_Piezīme:_ Dažiem digitālajiem produktiem ir atsevišķas lietotnes un politikas (piem., AI GDPR Audit Tool — šobrīd bezmaksas demonstrācija). Šī Politika attiecas uz [www.prosolvely.com](https://www.prosolvely.com/); atsevišķām web lietotnēm — savas privātuma noteikumi.
 
 #### 4. MĒRĶAUDITORIJA UN VECUMA IEROBEŽOJUMI
 

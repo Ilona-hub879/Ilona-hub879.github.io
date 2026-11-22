@@ -12,7 +12,7 @@ Lietotne ir automatizēts rīks, kas izmanto mākslīgā intelekta (AI) tehnolo�
 
 1.2. Lietotne ir paredzēta tikai pilngadīgām personām (sasniegušām 18 gadu vecumu) saimnieciskās, profesionālās darbības vai personīgu interešu ietvaros. Lietojot šo rīku, Jūs apstiprināt savu pilngadību. Lietotne **nepārbauda** Lietotāja vecumu vai uzņēmējdarbības statusu; Lietotājs apliecina to, turpinot lietot pakalpojumu.
 
-1.3. Pakalpojums tiek sniegts pēc principa "maksā par katru dokumentu" (pay-per-document): katra jauna dokumenta analīzei ir nepieciešama atsevišķa samaksa, ja vien netiek izmantots Demo režīms vai aktīvs ikmēneša abonements (sk. 2.5. punktu un Lietošanas noteikumus).  
+1.3. **Bezmaksas demonstrācijas produkts:** Lietotne pašlaik tiek piedāvāta kā **nekomerciāla, bezmaksas demonstrācija**, kamēr pietiek AI jaudas. Lietotnē **nav apmaksas, abonementa vai maksājumu kartes**. Katra pilna analīze ir bez maksas, ievērojot godīgas lietošanas limitus (sk. 3. punktu).  
 1.4. Lietotājs ir atbildīgs par augšupielādētā dokumenta saturu un apņemas neaugšupielādēt dokumentus, kas satur īpašu kategoriju personas datus (piemēram, datus par veselību, rasi, atnisko piederību, politiskajiem uzskatiem, reliģisko pārliecību) vai datus par sodāmību, ja vien Lietotājam nav tiesiska pamata šādu datu nodošanai analīzei. Lietotne nav paredzēta šādu datu apstrādei, un Pārzinis neuzņemas atbildību par to nejaušu apstrādi.  
 Lietotājs apņemas neaugšupielādēt dokumentus, kas satur nacionālos identifikatorus, piemēram, personas kodu, bez īpašas nepieciešamības un tiesiska pamata.
 
@@ -29,7 +29,7 @@ Pārzinis apstrādā tikai minimāli nepieciešamos datus, lai nodrošinātu Lie
 **3\. Demo režīma noteikumi**
 
 3.1. Demo režīms ir paredzēts tikai tam, lai Lietotājs iepazītos ar Lietotnes darbības principiem un analīzes kvalitāti.  
-3.2. Lai novērstu sistēmas pārslodzi un krāpniecību, bezmaksas pārbaudes Demo režīmā tiek tehniski ierobežotas līdz **2 (diviem) pilniem AI auditiem dienā** katram Lietotājam. Lietotājs tiek identificēts, izmantojot **e-pasta adresi** (obligāta augšupielādei), **IP adresi** un **pārlūkprogrammas digitālo nospiedumu (fingerprint)**, kas tiek apstrādāti tikai Demo limitu kontrolei un ļaunprātīgas izmantošanas novēršanai (sk. 2.4. punktu). Ja kāds no šiem rādītājiem ir sasniedzis dienas limitu, jaunam dokumentam var būt nepieciešama atsevišķa apmaksa vai abonements.
+3.2. Lai novērstu sistēmas pārslodzi un krāpniecību, bezmaksas auditi tiek ierobežoti līdz **2 (diviem) pilniem AI auditiem dienā** katram Lietotājam (e-pasts, IP, fingerprint). Ja dienas limits sasniegts, jāgaida nākamā diena — **maksas apiešanas iespēja netiek piedāvāta**.
 
 **4\. Datu glabāšana, drošība un "Zero-Retention" princips**
 
@@ -81,7 +81,7 @@ Lietotnes darbības nodrošināšanai dati tiek nodoti šādiem uzticamiem pakal
 
 8.2. **Svarīgs paziņojums:** Oriģinālo augšupielādēto failu Pārzinis pēc analīzes parasti **neglabā** un nevar atjaunot pēc sesijas beigām. **Analīzes ziņojumu** (ar ierobežotu derīguma termiņu, sk. 4.3.) Lietotājs var piekļūt caur unikālo saiti, kamēr saite ir aktīva; pēc termiņa beigām saistītie analīzes rezultāti tiek dzēsti vai noņemti no aktīvās piekļuves.
 
-8.3. Lai īstenotu savas datu subjekta tiesības vai uzdotu jautājumus, lūdzam sazināties ar mums elektroniski: [**info@prosolvely.com**](mailto:info@prosolvely.com).
+8.3. Lai īstenotu savas datu subjekta tiesības vai uzdotu jautājumus, lūdzam sazināties ar mums elektroniski: [info@prosolvely.com](mailto:info@prosolvely.com).
 
 **9\. Paziņojums par iepazīšanos ar noteikumiem**
 
